@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -1647.0, -32.0, 1372.0, 723.0 ],
+		"rect" : [ 34.0, 143.0, 1372.0, 723.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,9 +40,21 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 122.0, 142.0, 106.0, 22.0 ],
+					"text" : "prepend ignorclick"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"comment" : "LFO Output [0, 1]",
 					"id" : "obj-1",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -54,7 +66,7 @@
 				"box" : 				{
 					"comment" : "Depth [0, 1]",
 					"id" : "obj-40",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -80,7 +92,7 @@
 				"box" : 				{
 					"comment" : "Spread [0, 1]",
 					"id" : "obj-33",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -118,7 +130,7 @@
 				"box" : 				{
 					"comment" : "Rate [0, ∞]",
 					"id" : "obj-32",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -551,10 +563,10 @@
 					"id" : "obj-7",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "int", "int" ],
-					"patching_rect" : [ 19.0, 68.0, 182.0, 22.0 ],
-					"text" : "t i i"
+					"numoutlets" : 3,
+					"outlettype" : [ "int", "int", "int" ],
+					"patching_rect" : [ 19.0, 68.0, 225.0, 22.0 ],
+					"text" : "t i i i"
 				}
 
 			}
@@ -723,6 +735,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"midpoints" : [ 131.5, 171.5, 28.5, 171.5 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-21", 0 ]
 				}
@@ -857,9 +877,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-37", 1 ],
-					"midpoints" : [ 191.5, 307.0, 169.5, 307.0 ],
+					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-7", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 1 ],
+					"midpoints" : [ 234.5, 307.0, 169.5, 307.0 ],
+					"source" : [ "obj-7", 2 ]
 				}
 
 			}
@@ -877,7 +904,39 @@
 				}
 
 			}
- ]
+ ],
+		"parameters" : 		{
+			"obj-11" : [ "number[4]", "number[2]", 0 ],
+			"obj-14" : [ "textbutton[3]", "textbutton[2]", 0 ],
+			"obj-21" : [ "number[3]", "number[1]", 0 ],
+			"parameterbanks" : 			{
+				"0" : 				{
+					"index" : 0,
+					"name" : "",
+					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+				}
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [ 			{
+				"name" : "number-input.gendsp",
+				"bootpath" : "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath" : "../code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spread-lfo.gendsp",
+				"bootpath" : "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath" : "../code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
