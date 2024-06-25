@@ -1,6 +1,6 @@
 # Submarine Max Library
 
-A suite of hexaphonic effects designed in Max for the SubPro pickup by Submarine.
+A suite of hexaphonic effects designed in Max for the SubSix pickup by Submarine.
 
 ## Setup
 
