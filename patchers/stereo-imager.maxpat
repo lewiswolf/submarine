@@ -267,7 +267,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 822.0, 201.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 116.0, 206.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 116.0, 199.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "number",
@@ -293,7 +293,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 822.0, 141.0, 74.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 207.0, 104.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 200.0, 104.0, 20.0 ],
 					"text" : "LFO Offset",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -332,7 +332,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 964.0, 101.0, 67.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 229.0, 160.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 223.0, 170.0, 20.0 ],
 					"text" : "LFO Depth",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -363,7 +363,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 964.0, 174.0, 66.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 251.0, 160.0, 66.0 ],
+					"presentation_rect" : [ 0.0, 245.0, 170.0, 66.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
 					"setstyle" : 1,
 					"size" : 6,
@@ -386,7 +386,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 682.0, 205.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 116.0, 184.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 116.0, 175.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "number[1]",
@@ -411,7 +411,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 682.0, 145.0, 74.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 185.0, 104.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 176.0, 104.0, 20.0 ],
 					"text" : "LFO Spread",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -437,7 +437,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 540.0, 145.0, 61.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 163.0, 104.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 152.0, 104.0, 20.0 ],
 					"text" : "LFO Rate",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
@@ -689,7 +689,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 540.0, 205.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 116.0, 162.0, 50.0, 22.0 ],
+					"presentation_rect" : [ 116.0, 151.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "number[2]",
@@ -742,7 +742,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 195.0, 182.0, 160.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 36.0, 160.0, 100.0 ],
+					"presentation_rect" : [ 0.0, 27.0, 170.0, 100.0 ],
 					"size" : 6,
 					"slidercolor" : [ 0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0 ],
 					"spacing" : 2
@@ -761,7 +761,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 195.0, 44.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 141.0, 160.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 129.0, 170.0, 20.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -862,7 +862,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 24.0, 329.0, 30.0, 30.0 ]
 				}
 
@@ -875,7 +875,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 292.0, 15.0, 85.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 11.0, 160.0, 20.0 ],
+					"presentation_rect" : [ 0.0, 5.0, 170.0, 20.0 ],
 					"text" : "Stereo Imager",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"textjustification" : 1
@@ -893,7 +893,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 340.0, 44.0, 37.0, 21.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 6.0, 5.0, 160.0, 319.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 170.0, 320.0 ],
 					"proportion" : 0.5
 				}
 
