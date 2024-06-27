@@ -2,8 +2,8 @@
 	"name" : "Submarine",
 	"version" : 1,
 	"creationdate" : 3801728560,
-	"modificationdate" : 3802100325,
-	"viewrect" : [ 0.0, 115.0, 1440.0, 751.0 ],
+	"modificationdate" : 3802346403,
+	"viewrect" : [ 66.0, 100.0, 1320.0, 635.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -17,6 +17,11 @@
 			}
 ,
 			"hex-fuzz.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"hex-tone.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
