@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 115.0, 1372.0, 723.0 ],
+		"rect" : [ -1413.0, 24.0, 1372.0, 695.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-48",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 242.400000154972076, 151.0, 136.0, 22.0 ],
+					"text" : "mc.cycle~ 40 @chans 6"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "toggle",
@@ -184,18 +196,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-16",
-					"linecount" : 13,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 10.400000154972076, 16.800000250339508, 153.0, 181.0 ],
-					"text" : "ISSUES \n\ngen~ number-input stops working correctly when one of the signal inputs is static or when using manual input. basically need to check if the summed input == 0 ?\n\nSpread LFO phase does not reset when switching between LFO and manual"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -255,7 +255,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 232.000003457069397, 16.800000250339508, 150.0, 47.0 ],
+					"patching_rect" : [ 48.400000154972076, 11.0, 150.0, 47.0 ],
 					"text" : "here you can choose your input to be a set of 6 line ins, or 6 tracks of stems"
 				}
 
@@ -276,7 +276,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 194.400002896785736, 71.200001060962677, 224.0, 112.0 ],
+					"patching_rect" : [ 10.400000154972076, 65.0, 224.0, 112.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -288,7 +288,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 426.400006353855133, 71.200001060962677, 114.0, 22.0 ],
+					"patching_rect" : [ 242.400000154972076, 65.0, 114.0, 22.0 ],
 					"text" : "mc.adc~ 3 4 5 6 7 8"
 				}
 
@@ -343,7 +343,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "hex-fuzz.maxpat",
-					"numinlets" : 7,
+					"numinlets" : 5,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
@@ -441,7 +441,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 6 ],
+					"destination" : [ "obj-1", 4 ],
 					"midpoints" : [ 234.900000154972076, 297.200004518032074, 170.900000154972076, 297.200004518032074 ],
 					"source" : [ "obj-25", 0 ]
 				}
@@ -449,14 +449,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 6 ],
+					"destination" : [ "obj-1", 4 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 6 ],
+					"destination" : [ "obj-1", 4 ],
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -477,9 +477,7 @@
 			"obj-13" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-1::obj-16" : [ "number[7]", "number[2]", 0 ],
 			"obj-1::obj-2" : [ "number[6]", "number[2]", 0 ],
-			"obj-1::obj-41" : [ "number[8]", "number[2]", 0 ],
-			"obj-1::obj-50" : [ "number[9]", "number[2]", 0 ],
-			"obj-1::obj-57" : [ "number[10]", "number[2]", 0 ],
+			"obj-1::obj-39" : [ "number[13]", "number[2]", 0 ],
 			"obj-3::obj-11" : [ "number[11]", "number[2]", 0 ],
 			"obj-3::obj-14" : [ "textbutton[4]", "textbutton[2]", 0 ],
 			"obj-3::obj-21" : [ "number[12]", "number[1]", 0 ],
