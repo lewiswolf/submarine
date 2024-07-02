@@ -2,8 +2,8 @@
 	"name" : "Submarine",
 	"version" : 1,
 	"creationdate" : 3801728560,
-	"modificationdate" : 3802346403,
-	"viewrect" : [ 66.0, 100.0, 1320.0, 635.0 ],
+	"modificationdate" : 3802765569,
+	"viewrect" : [ 66.0, 128.0, 391.0, 497.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -70,6 +70,16 @@
 				}
 
 			}
+,
+			"harmonic-tremolo.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Dropbox/Work/Submarine/patchers",
+					"projectrelativepath" : "./patchers"
+				}
+
+			}
 
 		}
 ,
@@ -92,6 +102,16 @@
 			"stereo-imager.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
+			}
+,
+			"harmonic-tremolo.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Dropbox/Work/Submarine/code",
+					"projectrelativepath" : "./code"
+				}
+
 			}
 
 		}

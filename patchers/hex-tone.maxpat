@@ -158,7 +158,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 257.0, 149.0, 94.0, 49.0 ],
-					"presentation_linecount" : 3,
 					"text" : "mc.gen~ number-input @chans 6"
 				}
 
@@ -357,7 +356,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 411.0, 65.0, 30.0, 30.0 ]
 				}
 
@@ -395,7 +394,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "multichannelsignal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 103.0, 65.0, 30.0, 30.0 ]
 				}
 
@@ -447,8 +446,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 141.0, 42.0, 80.0, 22.0 ],
-					"text" : "loadmess 0.5"
+					"patching_rect" : [ 141.0, 42.0, 87.0, 22.0 ],
+					"text" : "loadmess 500."
 				}
 
 			}
