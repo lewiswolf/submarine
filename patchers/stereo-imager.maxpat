@@ -40,16 +40,6 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-45",
-					"maxclass" : "scope~",
-					"numinlets" : 2,
-					"numoutlets" : 0,
-					"patching_rect" : [ 576.0, 358.0, 130.0, 130.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgcolor" : [ 0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0.0,
@@ -1133,7 +1123,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 501.0, 282.0, 481.0, 22.0 ],
+					"patching_rect" : [ 501.0, 282.0, 481.000000000000114, 22.0 ],
 					"text" : "mc.gen~ spread-lfo @chans 6 @normalisation 0 @invert 0"
 				}
 
@@ -1540,14 +1530,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 2 ],
-					"order" : 1,
-					"source" : [ "obj-37", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-45", 0 ],
 					"order" : 0,
 					"source" : [ "obj-37", 0 ]
 				}
@@ -1557,7 +1539,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"midpoints" : [ 510.5, 310.5, 326.5, 310.5 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-37", 0 ]
 				}
 
