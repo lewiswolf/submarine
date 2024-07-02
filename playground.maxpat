@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 127.0, 1155.0, 739.0 ],
+		"rect" : [ 100.0, 155.0, 1155.0, 711.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 10.0, 673.0, 52.0, 22.0 ],
+					"text" : "mc.!-~ 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-41",
 					"maxclass" : "newobj",
@@ -82,7 +94,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 547.0, 82.0, 24.0, 24.0 ]
+					"patching_rect" : [ 547.0, 76.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -311,12 +323,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
-					"linecount" : 2,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.0, 343.0, 90.0, 33.0 ],
-					"text" : "ISSUE\nadd back offset"
+					"patching_rect" : [ 189.0, 343.0, 100.0, 60.0 ],
+					"text" : "ISSUE\nadd back offset\n\nadd rampsmooth"
 				}
 
 			}
@@ -492,7 +504,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 10.0, 343.0, 170.0, 300.0 ],
+					"patching_rect" : [ 10.0, 343.0, 170.0, 320.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -525,7 +537,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1216.0, 343.0, 170.0, 320.0 ],
+					"patching_rect" : [ 1216.0, 343.0, 170.0, 350.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -585,7 +597,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1216.0, 676.0, 170.0, 47.0 ],
+					"patching_rect" : [ 1216.0, 703.0, 170.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~",
@@ -609,7 +621,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1216.0, 736.0, 56.75, 56.75 ]
+					"patching_rect" : [ 1216.0, 763.0, 56.75, 56.75 ]
 				}
 
 			}
@@ -845,6 +857,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-38", 1 ],
 					"source" : [ "obj-32", 0 ]
 				}
@@ -902,6 +921,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 1 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 3 ],
 					"source" : [ "obj-9", 0 ]
 				}
@@ -954,84 +980,84 @@
 		"dependency_cache" : [ 			{
 				"name" : "harmonic-tremolo.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath" : "../code",
+				"patcherrelativepath" : "./code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "harmonic-tremolo.maxpat",
 				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "./patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hex-fuzz.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath" : "../code",
+				"patcherrelativepath" : "./code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hex-fuzz.maxpat",
 				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "./patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hex-tone.maxpat",
 				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "./patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "number-input.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath" : "../code",
+				"patcherrelativepath" : "./code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spread-lfo.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath" : "../code",
+				"patcherrelativepath" : "./code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spread-lfo.maxpat",
 				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "./patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stem-player-poly.maxpat",
-				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Dropbox/Work/Submarine/unused",
+				"patcherrelativepath" : "./unused",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stem-player.maxpat",
-				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : ".",
+				"bootpath" : "~/Dropbox/Work/Submarine/unused",
+				"patcherrelativepath" : "./unused",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stereo-imager.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath" : "../code",
+				"patcherrelativepath" : "./code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stereo-imager.maxpat",
 				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "./patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
