@@ -15,8 +15,10 @@ To open all of the plugins in this project, open `Submarine.maxproj`, which will
 ### Modulation
 - 	Spread LFO
 
-### Spatial Audio
+### Dynamic
+-	Harmonic Tremolo
 -	Stereo Imager
 
 ### Colour
 -	Hex Fuzz
+-	Hex Tone
