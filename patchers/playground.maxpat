@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 91.0, 183.0, 860.0, 683.0 ],
+		"rect" : [ 89.0, 115.0, 1012.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,27 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-6",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "buffer-delay.maxpat",
+					"numinlets" : 6,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "multichannelsignal", "multichannelsignal" ],
+					"patching_rect" : [ 914.5, 650.875, 170.0, 275.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "ezdac~",
@@ -333,12 +354,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
-					"linecount" : 7,
+					"linecount" : 9,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.0, 343.0, 100.0, 100.0 ],
-					"text" : "ISSUE\nadd back offset\n\nadd rampsmooth\n\nget manual out of here!"
+					"patching_rect" : [ 189.0, 343.0, 100.0, 127.0 ],
+					"text" : "ISSUE\nadd back offset\n\nadd rampsmooth\n\nget manual out of here!\n\nadd min max"
 				}
 
 			}
@@ -923,72 +944,86 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "buffer-delay.gendsp",
+				"bootpath" : "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath" : "../code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "buffer-delay.maxpat",
+				"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "harmonic-tremolo.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath" : "./code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "harmonic-tremolo.maxpat",
-				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : "./patchers",
+				"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hex-fuzz.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath" : "./code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hex-fuzz.maxpat",
-				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : "./patchers",
+				"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "hex-tone.maxpat",
-				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : "./patchers",
+				"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "number-input.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath" : "./code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spread-lfo.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath" : "./code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "spread-lfo.maxpat",
-				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : "./patchers",
+				"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stereo-imager.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath" : "./code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "stereo-imager.maxpat",
-				"bootpath" : "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath" : "./patchers",
+				"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

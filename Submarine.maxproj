@@ -2,8 +2,8 @@
 	"name" : "Submarine",
 	"version" : 1,
 	"creationdate" : 3801728560,
-	"modificationdate" : 3802780687,
-	"viewrect" : [ 66.0, 155.0, 1223.0, 711.0 ],
+	"modificationdate" : 3803041911,
+	"viewrect" : [ 66.0, 239.0, 1799.0, 807.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,6 +14,11 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+,
+			"buffer-delay.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
 			}
 ,
 			"harmonic-tremolo.maxpat" : 			{
@@ -36,22 +41,7 @@
 				"local" : 1
 			}
 ,
-			"stem-player-poly.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"stem-player.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
 			"stereo-imager.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"buffer-delay.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -74,6 +64,11 @@
 		}
 ,
 		"code" : 		{
+			"buffer-delay.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
 			"harmonic-tremolo.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
