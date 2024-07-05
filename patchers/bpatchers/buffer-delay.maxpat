@@ -46,7 +46,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 712.0, 369.0, 30.0, 30.0 ]
+					"patching_rect" : [ 712.333333333333371, 351.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -501,7 +501,7 @@
 													"maxclass" : "inlet",
 													"numinlets" : 0,
 													"numoutlets" : 1,
-													"outlettype" : [ "" ],
+													"outlettype" : [ "multichannelsignal" ],
 													"patching_rect" : [ 31.0, 17.0, 30.0, 30.0 ]
 												}
 
@@ -677,7 +677,7 @@
 									"maxclass" : "inlet",
 									"numinlets" : 0,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "multichannelsignal" ],
 									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
 								}
 
@@ -1036,7 +1036,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 365.0, 148.0, 30.0, 30.0 ]
 				}
 
@@ -1131,7 +1131,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 191.0, 148.0, 30.0, 30.0 ]
 				}
 
@@ -1225,7 +1225,7 @@
 					"numinlets" : 5,
 					"numoutlets" : 2,
 					"outlettype" : [ "multichannelsignal", "multichannelsignal" ],
-					"patching_rect" : [ 17.0, 329.0, 714.0, 22.0 ],
+					"patching_rect" : [ 17.333333333333371, 311.0, 713.666666666666629, 22.0 ],
 					"text" : "mc.gen~ buffer-delay @chans 6"
 				}
 
@@ -1238,7 +1238,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 17.0, 369.0, 30.0, 30.0 ]
+					"patching_rect" : [ 17.333333333333371, 351.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1250,7 +1250,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "multichannelsignal" ],
 					"patching_rect" : [ 17.0, 74.0, 30.0, 30.0 ]
 				}
 
