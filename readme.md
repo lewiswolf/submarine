@@ -16,6 +16,7 @@ To open all of the plugins in this project, open `Submarine.maxproj`, which will
 - 	Spread LFO
 
 ### Dynamic
+-	Buffer Delay
 -	Harmonic Tremolo
 -	Stereo Imager
 
