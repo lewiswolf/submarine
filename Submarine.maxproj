@@ -2,8 +2,8 @@
 	"name" : "Submarine",
 	"version" : 1,
 	"creationdate" : 3801728560,
-	"modificationdate" : 3803041911,
-	"viewrect" : [ 66.0, 239.0, 1799.0, 807.0 ],
+	"modificationdate" : 3803385870,
+	"viewrect" : [ 66.0, 267.0, 1799.0, 779.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -34,6 +34,16 @@
 			"hex-tone.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
+			}
+,
+			"pitch-shift.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
+					"projectrelativepath" : "./patchers/bpatchers"
+				}
+
 			}
 ,
 			"spread-lfo.maxpat" : 			{
@@ -74,14 +84,24 @@
 				"local" : 1
 			}
 ,
+			"number-input.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1
+			}
+,
 			"hex-fuzz.gendsp" : 			{
 				"kind" : "gendsp",
 				"local" : 1
 			}
 ,
-			"number-input.gendsp" : 			{
+			"pitch-shift.gendsp" : 			{
 				"kind" : "gendsp",
-				"local" : 1
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Dropbox/Work/Submarine/code",
+					"projectrelativepath" : "./code"
+				}
+
 			}
 ,
 			"spread-lfo.gendsp" : 			{

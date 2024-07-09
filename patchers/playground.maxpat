@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 267.0, 1731.0, 779.0 ],
+		"rect" : [ 100.0, 295.0, 1731.0, 751.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,27 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-111",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "pitch-shift.maxpat",
+					"numinlets" : 6,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "multichannelsignal", "multichannelsignal" ],
+					"patching_rect" : [ 437.200000000000045, 699.0, 170.0, 275.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "toggle",
@@ -700,6 +721,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-111", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-13", 1 ],
 					"source" : [ "obj-12", 1 ]
 				}
@@ -808,6 +836,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-111", 0 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -1060,6 +1095,20 @@
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
 				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pitch-shift.gendsp",
+				"bootpath" : "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath" : "../code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pitch-shift.maxpat",
+				"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
