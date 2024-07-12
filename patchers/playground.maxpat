@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 3,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 100.0, 295.0, 1731.0, 751.0 ],
+		"rect" : [ 34.0, 115.0, 1852.0, 931.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,73 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "mc.ezdac~",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1027.0, 1057.0, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-105",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1236.0, 703.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-103",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "enveloper.maxpat",
+					"numinlets" : 5,
+					"numoutlets" : 1,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 905.0, 739.0, 350.0, 175.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-35",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1014.599999999999909, 357.0, 81.0, 33.0 ],
+					"text" : "add insert\nreverse delay"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 506.0, 673.0, 114.0, 22.0 ],
+					"text" : "mc.list~ -2 0 0 0 0 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -54,7 +121,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal", "multichannelsignal" ],
-					"patching_rect" : [ 437.200000000000045, 699.0, 170.0, 275.0 ],
+					"patching_rect" : [ 256.0, 760.0, 170.0, 275.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -141,12 +208,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-37",
-					"linecount" : 2,
+					"linecount" : 5,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1568.0, 343.0, 100.0, 33.0 ],
-					"text" : "ISSUE\nadd rampsmooth"
+					"patching_rect" : [ 1568.0, 343.0, 100.0, 74.0 ],
+					"text" : "ISSUE\nadd rampsmooth\n\nflip horizontal display"
 				}
 
 			}
@@ -423,12 +490,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
-					"linecount" : 9,
+					"linecount" : 12,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 189.0, 343.0, 100.0, 127.0 ],
-					"text" : "ISSUE\nadd back offset\n\nadd rampsmooth\n\nget manual out of here!\n\nadd min max"
+					"patching_rect" : [ 189.0, 343.0, 100.0, 167.0 ],
+					"text" : "ISSUE\nadd back offset\n\nadd rampsmooth\n\nget manual out of here!\n\nadd min max\n\nflip horizontal display"
 				}
 
 			}
@@ -649,7 +716,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 10.0, 113.0, 114.0, 22.0 ],
+					"patching_rect" : [ 14.0, 213.0, 114.0, 22.0 ],
 					"text" : "mc.adc~ 3 4 5 6 7 8"
 				}
 
@@ -714,15 +781,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 5 ],
-					"source" : [ "obj-11", 0 ]
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-103", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-12", 0 ],
-					"source" : [ "obj-111", 0 ]
+					"destination" : [ "obj-103", 4 ],
+					"source" : [ "obj-105", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 5 ],
+					"source" : [ "obj-11", 0 ]
 				}
 
 			}
@@ -841,7 +915,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-111", 0 ],
+					"destination" : [ "obj-103", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -1056,6 +1130,24 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "enveloper.gendsp",
+				"bootpath" : "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath" : "../code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "enveloper.maxpat",
+				"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath" : "./bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fluid.ampfeature~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
 				"name" : "harmonic-tremolo.gendsp",
 				"bootpath" : "~/Dropbox/Work/Submarine/code",
 				"patcherrelativepath" : "../code",
@@ -1108,6 +1200,13 @@
 				"name" : "pitch-shift.maxpat",
 				"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
 				"patcherrelativepath" : "./bpatchers",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "sp.onset~.maxpat",
+				"bootpath" : "~/Documents/Max 8/Packages/SP-Tools/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/SP-Tools/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}

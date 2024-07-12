@@ -2,8 +2,8 @@
 	"name" : "Submarine",
 	"version" : 1,
 	"creationdate" : 3801728560,
-	"modificationdate" : 3803385870,
-	"viewrect" : [ 66.0, 267.0, 1799.0, 779.0 ],
+	"modificationdate" : 3803655201,
+	"viewrect" : [ 0.0, 62.0, 1920.0, 984.0 ],
 	"autoorganize" : 0,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -17,6 +17,11 @@
 			}
 ,
 			"buffer-delay.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+,
+			"enveloper.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
@@ -38,12 +43,7 @@
 ,
 			"pitch-shift.maxpat" : 			{
 				"kind" : "patcher",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Dropbox/Work/Submarine/patchers/bpatchers",
-					"projectrelativepath" : "./patchers/bpatchers"
-				}
-
+				"local" : 1
 			}
 ,
 			"spread-lfo.maxpat" : 			{
@@ -96,12 +96,7 @@
 ,
 			"pitch-shift.gendsp" : 			{
 				"kind" : "gendsp",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Dropbox/Work/Submarine/code",
-					"projectrelativepath" : "./code"
-				}
-
+				"local" : 1
 			}
 ,
 			"spread-lfo.gendsp" : 			{
@@ -113,6 +108,20 @@
 				"kind" : "gendsp",
 				"local" : 1
 			}
+,
+			"enveloper.gendsp" : 			{
+				"kind" : "gendsp",
+				"local" : 1,
+				"singleton" : 				{
+					"bootpath" : "~/Dropbox/Work/Submarine/code",
+					"projectrelativepath" : "./code"
+				}
+
+			}
+
+		}
+,
+		"externals" : 		{
 
 		}
 

@@ -10,6 +10,11 @@ To use these plugins, you will need a valid Max license. Once setup, you can con
 
 To open all of the plugins in this project, open `Submarine.maxproj`, which will automatically open `playground.maxpat` as well. Each effect can be used in any order you want, and can even be installed in your own patchers using a `bpatcher`.
 
+To use the _Enveloper_, you will also need to install these dependencies in the Max packages folder (`~/Documents/Max 8/Packages`).
+
+-	[FluCoMa](https://github.com/flucoma/flucoma-max)
+-	[SP-Tools](https://github.com/rconstanzo/sp-tools)
+
 ## Effects
 
 ### Modulation
@@ -17,9 +22,11 @@ To open all of the plugins in this project, open `Submarine.maxproj`, which will
 
 ### Dynamic
 -	Buffer Delay
+- 	Enveloper
 -	Harmonic Tremolo
 -	Stereo Imager
 
 ### Colour
 -	Hex Fuzz
 -	Hex Tone
+-	Pitch Shift
