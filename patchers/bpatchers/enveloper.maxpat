@@ -73,6 +73,8 @@
 ,
 						"valueof" : 						{
 							"parameter_longname" : "live.numbox[1]",
+							"parameter_mmax" : 0.0,
+							"parameter_mmin" : -120.0,
 							"parameter_modmode" : 3,
 							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
