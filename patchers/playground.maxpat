@@ -731,7 +731,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal" ],
-					"patching_rect" : [ 393.0, 772.0, 350.0, 175.0 ],
+					"patching_rect" : [ 393.0, 769.0, 350.0, 175.0 ],
 					"viewvisibility" : 1
 				}
 
@@ -754,6 +754,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-103", 4 ],
 					"source" : [ "obj-105", 0 ]
 				}
@@ -763,6 +770,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 5 ],
 					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-103", 0 ],
+					"source" : [ "obj-111", 0 ]
 				}
 
 			}
@@ -881,7 +895,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
+					"destination" : [ "obj-111", 0 ],
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -1086,6 +1100,7 @@
 ,
 				"obj-103::obj-23" : 				{
 					"parameter_longname" : "live.numbox",
+					"parameter_range" : [ 0.25, 8.0 ],
 					"parameter_shortname" : "live.numbox",
 					"parameter_unitstyle" : 1
 				}

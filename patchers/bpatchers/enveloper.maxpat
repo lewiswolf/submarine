@@ -136,8 +136,8 @@
 ,
 						"valueof" : 						{
 							"parameter_longname" : "live.numbox",
-							"parameter_mmax" : 1000.0,
-							"parameter_mmin" : 1.0,
+							"parameter_mmax" : 8.0,
+							"parameter_mmin" : 0.25,
 							"parameter_modmode" : 3,
 							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
@@ -501,6 +501,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
