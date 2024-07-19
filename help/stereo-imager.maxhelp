@@ -4,12 +4,12 @@
 		"appversion": {
 			"major": 8,
 			"minor": 6,
-			"revision": 3,
+			"revision": 4,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 1372.0, 723.0],
+		"rect": [34.0, 199.0, 1068.0, 667.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -38,6 +38,26 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"bgmode": 0,
+					"border": 0,
+					"clickthrough": 0,
+					"enablehscroll": 0,
+					"enablevscroll": 0,
+					"id": "obj-2",
+					"lockeddragscroll": 0,
+					"lockedsize": 0,
+					"maxclass": "bpatcher",
+					"name": "stereo-imager.maxpat",
+					"numinlets": 6,
+					"numoutlets": 2,
+					"offset": [0.0, 0.0],
+					"outlettype": ["signal", "signal"],
+					"patching_rect": [330.0, 99.0, 191.0, 361.0],
+					"viewvisibility": 1
+				}
+			},
 			{
 				"box": {
 					"hidden": 1,
@@ -75,7 +95,50 @@
 				}
 			}
 		],
-		"dependency_cache": [],
+		"parameters": {
+			"obj-2::obj-11": ["number[2]", "number[2]", 0],
+			"obj-2::obj-14": ["textbutton[2]", "textbutton[2]", 0],
+			"obj-2::obj-21": ["number[1]", "number[1]", 0],
+			"obj-2::obj-8": ["number", "number", 0],
+			"parameterbanks": {
+				"0": {
+					"index": 0,
+					"name": "",
+					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
+				}
+			},
+			"inherited_shortname": 1
+		},
+		"dependency_cache": [
+			{
+				"name": "number-input.gendsp",
+				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
+				"patcherrelativepath": "../code/gen",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "spread-lfo.gendsp",
+				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
+				"patcherrelativepath": "../code/gen",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "stereo-imager.gendsp",
+				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
+				"patcherrelativepath": "../code/gen",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "stereo-imager.maxpat",
+				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath": "../patchers/bpatchers",
+				"type": "JSON",
+				"implicit": 1
+			}
+		],
 		"autosave": 0
 	}
 }

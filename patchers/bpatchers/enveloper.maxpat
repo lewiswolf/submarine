@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 1068.0, 723.0],
+		"rect": [34.0, 199.0, 1372.0, 667.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -451,7 +451,6 @@
 						"style": "",
 						"subpatcher_template": "",
 						"assistshowspatchername": 0,
-						"visible": 1,
 						"boxes": [
 							{
 								"box": {
@@ -636,7 +635,7 @@
 									"maxclass": "inlet",
 									"numinlets": 0,
 									"numoutlets": 1,
-									"outlettype": ["multichannelsignal"],
+									"outlettype": [""],
 									"patching_rect": [20.0, 41.0, 30.0, 30.0]
 								}
 							},
@@ -1251,7 +1250,7 @@
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": ["multichannelsignal"],
+					"outlettype": [""],
 					"patching_rect": [115.0, 209.0, 30.0, 30.0]
 				}
 			},
@@ -1356,8 +1355,8 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [1321.0, 116.0, 122.0, 62.0],
-					"text": ";\rmax openfile enveloper-help eneloper.maxhelp"
+					"patching_rect": [1321.0, 116.0, 109.0, 62.0],
+					"text": ";\rmax openfile enveloper-help enveloper.maxhelp"
 				}
 			},
 			{

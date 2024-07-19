@@ -4,12 +4,12 @@
 		"appversion": {
 			"major": 8,
 			"minor": 6,
-			"revision": 3,
+			"revision": 4,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 1065.0, 723.0],
+		"rect": [34.0, 199.0, 1068.0, 667.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -49,7 +49,6 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [20.973166999999989, 350.588241040706635, 273.0, 24.0],
-					"presentation_linecount": 3,
 					"text": "Distortion for singal beneath the zero crossing."
 				}
 			},
@@ -63,7 +62,6 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [468.553451299667358, 327.450985759496689, 262.0, 24.0],
-					"presentation_linecount": 2,
 					"text": "Distortion for singal above the zero crossing."
 				}
 			},
@@ -77,18 +75,7 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [468.627458661794662, 374.11765319108963, 206.0, 24.0],
-					"presentation_linecount": 2,
 					"text": "Mix noise into the distorted signal."
-				}
-			},
-			{
-				"box": {
-					"id": "obj-5",
-					"maxclass": "message",
-					"numinlets": 2,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [321.218134919802367, 90.604030787944794, 50.0, 22.0]
 				}
 			},
 			{
@@ -102,8 +89,7 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [141.973166999999989, 305.882357954978943, 152.0, 24.0],
-					"text": "Gain of the input signal.",
-					"textjustification": 0
+					"text": "Gain of the input signal."
 				}
 			},
 			{
@@ -116,8 +102,7 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [468.553451299667358, 283.921573281288147, 181.0, 24.0],
-					"text": "Mix between input and effect.",
-					"textjustification": 0
+					"text": "Mix between input and effect."
 				}
 			},
 			{
@@ -131,11 +116,11 @@
 					"lockeddragscroll": 0,
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
-					"name": "hex-fuzz.maxpat",
-					"numinlets": 7,
-					"numoutlets": 1,
+					"name": "buffer-delay.maxpat",
+					"numinlets": 6,
+					"numoutlets": 2,
 					"offset": [0.0, 0.0],
-					"outlettype": ["multichannelsignal"],
+					"outlettype": ["multichannelsignal", "multichannelsignal"],
 					"patching_rect": [295.973166999999989, 138.765106000000003, 170.0, 273.825514999999996],
 					"viewvisibility": 1
 				}
@@ -150,8 +135,8 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [10.0, 34.0, 161.0, 35.0],
-					"text": ";\rmax closefile hex-fuzz-help"
+					"patching_rect": [10.0, 34.0, 171.0, 35.0],
+					"text": ";\rmax closefile buffer-delay-help"
 				}
 			},
 			{
@@ -175,48 +160,34 @@
 					"destination": ["obj-9", 0],
 					"source": ["obj-1", 0]
 				}
-			},
-			{
-				"patchline": {
-					"destination": ["obj-2", 1],
-					"source": ["obj-5", 0]
-				}
 			}
 		],
-		"parameters": {
-			"obj-2::obj-16": ["number[7]", "number[2]", 0],
-			"obj-2::obj-2": ["number[6]", "number[2]", 0],
-			"obj-2::obj-41": ["number[8]", "number[2]", 0],
-			"obj-2::obj-50": ["number[9]", "number[2]", 0],
-			"obj-2::obj-57": ["number[10]", "number[2]", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"inherited_shortname": 1
-		},
 		"dependency_cache": [
 			{
-				"name": "hex-fuzz.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath": "../code",
+				"name": "buffer-delay.gendsp",
+				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
+				"patcherrelativepath": "../code/gen",
 				"type": "gDSP",
 				"implicit": 1
 			},
 			{
-				"name": "hex-fuzz.maxpat",
-				"bootpath": "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath": ".",
+				"name": "buffer-delay.maxpat",
+				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath": "../patchers/bpatchers",
 				"type": "JSON",
 				"implicit": 1
 			},
 			{
+				"name": "harmonic-tremolo.gendsp",
+				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
+				"patcherrelativepath": "../code/gen",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
 				"name": "number-input.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath": "../code",
+				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
+				"patcherrelativepath": "../code/gen",
 				"type": "gDSP",
 				"implicit": 1
 			}
