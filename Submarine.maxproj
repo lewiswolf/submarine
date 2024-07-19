@@ -2,13 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3803898459,
-	"viewrect": [
-		0,
-		143,
-		1440,
-		723
-	],
+	"modificationdate": 3804277223,
+	"viewrect": [0.0, 171.0, 1440.0, 695.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -52,6 +47,10 @@
 				"kind": "patcher",
 				"local": 1
 			},
+			"stereo-imager.maxpat": {
+				"kind": "patcher",
+				"local": 1
+			},
 			"stem-player.maxpat": {
 				"kind": "patcher",
 				"local": 1
@@ -60,15 +59,31 @@
 				"kind": "patcher",
 				"local": 1
 			},
-			"stereo-imager.maxpat": {
-				"kind": "patcher",
+			"buffer-delay.maxhelp": {
+				"kind": "helpfile",
 				"local": 1
 			},
-			"spread-lfo.maxhelp": {
+			"enveloper.maxhelp": {
+				"kind": "helpfile",
+				"local": 1
+			},
+			"harmonic-tremolo.maxhelp": {
 				"kind": "helpfile",
 				"local": 1
 			},
 			"hex-fuzz.maxhelp": {
+				"kind": "helpfile",
+				"local": 1
+			},
+			"hex-tone.maxhelp": {
+				"kind": "helpfile",
+				"local": 1
+			},
+			"pitch-shift.maxhelp": {
+				"kind": "helpfile",
+				"local": 1
+			},
+			"spread-lfo.maxhelp": {
 				"kind": "helpfile",
 				"local": 1
 			},

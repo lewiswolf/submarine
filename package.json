@@ -1,0 +1,73 @@
+{
+	"name": "submarine",
+	"version": "0.0.1",
+	"author": "Lewis Wolstanholme & Pete Roe",
+	"description": "A suite of hexaphonic effects designed in Max for the SubSix pickup by Submarine.",
+	"main": "code/gui/dist",
+	"source": "code/gui/src",
+	"devDependencies": {
+		"@types/maxmsp": "^1.0.11",
+		"@typescript-eslint/eslint-plugin": "^7.16.1",
+		"@typescript-eslint/parser": "^7.16.1",
+		"eslint": "^8.57.0",
+		"prettier": "^3.3.3",
+		"typescript": "^5.5.3"
+	},
+	"scripts": {
+		"build": "tsc",
+		"dev": "tsc --watch",
+		"format": "prettier --write .",
+		"test": "tsc && eslint . --ext .ts"
+	},
+	"eslintConfig": {
+		"root": true,
+		"env": {
+			"node": true
+		},
+		"extends": [
+			"eslint:recommended",
+			"plugin:@typescript-eslint/strict-type-checked"
+		],
+		"ignorePatterns": [
+			"dist",
+			"unused"
+		],
+		"parser": "@typescript-eslint/parser",
+		"parserOptions": {
+			"project": [
+				"./tsconfig.json"
+			]
+		},
+		"plugins": [
+			"@typescript-eslint"
+		]
+	},
+	"prettier": {
+		"arrowParens": "always",
+		"bracketSpacing": true,
+		"bracketSameLine": false,
+		"endOfLine": "lf",
+		"htmlWhitespaceSensitivity": "strict",
+		"jsxSingleQuote": true,
+		"overrides": [
+			{
+				"files": [
+					"*.gendsp",
+					"*.maxhelp",
+					"*.maxpat",
+					"*.maxproj"
+				],
+				"options": {
+					"parser": "json"
+				}
+			}
+		],
+		"printWidth": 110,
+		"quoteProps": "as-needed",
+		"semi": false,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "all",
+		"useTabs": true
+	}
+}
