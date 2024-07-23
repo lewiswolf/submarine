@@ -2,8 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3804594036,
-	"viewrect": [0.0, 87.0, 1323.0, 779.0],
+	"modificationdate": 3804595495,
+	"viewrect": [0.0, 115.0, 1323.0, 751.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -59,11 +59,39 @@
 				"kind": "patcher",
 				"local": 1
 			},
-			"spread-lfo.maxhelp": {
+			"buffer-delay.maxhelp": {
+				"kind": "helpfile",
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
+			},
+			"enveloper.maxhelp": {
+				"kind": "helpfile",
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
+			},
+			"harmonic-tremolo.maxhelp": {
 				"kind": "helpfile",
 				"local": 1
 			},
 			"hex-fuzz.maxhelp": {
+				"kind": "helpfile",
+				"local": 1
+			},
+			"hex-tone.maxhelp": {
+				"kind": "helpfile",
+				"local": 1
+			},
+			"pitch-shift.maxhelp": {
+				"kind": "helpfile",
+				"local": 1
+			},
+			"spread-lfo.maxhelp": {
 				"kind": "helpfile",
 				"local": 1
 			},

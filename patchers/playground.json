@@ -10,7 +10,13 @@
 					"hex-fuzz::gain": [0.0],
 					"hex-fuzz::mix": [50.0],
 					"hex-fuzz::tone": [2000.0],
-					"hex-fuzz::waveshape": [0]
+					"hex-fuzz::waveshape": [0],
+					"enveloper::attack": [500.0],
+					"enveloper::bypass": [0],
+					"enveloper::curvature": [2.0],
+					"enveloper::release": [300.0],
+					"enveloper::sustain": [300.0],
+					"enveloper::threshold": [-70.0]
 				}
 			}
 		}
