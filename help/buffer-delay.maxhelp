@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 951.0, 751.0],
+		"rect": [34.0, 115.0, 1039.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -40,6 +40,118 @@
 		"boxes": [
 			{
 				"box": {
+					"id": "obj-22",
+					"linecount": 17,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [626.0, 233.0, 277.0, 234.0],
+					"presentation_linecount": 22,
+					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nTime between each delay. \n\nControl the recursive amplitude of the delay feedback.\n\nLow pass filter acting on the delay feedback.\n\nControl the mix of the main output.\n\nToggle reversed delay. \n\nSet the amplitude envelope for each reverse delay, where 0 is no fade, 1 is a triangle envelope, and (0, 1) is a trapezoidal envelope.",
+					"textjustification": 2
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"id": "obj-21",
+					"linecount": 16,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 233.0, 146.0, 234.0],
+					"presentation_linecount": 16,
+					"text": "Bypass\n\n\nDelay Time [0, 4000] (ms)\n\nFeedback [0, 1]\n\n\nTone [20, 24000] (Hz)\n\nDry / Wet [0, 100] (%)\n\nReverse Delay\n\nFade [0, 1]\n\n"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-20",
+					"linecount": 9,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [626.0, 71.0, 277.0, 127.0],
+					"presentation_linecount": 9,
+					"text": "Main dry input.\n\nSet 'Time' independently.\n\nSet 'Feedback' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
+					"textjustification": 2
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"id": "obj-19",
+					"linecount": 9,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 71.0, 146.0, 127.0],
+					"presentation_linecount": 10,
+					"text": "Hexaphonic Input\n\nDelay Time [0, 4000] (ms)\n\nFeedback [0, 1]\n\nTone [0, ∞) (Hz)\n\nDry / Wet [0, 1]"
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"id": "obj-18",
+					"linecount": 3,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 505.0, 146.0, 47.0],
+					"presentation_linecount": 6,
+					"text": "Hexaphonic Output\n\nDelay Output"
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"id": "obj-17",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 483.0, 58.0, 20.0],
+					"text": "Outputs"
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"id": "obj-16",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 211.0, 58.0, 20.0],
+					"presentation_linecount": 2,
+					"text": "Controls"
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"id": "obj-15",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 49.0, 121.0, 20.0],
+					"text": "Multichannel Inputs"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-8",
+					"linecount": 3,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [626.0, 505.0, 277.0, 47.0],
+					"presentation_linecount": 6,
+					"text": "Mixed signal between original and delayed signal.\n\nDelay signal unattenuated.",
+					"textjustification": 2
+				}
+			},
+			{
+				"box": {
 					"bgmode": 0,
 					"border": 0,
 					"clickthrough": 0,
@@ -54,7 +166,7 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "multichannelsignal"],
-					"patching_rect": [295.973166999999989, 138.765106000000003, 350.0, 175.0],
+					"patching_rect": [72.0, 49.0, 350.0, 175.0],
 					"varname": "buffer-delay",
 					"viewvisibility": 1
 				}
@@ -69,7 +181,7 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [10.0, 34.0, 171.0, 35.0],
+					"patching_rect": [732.0, 685.0, 171.0, 35.0],
 					"text": ";\rmax closefile buffer-delay-help"
 				}
 			},
@@ -82,7 +194,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["bang"],
-					"patching_rect": [10.0, 10.0, 63.0, 22.0],
+					"patching_rect": [732.0, 661.0, 63.0, 22.0],
 					"text": "closebang"
 				}
 			}
@@ -98,14 +210,23 @@
 		],
 		"parameters": {
 			"obj-2::obj-10": ["Dry / Wet", "Dry / Wet", 0],
-			"obj-2::obj-7": ["Delay Time", "Delay Time", 0],
+			"obj-2::obj-24": ["Fade", "Fade", 0],
+			"obj-2::obj-7": ["Delay Time", "Time", 0],
 			"obj-2::obj-8": ["Feedback", "Feedback", 0],
-			"obj-2::obj-9": ["Filter Freq.", "Filter Freq.", 0],
+			"obj-2::obj-9": ["Filter Freq.", "Tone", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,
 					"name": "",
 					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
+				}
+			},
+			"parameter_overrides": {
+				"obj-2::obj-7": {
+					"parameter_longname": "Delay Time"
+				},
+				"obj-2::obj-9": {
+					"parameter_longname": "Filter Freq."
 				}
 			},
 			"inherited_shortname": 1
