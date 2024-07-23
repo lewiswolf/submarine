@@ -2,13 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3803898459,
-	"viewrect": [
-		0,
-		143,
-		1440,
-		723
-	],
+	"modificationdate": 3804594036,
+	"viewrect": [0.0, 87.0, 1323.0, 779.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -28,6 +23,10 @@
 				"kind": "patcher",
 				"local": 1
 			},
+			"sp.onset~.maxpat": {
+				"kind": "patcher",
+				"local": 1
+			},
 			"harmonic-tremolo.maxpat": {
 				"kind": "patcher",
 				"local": 1
@@ -44,11 +43,11 @@
 				"kind": "patcher",
 				"local": 1
 			},
-			"sp.onset~.maxpat": {
+			"spread-lfo.maxpat": {
 				"kind": "patcher",
 				"local": 1
 			},
-			"spread-lfo.maxpat": {
+			"stereo-imager.maxpat": {
 				"kind": "patcher",
 				"local": 1
 			},
@@ -57,10 +56,6 @@
 				"local": 1
 			},
 			"stem-player-poly.maxpat": {
-				"kind": "patcher",
-				"local": 1
-			},
-			"stereo-imager.maxpat": {
 				"kind": "patcher",
 				"local": 1
 			},
@@ -109,6 +104,16 @@
 			"stereo-imager.gendsp": {
 				"kind": "gendsp",
 				"local": 1
+			}
+		},
+		"data": {
+			"playground.json": {
+				"kind": "json",
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/patchers",
+					"projectrelativepath": "./patchers"
+				}
 			}
 		},
 		"externals": {

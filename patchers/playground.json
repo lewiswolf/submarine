@@ -1,0 +1,18 @@
+{
+	"pattrstorage": {
+		"name": "u387005125",
+		"slots": {
+			"1": {
+				"id": 1,
+				"data": {
+					"hex-fuzz::bypass": [0],
+					"hex-fuzz::distortion_amount": [0.5],
+					"hex-fuzz::gain": [0.0],
+					"hex-fuzz::mix": [50.0],
+					"hex-fuzz::tone": [2000.0],
+					"hex-fuzz::waveshape": [0]
+				}
+			}
+		}
+	}
+}

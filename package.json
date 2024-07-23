@@ -1,0 +1,41 @@
+{
+	"name": "submarine",
+	"version": "1.0.0",
+	"description": "A suite of hexaphonic effects designed in Max for the SubSix pickup by Submarine.",
+	"scripts": {
+		"format": "prettier . --write"
+	},
+	"author": "Lewis Wolstanholme & Pete Roe",
+	"license": "Private",
+	"devDependencies": {
+		"prettier": "^3.3.3"
+	},
+	"prettier": {
+		"arrowParens": "always",
+		"bracketSpacing": true,
+		"bracketSameLine": false,
+		"endOfLine": "lf",
+		"htmlWhitespaceSensitivity": "strict",
+		"jsxSingleQuote": true,
+		"overrides": [
+			{
+				"files": [
+					"*.gendsp",
+					"*.maxhelp",
+					"*.maxpat",
+					"*.maxproj"
+				],
+				"options": {
+					"parser": "json"
+				}
+			}
+		],
+		"printWidth": 110,
+		"quoteProps": "as-needed",
+		"semi": false,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "all",
+		"useTabs": true
+	}
+}
