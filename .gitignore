@@ -3,4 +3,5 @@ audio
 demos
 externals
 node_modules
+package-json.lock
 unused
