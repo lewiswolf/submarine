@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 951.0, 751.0],
+		"rect": [34.0, 115.0, 1255.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -118,7 +118,7 @@
 				"box": {
 					"comment": "Distortion Amount [0, 1]",
 					"id": "obj-6",
-					"index": 4,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -324,7 +324,7 @@
 				"box": {
 					"comment": "Hexaphonic Output",
 					"id": "obj-71",
-					"index": 1,
+					"index": 0,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -335,11 +335,11 @@
 				"box": {
 					"comment": "Hexaphonic Input",
 					"id": "obj-77",
-					"index": 1,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": ["multichannelsignal"],
+					"outlettype": [""],
 					"patching_rect": [115.0, 297.0, 30.0, 30.0]
 				}
 			},
@@ -358,7 +358,7 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-83",
-					"index": 6,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -520,7 +520,7 @@
 				"box": {
 					"comment": "Distortion Amount [0, 1]",
 					"id": "obj-33",
-					"index": 3,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -543,7 +543,7 @@
 				"box": {
 					"comment": "Gain [-30, 30] (dB)",
 					"id": "obj-5",
-					"index": 2,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -555,7 +555,7 @@
 				"box": {
 					"comment": "Dry / Wet [0, 1]",
 					"id": "obj-32",
-					"index": 5,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2048,6 +2048,37 @@
 					"source": ["obj-99", 0]
 				}
 			}
-		]
+		],
+		"parameters": {
+			"obj-1": ["Tone", "Tone", 0],
+			"obj-101": ["Gain", "Gain", 0],
+			"obj-35": ["Amount", "Amount", 0],
+			"obj-41": ["Dry / Wet", "Dry / Wet", 0],
+			"parameterbanks": {
+				"0": {
+					"index": 0,
+					"name": "",
+					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
+				}
+			},
+			"inherited_shortname": 1
+		},
+		"dependency_cache": [
+			{
+				"name": "hex-fuzz.gendsp",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../../code",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "number-input.gendsp",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../../code",
+				"type": "gDSP",
+				"implicit": 1
+			}
+		],
+		"autosave": 0
 	}
 }

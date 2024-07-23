@@ -140,6 +140,7 @@
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "multichannelsignal"],
 					"patching_rect": [393.0, 1017.0, 350.0, 175.0],
+					"varname": "enveloper",
 					"viewvisibility": 1
 				}
 			},
@@ -1044,7 +1045,7 @@
 			"obj-103::obj-18": ["Sustain", "Sustain", 0],
 			"obj-103::obj-19": ["Release", "Release", 0],
 			"obj-103::obj-23": ["live.numbox", "live.numbox", 0],
-			"obj-103::obj-24": ["live.numbox[1]", "live.numbox", 0],
+			"obj-103::obj-24": ["live.numbox[1]", "Threshold", 0],
 			"obj-122::obj-11": ["number[3]", "number[2]", 0],
 			"obj-122::obj-27": ["number[4]", "number[2]", 0],
 			"obj-122::obj-28": ["number[5]", "number[2]", 0],
