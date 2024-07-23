@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 951.0, 751.0],
+		"rect": [34.0, 115.0, 1255.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -47,12 +47,12 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [1194.0, 98.0, 56.0, 22.0],
 					"restore": {
-						"bypass": [1],
+						"bypass": [0],
 						"distortion_amount": [0.5],
 						"gain": [0.0],
 						"mix": [50.0],
-						"tone": [1999.999999999999773],
-						"waveshape": [0]
+						"tone": [1999.999999999999545],
+						"waveshape": [3]
 					},
 					"text": "autopattr",
 					"varname": "u790011379"
@@ -168,7 +168,7 @@
 					"parameter_enable": 0,
 					"patching_rect": [197.0, 219.0, 100.0, 22.0],
 					"presentation": 1,
-					"presentation_rect": [5.0, 30.0, 165.0, 22.0],
+					"presentation_rect": [175.0, 124.5, 108.0, 22.0],
 					"varname": "waveshape"
 				}
 			},
@@ -221,7 +221,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [850.0, 130.0, 50.0, 69.0],
 					"presentation": 1,
-					"presentation_rect": [230.0, 101.0, 53.0, 69.0],
+					"presentation_rect": [285.0, 101.0, 53.0, 69.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -291,7 +291,8 @@
 			},
 			{
 				"box": {
-					"bgcolor": [1.0, 1.0, 1.0, 1.0],
+					"bgcolor": [0.862745098039216, 0.392156862745098, 0.356862745098039, 1.0],
+					"bgoncolor": [1.0, 1.0, 1.0, 1.0],
 					"id": "obj-66",
 					"maxclass": "textbutton",
 					"mode": 1,
@@ -303,9 +304,10 @@
 					"presentation": 1,
 					"presentation_rect": [285.0, 0.0, 65.0, 20.0],
 					"text": "Bypass",
-					"textcolor": [0.0, 0.0, 0.0, 1.0],
+					"textcolor": [1.0, 1.0, 1.0, 1.0],
 					"texton": "Bypass",
 					"textoncolor": [0.862745098039216, 0.392156862745098, 0.356862745098039, 1.0],
+					"usebgoncolor": 1,
 					"varname": "bypass"
 				}
 			},
@@ -339,7 +341,7 @@
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": ["multichannelsignal"],
+					"outlettype": [""],
 					"patching_rect": [115.0, 297.0, 30.0, 30.0]
 				}
 			},
@@ -411,8 +413,7 @@
 					"presentation": 1,
 					"presentation_rect": [0.0, 0.0, 350.0, 20.0],
 					"text": "Hex Fuzz",
-					"textcolor": [1.0, 1.0, 1.0, 1.0],
-					"textjustification": 0
+					"textcolor": [1.0, 1.0, 1.0, 1.0]
 				}
 			},
 			{
@@ -1578,7 +1579,7 @@
 							"parameter_exponent": 2.0,
 							"parameter_linknames": 1,
 							"parameter_longname": "tone",
-							"parameter_mmax": 22000.0,
+							"parameter_mmax": 24000.0,
 							"parameter_mmin": 20.0,
 							"parameter_modmode": 3,
 							"parameter_shortname": "Tone",
