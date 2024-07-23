@@ -4,12 +4,12 @@
 		"appversion": {
 			"major": 8,
 			"minor": 6,
-			"revision": 3,
+			"revision": 4,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 1065.0, 723.0],
+		"rect": [34.0, 115.0, 951.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -48,8 +48,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [20.973166999999989, 350.588241040706635, 273.0, 24.0],
-					"presentation_linecount": 3,
+					"patching_rect": [15.0, 229.0, 273.0, 24.0],
 					"text": "Distortion for singal beneath the zero crossing."
 				}
 			},
@@ -62,8 +61,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [468.553451299667358, 327.450985759496689, 262.0, 24.0],
-					"presentation_linecount": 2,
+					"patching_rect": [664.0, 207.0, 262.0, 24.0],
 					"text": "Distortion for singal above the zero crossing."
 				}
 			},
@@ -76,8 +74,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [468.627458661794662, 374.11765319108963, 206.0, 24.0],
-					"presentation_linecount": 2,
+					"patching_rect": [664.0, 254.0, 206.0, 24.0],
 					"text": "Mix noise into the distorted signal."
 				}
 			},
@@ -101,9 +98,8 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [141.973166999999989, 305.882357954978943, 152.0, 24.0],
-					"text": "Gain of the input signal.",
-					"textjustification": 0
+					"patching_rect": [136.0, 184.0, 152.0, 24.0],
+					"text": "Gain of the input signal."
 				}
 			},
 			{
@@ -115,9 +111,8 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [468.553451299667358, 283.921573281288147, 181.0, 24.0],
-					"text": "Mix between input and effect.",
-					"textjustification": 0
+					"patching_rect": [664.0, 164.0, 181.0, 24.0],
+					"text": "Mix between input and effect."
 				}
 			},
 			{
@@ -132,11 +127,12 @@
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
 					"name": "hex-fuzz.maxpat",
-					"numinlets": 7,
+					"numinlets": 6,
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [295.973166999999989, 138.765106000000003, 170.0, 273.825514999999996],
+					"patching_rect": [295.973166999999989, 138.765106000000003, 350.0, 175.0],
+					"varname": "hex-fuzz",
 					"viewvisibility": 1
 				}
 			},
@@ -184,16 +180,20 @@
 			}
 		],
 		"parameters": {
-			"obj-2::obj-16": ["number[7]", "number[2]", 0],
-			"obj-2::obj-2": ["number[6]", "number[2]", 0],
-			"obj-2::obj-41": ["number[8]", "number[2]", 0],
-			"obj-2::obj-50": ["number[9]", "number[2]", 0],
-			"obj-2::obj-57": ["number[10]", "number[2]", 0],
+			"obj-2::obj-1": ["tone", "Tone", 0],
+			"obj-2::obj-101": ["Gain", "Gain", 0],
+			"obj-2::obj-35": ["Amount", "Amount", 0],
+			"obj-2::obj-41": ["number[8]", "Dry / Wet", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,
 					"name": "",
 					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
+				}
+			},
+			"parameter_overrides": {
+				"obj-2::obj-41": {
+					"parameter_longname": "number[8]"
 				}
 			},
 			"inherited_shortname": 1
@@ -208,8 +208,8 @@
 			},
 			{
 				"name": "hex-fuzz.maxpat",
-				"bootpath": "~/Dropbox/Work/Submarine/patchers",
-				"patcherrelativepath": ".",
+				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath": "../patchers/bpatchers",
 				"type": "JSON",
 				"implicit": 1
 			},

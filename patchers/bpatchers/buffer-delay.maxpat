@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 951.0, 751.0],
+		"rect": [34.0, 115.0, 1255.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -332,8 +332,8 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [1321.0, 130.0, 122.0, 62.0],
-					"text": ";\rmax openfile hex-fuzz-help hex-fuzz.maxhelp"
+					"patching_rect": [1321.0, 130.0, 119.0, 62.0],
+					"text": ";\rmax openfile buffer-delay-help buffer-delay.maxhelp"
 				}
 			},
 			{
@@ -347,8 +347,7 @@
 					"presentation": 1,
 					"presentation_rect": [0.0, 0.0, 350.0, 20.0],
 					"text": "Buffer Delay",
-					"textcolor": [1.0, 1.0, 1.0, 1.0],
-					"textjustification": 0
+					"textcolor": [1.0, 1.0, 1.0, 1.0]
 				}
 			},
 			{

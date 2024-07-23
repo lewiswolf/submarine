@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 199.0, 1068.0, 667.0],
+		"rect": [34.0, 115.0, 951.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -40,83 +40,6 @@
 		"boxes": [
 			{
 				"box": {
-					"bubble": 1,
-					"bubbleside": 3,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-8",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [20.973166999999989, 350.588241040706635, 273.0, 24.0],
-					"text": "Distortion for singal beneath the zero crossing."
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-7",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [468.553451299667358, 327.450985759496689, 262.0, 24.0],
-					"text": "Distortion for singal above the zero crossing."
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-6",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [468.627458661794662, 374.11765319108963, 206.0, 24.0],
-					"text": "Mix noise into the distorted signal."
-				}
-			},
-			{
-				"box": {
-					"id": "obj-5",
-					"maxclass": "message",
-					"numinlets": 2,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [321.218134919802367, 90.604030787944794, 50.0, 22.0]
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"bubbleside": 3,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-3",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [141.973166999999989, 305.882357954978943, 152.0, 24.0],
-					"text": "Gain of the input signal."
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-27",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [468.553451299667358, 283.921573281288147, 181.0, 24.0],
-					"text": "Mix between input and effect."
-				}
-			},
-			{
-				"box": {
 					"bgmode": 0,
 					"border": 0,
 					"clickthrough": 0,
@@ -131,7 +54,8 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "multichannelsignal"],
-					"patching_rect": [295.973166999999989, 138.765106000000003, 170.0, 273.825514999999996],
+					"patching_rect": [295.973166999999989, 138.765106000000003, 350.0, 175.0],
+					"varname": "enveloper",
 					"viewvisibility": 1
 				}
 			},
@@ -170,12 +94,6 @@
 					"destination": ["obj-9", 0],
 					"source": ["obj-1", 0]
 				}
-			},
-			{
-				"patchline": {
-					"destination": ["obj-2", 1],
-					"source": ["obj-5", 0]
-				}
 			}
 		],
 		"parameters": {
@@ -183,7 +101,7 @@
 			"obj-2::obj-18": ["Sustain", "Sustain", 0],
 			"obj-2::obj-19": ["Release", "Release", 0],
 			"obj-2::obj-23": ["live.numbox", "live.numbox", 0],
-			"obj-2::obj-24": ["live.numbox[1]", "live.numbox", 0],
+			"obj-2::obj-24": ["live.numbox[1]", "Threshold", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,
@@ -196,8 +114,8 @@
 		"dependency_cache": [
 			{
 				"name": "enveloper.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
-				"patcherrelativepath": "../code/gen",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../code",
 				"type": "gDSP",
 				"implicit": 1
 			},
@@ -214,8 +132,8 @@
 			},
 			{
 				"name": "number-input.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
-				"patcherrelativepath": "../code/gen",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../code",
 				"type": "gDSP",
 				"implicit": 1
 			},
