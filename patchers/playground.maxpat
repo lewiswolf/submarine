@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 1255.0, 751.0],
+		"rect": [34.0, 115.0, 951.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -132,7 +132,7 @@
 					"enablevscroll": 0,
 					"id": "obj-103",
 					"lockeddragscroll": 0,
-					"lockedsize": 0,
+					"lockedsize": 1,
 					"maxclass": "bpatcher",
 					"name": "enveloper.maxpat",
 					"numinlets": 5,
@@ -142,17 +142,6 @@
 					"patching_rect": [393.0, 1017.0, 350.0, 175.0],
 					"varname": "enveloper",
 					"viewvisibility": 1
-				}
-			},
-			{
-				"box": {
-					"id": "obj-35",
-					"linecount": 2,
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [1014.599999999999909, 357.0, 81.0, 33.0],
-					"text": "add insert\nreverse delay"
 				}
 			},
 			{
@@ -177,34 +166,12 @@
 			},
 			{
 				"box": {
-					"id": "obj-5",
-					"maxclass": "toggle",
-					"numinlets": 1,
-					"numoutlets": 1,
-					"outlettype": ["int"],
-					"parameter_enable": 0,
-					"patching_rect": [1053.599999999999909, 285.0, 24.0, 24.0]
-				}
-			},
-			{
-				"box": {
-					"id": "obj-11",
-					"maxclass": "newobj",
-					"numinlets": 1,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [1053.599999999999909, 310.0, 42.0, 22.0],
-					"text": "mute~"
-				}
-			},
-			{
-				"box": {
 					"id": "obj-30",
 					"maxclass": "message",
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [989.599999999999909, 286.0, 31.0, 22.0],
+					"patching_rect": [1174.599999999999909, 692.0, 31.0, 22.0],
 					"text": "help"
 				}
 			},
@@ -215,7 +182,7 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [989.599999999999909, 310.0, 58.0, 22.0],
+					"patching_rect": [1174.599999999999909, 716.0, 58.0, 22.0],
 					"text": "loadbang"
 				}
 			},
@@ -228,14 +195,15 @@
 					"enablevscroll": 0,
 					"id": "obj-6",
 					"lockeddragscroll": 0,
-					"lockedsize": 0,
+					"lockedsize": 1,
 					"maxclass": "bpatcher",
 					"name": "buffer-delay.maxpat",
 					"numinlets": 6,
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "multichannelsignal"],
-					"patching_rect": [838.599999999999909, 343.0, 170.0, 275.0],
+					"patching_rect": [843.599999999999909, 754.0, 350.0, 175.0],
+					"varname": "buffer-delay",
 					"viewvisibility": 1
 				}
 			},
@@ -777,12 +745,6 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-6", 5],
-					"source": ["obj-11", 0]
-				}
-			},
-			{
-				"patchline": {
 					"destination": ["obj-103", 0],
 					"source": ["obj-111", 0]
 				}
@@ -1023,12 +985,6 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-11", 0],
-					"source": ["obj-5", 0]
-				}
-			},
-			{
-				"patchline": {
 					"destination": ["obj-103", 4],
 					"source": ["obj-8", 0]
 				}
@@ -1063,6 +1019,10 @@
 			"obj-3::obj-14": ["textbutton[4]", "textbutton[2]", 0],
 			"obj-3::obj-21": ["number[12]", "number[1]", 0],
 			"obj-3::obj-46": ["textbutton[6]", "textbutton[2]", 0],
+			"obj-6::obj-10": ["Dry / Wet", "Dry / Wet", 0],
+			"obj-6::obj-7": ["Delay Time", "Delay Time", 0],
+			"obj-6::obj-8": ["Feedback", "Feedback", 0],
+			"obj-6::obj-9": ["Filter Freq.", "Filter Freq.", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,

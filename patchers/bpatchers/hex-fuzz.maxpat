@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 1255.0, 751.0],
+		"rect": [34.0, 115.0, 951.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -47,7 +47,7 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [1194.0, 98.0, 56.0, 22.0],
 					"restore": {
-						"bypass": [0],
+						"bypass": [1],
 						"distortion_amount": [0.5],
 						"gain": [0.0],
 						"mix": [50.0],
@@ -118,7 +118,7 @@
 				"box": {
 					"comment": "Distortion Amount [0, 1]",
 					"id": "obj-6",
-					"index": 0,
+					"index": 4,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -242,7 +242,8 @@
 							"expression": ""
 						},
 						"valueof": {
-							"parameter_longname": "Dry / Wet",
+							"parameter_linknames": 1,
+							"parameter_longname": "mix",
 							"parameter_mmax": 100.0,
 							"parameter_modmode": 3,
 							"parameter_shortname": "Dry / Wet",
@@ -290,7 +291,7 @@
 			},
 			{
 				"box": {
-					"bgcolor": [0.862745098039216, 0.392156862745098, 0.356862745098039, 1.0],
+					"bgcolor": [1.0, 1.0, 1.0, 1.0],
 					"id": "obj-66",
 					"maxclass": "textbutton",
 					"mode": 1,
@@ -301,11 +302,10 @@
 					"patching_rect": [33.0, 220.0, 67.0, 20.0],
 					"presentation": 1,
 					"presentation_rect": [285.0, 0.0, 65.0, 20.0],
-					"rounded": 8.0,
 					"text": "Bypass",
 					"textcolor": [0.0, 0.0, 0.0, 1.0],
 					"texton": "Bypass",
-					"textoncolor": [1.0, 1.0, 1.0, 1.0],
+					"textoncolor": [0.862745098039216, 0.392156862745098, 0.356862745098039, 1.0],
 					"varname": "bypass"
 				}
 			},
@@ -324,7 +324,7 @@
 				"box": {
 					"comment": "Hexaphonic Output",
 					"id": "obj-71",
-					"index": 0,
+					"index": 1,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -335,11 +335,11 @@
 				"box": {
 					"comment": "Hexaphonic Input",
 					"id": "obj-77",
-					"index": 0,
+					"index": 1,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": [""],
+					"outlettype": ["multichannelsignal"],
 					"patching_rect": [115.0, 297.0, 30.0, 30.0]
 				}
 			},
@@ -358,7 +358,7 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-83",
-					"index": 0,
+					"index": 6,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -402,16 +402,17 @@
 			},
 			{
 				"box": {
+					"bgcolor": [0.862745098039216, 0.392156862745098, 0.356862745098039, 1.0],
 					"id": "obj-97",
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [1393.0, 11.0, 74.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [0.0, 0.0, 285.0, 20.0],
+					"presentation_rect": [0.0, 0.0, 350.0, 20.0],
 					"text": "Hex Fuzz",
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
-					"textjustification": 1
+					"textjustification": 0
 				}
 			},
 			{
@@ -520,7 +521,7 @@
 				"box": {
 					"comment": "Distortion Amount [0, 1]",
 					"id": "obj-33",
-					"index": 0,
+					"index": 3,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -543,7 +544,7 @@
 				"box": {
 					"comment": "Gain [-30, 30] (dB)",
 					"id": "obj-5",
-					"index": 0,
+					"index": 2,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -555,7 +556,7 @@
 				"box": {
 					"comment": "Dry / Wet [0, 1]",
 					"id": "obj-32",
-					"index": 0,
+					"index": 5,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -1575,7 +1576,8 @@
 						},
 						"valueof": {
 							"parameter_exponent": 2.0,
-							"parameter_longname": "Tone",
+							"parameter_linknames": 1,
+							"parameter_longname": "tone",
 							"parameter_mmax": 22000.0,
 							"parameter_mmin": 20.0,
 							"parameter_modmode": 3,
@@ -2048,37 +2050,6 @@
 					"source": ["obj-99", 0]
 				}
 			}
-		],
-		"parameters": {
-			"obj-1": ["Tone", "Tone", 0],
-			"obj-101": ["Gain", "Gain", 0],
-			"obj-35": ["Amount", "Amount", 0],
-			"obj-41": ["Dry / Wet", "Dry / Wet", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"inherited_shortname": 1
-		},
-		"dependency_cache": [
-			{
-				"name": "hex-fuzz.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			}
-		],
-		"autosave": 0
+		]
 	}
 }

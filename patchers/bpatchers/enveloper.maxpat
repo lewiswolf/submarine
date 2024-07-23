@@ -62,7 +62,7 @@
 				"box": {
 					"comment": "Envelope Output",
 					"id": "obj-6",
-					"index": 0,
+					"index": 2,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -99,7 +99,7 @@
 							"expression": ""
 						},
 						"valueof": {
-							"parameter_longname": "Threshold",
+							"parameter_longname": "live.numbox[1]",
 							"parameter_mmax": 0.0,
 							"parameter_mmin": -120.0,
 							"parameter_modmode": 3,
@@ -143,11 +143,11 @@
 							"expression": ""
 						},
 						"valueof": {
-							"parameter_longname": "Curvature",
+							"parameter_longname": "live.numbox",
 							"parameter_mmax": 8.0,
 							"parameter_mmin": 0.25,
 							"parameter_modmode": 3,
-							"parameter_shortname": "Curvature",
+							"parameter_shortname": "live.numbox",
 							"parameter_type": 0,
 							"parameter_unitstyle": 1
 						}
@@ -655,7 +655,7 @@
 									"maxclass": "inlet",
 									"numinlets": 0,
 									"numoutlets": 1,
-									"outlettype": [""],
+									"outlettype": ["multichannelsignal"],
 									"patching_rect": [20.0, 41.0, 30.0, 30.0]
 								}
 							},
@@ -1009,7 +1009,7 @@
 				"box": {
 					"comment": "Attack [0, ∞] (ms)",
 					"id": "obj-69",
-					"index": 0,
+					"index": 2,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -1066,7 +1066,7 @@
 				"box": {
 					"comment": "Release [0, ∞] (ms)",
 					"id": "obj-84",
-					"index": 0,
+					"index": 4,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -1123,7 +1123,7 @@
 				"box": {
 					"comment": "Sustain [0, ∞] (ms)",
 					"id": "obj-91",
-					"index": 0,
+					"index": 3,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -1222,7 +1222,7 @@
 			},
 			{
 				"box": {
-					"bgcolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
+					"bgcolor": [1.0, 1.0, 1.0, 1.0],
 					"id": "obj-59",
 					"maxclass": "textbutton",
 					"mode": 1,
@@ -1233,11 +1233,10 @@
 					"patching_rect": [43.589749097824097, 250.000031590461731, 67.0, 20.0],
 					"presentation": 1,
 					"presentation_rect": [285.0, 0.0, 65.0, 20.0],
-					"rounded": 8.0,
 					"text": "Bypass",
 					"textcolor": [0.0, 0.0, 0.0, 1.0],
 					"texton": "Bypass",
-					"textoncolor": [1.0, 1.0, 1.0, 1.0],
+					"textoncolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"varname": "bypass"
 				}
 			},
@@ -1256,7 +1255,7 @@
 				"box": {
 					"comment": "Hexaphonic Output",
 					"id": "obj-64",
-					"index": 0,
+					"index": 1,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -1267,11 +1266,11 @@
 				"box": {
 					"comment": "Hexaphonic Input",
 					"id": "obj-67",
-					"index": 0,
+					"index": 1,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": [""],
+					"outlettype": ["multichannelsignal"],
 					"patching_rect": [125.64104151725769, 292.307729244232178, 30.0, 30.0]
 				}
 			},
@@ -1327,7 +1326,7 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-7",
-					"index": 0,
+					"index": 5,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -1371,16 +1370,17 @@
 			},
 			{
 				"box": {
+					"bgcolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"id": "obj-2",
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [1369.0, 11.0, 74.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [0.0, 0.0, 285.0, 20.0],
+					"presentation_rect": [0.0, 0.0, 350.0, 20.0],
 					"text": "Enveloper",
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
-					"textjustification": 1
+					"textjustification": 0
 				}
 			},
 			{
@@ -1761,49 +1761,6 @@
 					"source": ["obj-99", 0]
 				}
 			}
-		],
-		"parameters": {
-			"obj-16": ["Attack", "Attack", 0],
-			"obj-18": ["Sustain", "Sustain", 0],
-			"obj-19": ["Release", "Release", 0],
-			"obj-23": ["Curvature", "Curvature", 0],
-			"obj-24": ["Threshold", "Threshold", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"inherited_shortname": 1
-		},
-		"dependency_cache": [
-			{
-				"name": "enveloper.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "fluid.ampfeature~.mxo",
-				"type": "iLaX"
-			},
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "sp.onset~.maxpat",
-				"bootpath": "~/Dropbox/Work/Submarine/externals",
-				"patcherrelativepath": "../../externals",
-				"type": "JSON",
-				"implicit": 1
-			}
-		],
-		"autosave": 0
+		]
 	}
 }
