@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 951.0, 751.0],
+		"rect": [34.0, 115.0, 1255.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -1084,6 +1084,10 @@
 					"parameter_longname": "mix",
 					"parameter_range": [0.0, 100.0],
 					"parameter_shortname": "Dry / Wet",
+					"parameter_unitstyle": 5
+				},
+				"obj-6::obj-10": {
+					"parameter_range": [0.0, 100.0],
 					"parameter_unitstyle": 5
 				}
 			},
