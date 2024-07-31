@@ -40,6 +40,79 @@
 		"boxes": [
 			{
 				"box": {
+					"id": "obj-1",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 4,
+					"outlettype": ["", "", "", ""],
+					"patching_rect": [521.0, 109.0, 56.0, 22.0],
+					"restore": {
+						"pedal-max": [1.0],
+						"pedal-min": [0.0]
+					},
+					"text": "autopattr",
+					"varname": "u790011379"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-82",
+					"maxclass": "message",
+					"numinlets": 2,
+					"numoutlets": 1,
+					"outlettype": [""],
+					"patching_rect": [562.0, 22.0, 58.0, 22.0],
+					"text": "loadbang"
+				}
+			},
+			{
+				"box": {
+					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
+					"id": "obj-83",
+					"index": 2,
+					"maxclass": "inlet",
+					"numinlets": 0,
+					"numoutlets": 1,
+					"outlettype": [""],
+					"patching_rect": [521.0, 22.0, 30.0, 30.0]
+				}
+			},
+			{
+				"box": {
+					"id": "obj-6",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": ["bang"],
+					"patching_rect": [648.0, 109.0, 22.0, 22.0],
+					"text": "t b"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-87",
+					"maxclass": "newobj",
+					"numinlets": 3,
+					"numoutlets": 3,
+					"outlettype": ["", "", ""],
+					"patching_rect": [521.0, 69.0, 273.0, 22.0],
+					"text": "route loadbang help"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-93",
+					"linecount": 4,
+					"maxclass": "message",
+					"numinlets": 2,
+					"numoutlets": 1,
+					"outlettype": [""],
+					"patching_rect": [648.0, 141.0, 150.0, 62.0],
+					"text": ";\rmax openfile expression-pedal-help expression-pedal.maxhelp"
+				}
+			},
+			{
+				"box": {
 					"id": "obj-9",
 					"maxclass": "newobj",
 					"numinlets": 1,
@@ -100,7 +173,7 @@
 					},
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
 					"textjustification": 2,
-					"varname": "curvature[1]"
+					"varname": "pedal-max"
 				}
 			},
 			{
@@ -143,7 +216,7 @@
 					},
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
 					"textjustification": 2,
-					"varname": "curvature"
+					"varname": "pedal-min"
 				}
 			},
 			{
@@ -180,7 +253,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [372.0, 158.0, 74.0, 33.0],
+					"patching_rect": [720.0, 20.5, 74.0, 33.0],
 					"presentation": 1,
 					"presentation_rect": [0.0, 0.0, 350.0, 20.0],
 					"text": "Expression Pedal",
@@ -334,7 +407,7 @@
 					"mode": 0,
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [409.0, 178.0, 37.0, 21.0],
+					"patching_rect": [757.0, 40.5, 37.0, 21.0],
 					"presentation": 1,
 					"presentation_rect": [0.0, 0.0, 350.0, 175.0],
 					"proportion": 0.5
@@ -409,6 +482,12 @@
 			},
 			{
 				"patchline": {
+					"destination": ["obj-93", 0],
+					"source": ["obj-6", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-45", 1],
 					"source": ["obj-65", 1]
 				}
@@ -447,6 +526,25 @@
 				"patchline": {
 					"destination": ["obj-5", 0],
 					"source": ["obj-8", 1]
+				}
+			},
+			{
+				"patchline": {
+					"destination": ["obj-87", 0],
+					"midpoints": [571.5, 58.5, 530.5, 58.5],
+					"source": ["obj-82", 0]
+				}
+			},
+			{
+				"patchline": {
+					"destination": ["obj-87", 0],
+					"source": ["obj-83", 0]
+				}
+			},
+			{
+				"patchline": {
+					"destination": ["obj-6", 0],
+					"source": ["obj-87", 1]
 				}
 			},
 			{

@@ -23,7 +23,9 @@
 					"enveloper::curvature": [2.0],
 					"enveloper::release": [300.0],
 					"enveloper::sustain": [300.0],
-					"enveloper::threshold": [-70.0]
+					"enveloper::threshold": [-70.0],
+					"expression-pedal::pedal-min": [0.0],
+					"expression-pedal::pedal-max": [1.0]
 				}
 			}
 		}

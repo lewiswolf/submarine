@@ -86,11 +86,12 @@
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
 					"name": "expression-pedal.maxpat",
-					"numinlets": 1,
+					"numinlets": 2,
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "signal"],
 					"patching_rect": [415.0, 1140.0, 350.0, 175.0],
+					"varname": "expression-pedal",
 					"viewvisibility": 1
 				}
 			},
@@ -159,7 +160,7 @@
 					"outlettype": [""],
 					"patching_rect": [10.0, 71.5, 202.0, 22.0],
 					"saved_object_attributes": {
-						"client_rect": [0, 115, 1323, 866],
+						"client_rect": [0, 143, 1323, 866],
 						"parameter_enable": 0,
 						"parameter_mappable": 0,
 						"storage_rect": [583, 69, 1034, 197]
