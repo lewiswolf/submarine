@@ -189,28 +189,13 @@
 			},
 			{
 				"box": {
-					"angle": 270.0,
-					"bgcolor": [0.2, 0.2, 0.2, 1.0],
-					"id": "obj-98",
-					"maxclass": "panel",
-					"mode": 0,
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [409.0, 178.0, 37.0, 21.0],
-					"presentation": 1,
-					"presentation_rect": [0.0, 0.0, 350.0, 175.0],
-					"proportion": 0.5
-				}
-			},
-			{
-				"box": {
 					"comment": "Pedal Input",
 					"id": "obj-73",
 					"index": 1,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": [""],
+					"outlettype": ["signal"],
 					"patching_rect": [26.0, 26.0, 30.0, 30.0]
 				}
 			},
@@ -238,6 +223,7 @@
 			},
 			{
 				"box": {
+					"bgcolor": [0.329411764705882, 0.701960784313725, 0.470588235294118, 1.0],
 					"id": "obj-69",
 					"maxclass": "textbutton",
 					"numinlets": 1,
@@ -246,8 +232,9 @@
 					"parameter_enable": 0,
 					"patching_rect": [124.0, 57.0, 72.600000000000023, 22.0],
 					"presentation": 1,
-					"presentation_rect": [125.0, 138.0, 72.600000000000023, 22.0],
-					"text": "Calibrate"
+					"presentation_rect": [186.0, 76.5, 138.0, 22.0],
+					"text": "Calibrate Pedal",
+					"textoncolor": [1.0, 1.0, 1.0, 1.0]
 				}
 			},
 			{
@@ -336,6 +323,21 @@
 					"outlettype": ["signal"],
 					"patching_rect": [272.0, 192.0, 80.0, 22.0],
 					"text": "cycle~ 20000"
+				}
+			},
+			{
+				"box": {
+					"angle": 270.0,
+					"bgcolor": [0.2, 0.2, 0.2, 1.0],
+					"id": "obj-98",
+					"maxclass": "panel",
+					"mode": 0,
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [409.0, 178.0, 37.0, 21.0],
+					"presentation": 1,
+					"presentation_rect": [0.0, 0.0, 350.0, 175.0],
+					"proportion": 0.5
 				}
 			}
 		],
