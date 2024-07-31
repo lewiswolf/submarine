@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 951.0, 723.0],
+		"rect": [34.0, 143.0, 1255.0, 723.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -290,8 +290,8 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [26.0, 192.0, 112.0, 22.0],
-					"text": "mc.dup~ @chans 6"
+					"patching_rect": [26.0, 192.0, 108.0, 22.0],
+					"text": "mc.sig~ @chans 6"
 				}
 			},
 			{
