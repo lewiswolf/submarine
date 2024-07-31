@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 951.0, 751.0],
+		"rect": [34.0, 143.0, 951.0, 723.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -38,6 +38,73 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"fontface": 0,
+					"fontname": "Arial",
+					"fontsize": 12.0,
+					"id": "obj-26",
+					"maxclass": "mc.number~",
+					"mode": 2,
+					"numinlets": 2,
+					"numoutlets": 3,
+					"outlettype": ["multichannelsignal", "float", "int"],
+					"patching_rect": [415.0, 1330.0, 56.0, 34.0],
+					"sig": 0.0
+				}
+			},
+			{
+				"box": {
+					"id": "obj-25",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": ["signal"],
+					"patching_rect": [415.0, 1110.0, 45.0, 22.0],
+					"text": "adc~ 1"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-24",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [746.0, 1330.0, 45.0, 22.0],
+					"text": "dac~ 3"
+				}
+			},
+			{
+				"box": {
+					"bgmode": 0,
+					"border": 0,
+					"clickthrough": 0,
+					"enablehscroll": 0,
+					"enablevscroll": 0,
+					"id": "obj-11",
+					"lockeddragscroll": 0,
+					"lockedsize": 0,
+					"maxclass": "bpatcher",
+					"name": "expression-pedal.maxpat",
+					"numinlets": 1,
+					"numoutlets": 2,
+					"offset": [0.0, 0.0],
+					"outlettype": ["multichannelsignal", "signal"],
+					"patching_rect": [415.0, 1140.0, 350.0, 175.0],
+					"viewvisibility": 1
+				}
+			},
+			{
+				"box": {
+					"id": "obj-8",
+					"maxclass": "message",
+					"numinlets": 2,
+					"numoutlets": 1,
+					"outlettype": [""],
+					"patching_rect": [1105.0, 869.0, 31.0, 22.0],
+					"text": "help"
+				}
+			},
 			{
 				"box": {
 					"id": "obj-46",
@@ -661,6 +728,18 @@
 			},
 			{
 				"patchline": {
+					"destination": ["obj-24", 0],
+					"source": ["obj-11", 1]
+				}
+			},
+			{
+				"patchline": {
+					"destination": ["obj-26", 0],
+					"source": ["obj-11", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-13", 1],
 					"source": ["obj-12", 1]
 				}
@@ -790,6 +869,12 @@
 			},
 			{
 				"patchline": {
+					"destination": ["obj-11", 0],
+					"source": ["obj-25", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-15", 4],
 					"source": ["obj-28", 0]
 				}
@@ -877,6 +962,12 @@
 			},
 			{
 				"patchline": {
+					"destination": ["obj-6", 5],
+					"source": ["obj-8", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-3", 3],
 					"source": ["obj-9", 0]
 				}
@@ -888,6 +979,8 @@
 			"obj-103::obj-19": ["Release", "Release", 0],
 			"obj-103::obj-23": ["live.numbox", "live.numbox", 0],
 			"obj-103::obj-24": ["live.numbox[1]", "Threshold", 0],
+			"obj-11::obj-23": ["live.numbox[4]", "live.numbox", 0],
+			"obj-11::obj-5": ["live.numbox[5]", "live.numbox", 0],
 			"obj-122::obj-11": ["number[3]", "number[2]", 0],
 			"obj-122::obj-27": ["number[4]", "number[2]", 0],
 			"obj-122::obj-28": ["number[5]", "number[2]", 0],
@@ -1028,6 +1121,13 @@
 			},
 			{
 				"name": "enveloper.maxpat",
+				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath": "./bpatchers",
+				"type": "JSON",
+				"implicit": 1
+			},
+			{
+				"name": "expression-pedal.maxpat",
 				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
 				"patcherrelativepath": "./bpatchers",
 				"type": "JSON",

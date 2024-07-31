@@ -2,8 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3804595495,
-	"viewrect": [0.0, 115.0, 1323.0, 751.0],
+	"modificationdate": 3805268274,
+	"viewrect": [0.0, 143.0, 1323.0, 723.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -23,7 +23,7 @@
 				"kind": "patcher",
 				"local": 1
 			},
-			"sp.onset~.maxpat": {
+			"expression-pedal.maxpat": {
 				"kind": "patcher",
 				"local": 1
 			},
@@ -56,6 +56,10 @@
 				"local": 1
 			},
 			"stem-player-poly.maxpat": {
+				"kind": "patcher",
+				"local": 1
+			},
+			"sp.onset~.maxpat": {
 				"kind": "patcher",
 				"local": 1
 			},
@@ -105,19 +109,19 @@
 				"kind": "gendsp",
 				"local": 1
 			},
-			"harmonic-tremolo.gendsp": {
-				"kind": "gendsp",
-				"local": 1
-			},
-			"number-input.gendsp": {
-				"kind": "gendsp",
-				"local": 1
-			},
 			"enveloper.gendsp": {
 				"kind": "gendsp",
 				"local": 1
 			},
+			"harmonic-tremolo.gendsp": {
+				"kind": "gendsp",
+				"local": 1
+			},
 			"hex-fuzz.gendsp": {
+				"kind": "gendsp",
+				"local": 1
+			},
+			"number-input.gendsp": {
 				"kind": "gendsp",
 				"local": 1
 			},
@@ -137,11 +141,7 @@
 		"data": {
 			"playground.json": {
 				"kind": "json",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/patchers",
-					"projectrelativepath": "./patchers"
-				}
+				"local": 1
 			}
 		},
 		"externals": {
