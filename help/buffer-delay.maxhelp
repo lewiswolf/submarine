@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 1039.0, 751.0],
+		"rect": [34.0, 171.0, 1258.0, 875.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -40,13 +40,13 @@
 		"boxes": [
 			{
 				"box": {
+					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 17,
+					"linecount": 14,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 233.0, 277.0, 234.0],
-					"presentation_linecount": 22,
+					"patching_rect": [626.0, 252.0, 388.0, 175.0],
 					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nTime between each delay. \n\nControl the recursive amplitude of the delay feedback.\n\nLow pass filter acting on the delay feedback.\n\nControl the mix of the main output.\n\nToggle reversed delay. \n\nSet the amplitude envelope for each reverse delay, where 0 is no fade, 1 is a triangle envelope, and (0, 1) is a trapezoidal envelope.",
 					"textjustification": 2
 				}
@@ -54,99 +54,101 @@
 			{
 				"box": {
 					"fontface": 0,
+					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 16,
+					"linecount": 14,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 233.0, 146.0, 234.0],
-					"presentation_linecount": 16,
-					"text": "Bypass\n\n\nDelay Time [0, 4000] (ms)\n\nFeedback [0, 1]\n\n\nTone [20, 24000] (Hz)\n\nDry / Wet [0, 100] (%)\n\nReverse Delay\n\nFade [0, 1]\n\n"
+					"patching_rect": [474.0, 252.0, 147.0, 187.0],
+					"text": "Bypass\n\nDelay Time [0, 4000] (ms)\n\nFeedback [0, 1]\n\nTone [20, 24000] (Hz)\n\nDry / Wet [0, 100] (%)\n\nReverse Delay\n\nFade [0, 1]\n\n"
 				}
 			},
 			{
 				"box": {
+					"fontname": "Moderat Trial",
 					"id": "obj-20",
 					"linecount": 9,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 277.0, 127.0],
-					"presentation_linecount": 9,
-					"text": "Main dry input.\n\nSet 'Time' independently.\n\nSet 'Feedback' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
+					"patching_rect": [626.0, 71.0, 379.0, 115.0],
+					"text": "Main dry input.\n\nSet 'Delay Time' independently.\n\nSet 'Feedback' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
 					"textjustification": 2
 				}
 			},
 			{
 				"box": {
 					"fontface": 0,
+					"fontname": "Moderat Trial",
 					"id": "obj-19",
 					"linecount": 9,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 71.0, 146.0, 127.0],
-					"presentation_linecount": 10,
+					"patching_rect": [474.0, 71.0, 147.0, 115.0],
 					"text": "Hexaphonic Input\n\nDelay Time [0, 4000] (ms)\n\nFeedback [0, 1]\n\nTone [0, ∞) (Hz)\n\nDry / Wet [0, 1]"
 				}
 			},
 			{
 				"box": {
 					"fontface": 0,
+					"fontname": "Moderat Trial",
 					"id": "obj-18",
-					"linecount": 3,
+					"linecount": 7,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 505.0, 146.0, 47.0],
-					"presentation_linecount": 6,
-					"text": "Hexaphonic Output\n\nDelay Output"
+					"patching_rect": [474.0, 505.0, 154.0, 91.0],
+					"text": "Hexaphonic Output\n\nDelay Output\n\nDelay Tap 2/3\n\nDelay Tap 1/3"
 				}
 			},
 			{
 				"box": {
 					"fontface": 1,
+					"fontname": "Moderat Trial",
 					"id": "obj-17",
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 483.0, 58.0, 20.0],
+					"patching_rect": [474.0, 484.0, 58.0, 18.0],
 					"text": "Outputs"
 				}
 			},
 			{
 				"box": {
 					"fontface": 1,
+					"fontname": "Moderat Trial",
 					"id": "obj-16",
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 211.0, 58.0, 20.0],
-					"presentation_linecount": 2,
+					"patching_rect": [475.0, 232.0, 56.0, 18.0],
 					"text": "Controls"
 				}
 			},
 			{
 				"box": {
 					"fontface": 1,
+					"fontname": "Moderat Trial",
 					"id": "obj-15",
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 49.0, 121.0, 20.0],
+					"patching_rect": [474.0, 49.0, 117.0, 18.0],
 					"text": "Multichannel Inputs"
 				}
 			},
 			{
 				"box": {
+					"fontname": "Moderat Trial",
 					"id": "obj-8",
-					"linecount": 3,
+					"linecount": 7,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 505.0, 277.0, 47.0],
-					"presentation_linecount": 6,
-					"text": "Mixed signal between original and delayed signal.\n\nDelay signal unattenuated.",
+					"patching_rect": [626.0, 505.0, 377.0, 91.0],
+					"text": "Mixed signal between original and delayed signal.\n\nDelay signal unattenuated.\n\nDelay tap at 2/3 of the delay time (unused with reverse delay).\n\nDelay tap at 1/3 of the delay time (unused with reverse delay).",
 					"textjustification": 2
 				}
 			},
@@ -163,9 +165,14 @@
 					"maxclass": "bpatcher",
 					"name": "buffer-delay.maxpat",
 					"numinlets": 6,
-					"numoutlets": 2,
+					"numoutlets": 4,
 					"offset": [0.0, 0.0],
-					"outlettype": ["multichannelsignal", "multichannelsignal"],
+					"outlettype": [
+						"multichannelsignal",
+						"multichannelsignal",
+						"multichannelsignal",
+						"multichannelsignal"
+					],
 					"patching_rect": [72.0, 49.0, 350.0, 175.0],
 					"varname": "buffer-delay",
 					"viewvisibility": 1
