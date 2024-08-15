@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 951.0, 723.0],
+		"rect": [158.0, 115.0, 1187.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -49,7 +49,7 @@
 					"numinlets": 2,
 					"numoutlets": 3,
 					"outlettype": ["multichannelsignal", "float", "int"],
-					"patching_rect": [415.0, 1330.0, 56.0, 34.0],
+					"patching_rect": [415.0, 1348.0, 153.0, 34.0],
 					"sig": 0.0
 				}
 			},
@@ -60,7 +60,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["signal"],
-					"patching_rect": [415.0, 1110.0, 45.0, 22.0],
+					"patching_rect": [415.0, 1128.0, 45.0, 22.0],
 					"text": "adc~ 1"
 				}
 			},
@@ -70,7 +70,7 @@
 					"maxclass": "newobj",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [746.0, 1330.0, 45.0, 22.0],
+					"patching_rect": [746.0, 1348.0, 45.0, 22.0],
 					"text": "dac~ 3"
 				}
 			},
@@ -90,7 +90,7 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "signal"],
-					"patching_rect": [415.0, 1140.0, 350.0, 175.0],
+					"patching_rect": [415.0, 1158.0, 350.0, 175.0],
 					"varname": "expression-pedal",
 					"viewvisibility": 1
 				}
@@ -102,7 +102,7 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [1105.0, 869.0, 31.0, 22.0],
+					"patching_rect": [1105.0, 908.0, 31.0, 22.0],
 					"text": "help"
 				}
 			},
@@ -185,7 +185,7 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "multichannelsignal"],
-					"patching_rect": [415.0, 904.0, 350.0, 175.0],
+					"patching_rect": [415.0, 937.0, 350.0, 175.0],
 					"varname": "enveloper",
 					"viewvisibility": 1
 				}
@@ -206,7 +206,8 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "multichannelsignal"],
-					"patching_rect": [76.0, 837.0, 170.0, 275.0],
+					"patching_rect": [415.0, 722.0, 350.0, 175.0],
+					"varname": "pitch-shift",
 					"viewvisibility": 1
 				}
 			},
@@ -223,10 +224,15 @@
 					"maxclass": "bpatcher",
 					"name": "buffer-delay.maxpat",
 					"numinlets": 6,
-					"numoutlets": 2,
+					"numoutlets": 4,
 					"offset": [0.0, 0.0],
-					"outlettype": ["multichannelsignal", "multichannelsignal"],
-					"patching_rect": [774.0, 904.0, 350.0, 175.0],
+					"outlettype": [
+						"multichannelsignal",
+						"multichannelsignal",
+						"multichannelsignal",
+						"multichannelsignal"
+					],
+					"patching_rect": [774.0, 937.0, 350.0, 175.0],
 					"varname": "buffer-delay",
 					"viewvisibility": 1
 				}
@@ -709,11 +715,11 @@
 					"lockedsize": 1,
 					"maxclass": "bpatcher",
 					"name": "hex-fuzz.maxpat",
-					"numinlets": 6,
+					"numinlets": 7,
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [415.0, 716.0, 350.0, 175.0],
+					"patching_rect": [774.0, 722.0, 350.0, 175.0],
 					"varname": "hex-fuzz",
 					"viewvisibility": 1
 				}
@@ -838,12 +844,6 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-111", 0],
-					"source": ["obj-2", 0]
-				}
-			},
-			{
-				"patchline": {
 					"destination": ["obj-15", 4],
 					"midpoints": [1339.299999999999955, 337.5, 1275.299999999999955, 337.5],
 					"source": ["obj-20", 0]
@@ -957,12 +957,6 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-12", 0],
-					"source": ["obj-6", 0]
-				}
-			},
-			{
-				"patchline": {
 					"destination": ["obj-6", 5],
 					"source": ["obj-8", 0]
 				}
@@ -980,6 +974,10 @@
 			"obj-103::obj-19": ["Release", "Release", 0],
 			"obj-103::obj-23": ["live.numbox", "live.numbox", 0],
 			"obj-103::obj-24": ["live.numbox[1]", "Threshold", 0],
+			"obj-111::obj-36": ["mix[1]", "Dry / Wet", 0],
+			"obj-111::obj-41": ["pitch_shift", "Pitch Shift", 0],
+			"obj-111::obj-45": ["vibrato_amount", "Vibrato Amt", 0],
+			"obj-111::obj-63": ["vibrato_rate", "Vibrato Rate", 0],
 			"obj-11::obj-23": ["live.numbox[4]", "live.numbox", 0],
 			"obj-11::obj-5": ["live.numbox[5]", "live.numbox", 0],
 			"obj-122::obj-11": ["number[3]", "number[2]", 0],
@@ -995,6 +993,7 @@
 			"obj-1::obj-101": ["Gain", "Gain", 0],
 			"obj-1::obj-35": ["Amount", "Amount", 0],
 			"obj-1::obj-41": ["mix", "Dry / Wet", 0],
+			"obj-1::obj-72": ["Asymmetry", "Asymmetry", 0],
 			"obj-3::obj-11": ["number[11]", "number[2]", 0],
 			"obj-3::obj-14": ["textbutton[4]", "textbutton[2]", 0],
 			"obj-3::obj-21": ["number[12]", "number[1]", 0],

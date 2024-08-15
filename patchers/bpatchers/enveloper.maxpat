@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 951.0, 751.0],
+		"rect": [158.0, 115.0, 883.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -74,7 +74,7 @@
 					"activebgcolor": [0.223529411764706, 0.223529411764706, 0.223529411764706, 0.0],
 					"bordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 0.0],
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
-					"fontname": "Arial",
+					"fontname": "Moderat Trial Medium",
 					"fontsize": 13.0,
 					"id": "obj-24",
 					"maxclass": "live.numbox",
@@ -82,9 +82,9 @@
 					"numoutlets": 2,
 					"outlettype": ["", "float"],
 					"parameter_enable": 1,
-					"patching_rect": [1066.692333936691284, 303.846192240715027, 54.0, 18.0],
+					"patching_rect": [1066.692333936691284, 303.846192240715027, 55.0, 16.0],
 					"presentation": 1,
-					"presentation_rect": [285.0, 146.333333373069763, 50.0, 18.0],
+					"presentation_rect": [285.0, 146.333333373069763, 50.0, 16.0],
 					"saved_attribute_attributes": {
 						"activebgcolor": {
 							"expression": ""
@@ -118,7 +118,7 @@
 					"activebgcolor": [0.223529411764706, 0.223529411764706, 0.223529411764706, 0.0],
 					"bordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 0.0],
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
-					"fontname": "Arial",
+					"fontname": "Moderat Trial Medium",
 					"fontsize": 13.0,
 					"id": "obj-23",
 					"maxclass": "live.numbox",
@@ -126,9 +126,9 @@
 					"numoutlets": 2,
 					"outlettype": ["", "float"],
 					"parameter_enable": 1,
-					"patching_rect": [894.89233393669133, 303.846192240715027, 54.0, 18.0],
+					"patching_rect": [894.89233393669133, 303.846192240715027, 55.0, 16.0],
 					"presentation": 1,
-					"presentation_rect": [285.0, 113.0, 50.0, 18.0],
+					"presentation_rect": [285.0, 113.0, 50.0, 16.0],
 					"saved_attribute_attributes": {
 						"activebgcolor": {
 							"expression": ""
@@ -164,6 +164,7 @@
 					"activeneedlecolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"appearance": 3,
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
+					"fontname": "Moderat Trial Medium",
 					"fontsize": 12.0,
 					"id": "obj-19",
 					"maxclass": "live.dial",
@@ -171,9 +172,9 @@
 					"numoutlets": 2,
 					"outlettype": ["", "float"],
 					"parameter_enable": 1,
-					"patching_rect": [761.092335069179512, 125.128235101699829, 50.0, 69.0],
+					"patching_rect": [761.092335069179512, 125.128235101699829, 52.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [285.0, 30.0, 50.0, 69.0],
+					"presentation_rect": [285.0, 30.0, 52.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -214,6 +215,7 @@
 					"activeneedlecolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"appearance": 3,
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
+					"fontname": "Moderat Trial Medium",
 					"fontsize": 12.0,
 					"id": "obj-18",
 					"maxclass": "live.dial",
@@ -221,9 +223,9 @@
 					"numoutlets": 2,
 					"outlettype": ["", "float"],
 					"parameter_enable": 1,
-					"patching_rect": [588.625668382644676, 125.128235101699829, 50.0, 69.0],
+					"patching_rect": [588.625668382644676, 125.128235101699829, 52.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [230.0, 30.0, 50.0, 69.0],
+					"presentation_rect": [230.0, 30.0, 52.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -264,6 +266,7 @@
 					"activeneedlecolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"appearance": 3,
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
+					"fontname": "Moderat Trial Medium",
 					"fontsize": 12.0,
 					"id": "obj-16",
 					"maxclass": "live.dial",
@@ -271,9 +274,9 @@
 					"numoutlets": 2,
 					"outlettype": ["", "float"],
 					"parameter_enable": 1,
-					"patching_rect": [417.948770761489868, 125.64104151725769, 50.0, 69.0],
+					"patching_rect": [417.948770761489868, 125.64104151725769, 52.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [175.0, 30.0, 50.0, 69.0],
+					"presentation_rect": [175.0, 30.0, 52.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -1224,6 +1227,7 @@
 				"box": {
 					"bgcolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"bgoncolor": [1.0, 1.0, 1.0, 1.0],
+					"fontname": "Moderat Trial Medium",
 					"id": "obj-59",
 					"maxclass": "textbutton",
 					"mode": 1,
@@ -1289,26 +1293,28 @@
 			},
 			{
 				"box": {
+					"fontname": "Moderat Trial Medium",
 					"id": "obj-55",
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1065.359000563621521, 241.846190392971039, 88.0, 20.0],
+					"patching_rect": [1065.359000563621521, 241.846190392971039, 89.0, 18.0],
 					"presentation": 1,
-					"presentation_rect": [175.0, 144.333333373069763, 88.0, 20.0],
+					"presentation_rect": [175.0, 144.333333373069763, 89.0, 18.0],
 					"text": "Threshold (dB)",
 					"textcolor": [1.0, 1.0, 1.0, 1.0]
 				}
 			},
 			{
 				"box": {
+					"fontname": "Moderat Trial Medium",
 					"id": "obj-46",
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [894.89233393669133, 241.846190392971039, 61.0, 20.0],
+					"patching_rect": [894.89233393669133, 241.846190392971039, 63.0, 18.0],
 					"presentation": 1,
-					"presentation_rect": [175.0, 111.0, 61.0, 20.0],
+					"presentation_rect": [175.0, 111.0, 63.0, 18.0],
 					"text": "Curvature",
 					"textcolor": [1.0, 1.0, 1.0, 1.0]
 				}
@@ -1373,15 +1379,33 @@
 			{
 				"box": {
 					"bgcolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
+					"fontname": "Moderat Trial Medium",
 					"id": "obj-2",
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1369.0, 11.0, 74.0, 20.0],
+					"patching_rect": [1369.0, 11.0, 76.0, 18.0],
 					"presentation": 1,
-					"presentation_rect": [0.0, 0.0, 350.0, 20.0],
+					"presentation_rect": [0.0, 1.0, 350.0, 18.0],
 					"text": "Enveloper",
 					"textcolor": [1.0, 1.0, 1.0, 1.0]
+				}
+			},
+			{
+				"box": {
+					"angle": 270.0,
+					"bgcolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
+					"bordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
+					"id": "obj-20",
+					"maxclass": "panel",
+					"mode": 0,
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [372.0, 312.0, 128.0, 128.0],
+					"presentation": 1,
+					"presentation_rect": [0.0, -1.200000000000003, 344.0, 21.200000000000003],
+					"proportion": 0.5,
+					"rounded": 0
 				}
 			},
 			{

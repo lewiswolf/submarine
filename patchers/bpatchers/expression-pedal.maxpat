@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1633.0, 695.0],
+		"rect": [158.0, 115.0, 1187.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -135,8 +135,8 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [521.0, 103.0, 56.0, 22.0],
 					"restore": {
-						"pedal-max": [1.0],
-						"pedal-min": [0.0]
+						"pedal_max": [1.0],
+						"pedal_min": [0.0]
 					},
 					"text": "autopattr",
 					"varname": "u790011379"
@@ -157,7 +157,7 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-83",
-					"index": 2,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -206,7 +206,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["bang"],
-					"patching_rect": [512.0, 229.0, 58.0, 22.0],
+					"patching_rect": [512.5, 229.0, 58.0, 22.0],
 					"text": "loadbang"
 				}
 			},
@@ -217,7 +217,7 @@
 					"numinlets": 1,
 					"numoutlets": 2,
 					"outlettype": ["float", "float"],
-					"patching_rect": [512.0, 262.0, 178.0, 22.0],
+					"patching_rect": [512.5, 262.0, 177.0, 22.0],
 					"text": "t 0. 1."
 				}
 			},
@@ -226,7 +226,7 @@
 					"activebgcolor": [0.223529411764706, 0.223529411764706, 0.223529411764706, 0.0],
 					"bordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 0.0],
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
-					"fontname": "Arial",
+					"fontname": "Moderat Trial Medium",
 					"fontsize": 13.0,
 					"id": "obj-5",
 					"maxclass": "live.numbox",
@@ -234,9 +234,9 @@
 					"numoutlets": 2,
 					"outlettype": ["", "float"],
 					"parameter_enable": 1,
-					"patching_rect": [671.0, 302.0, 54.0, 18.0],
+					"patching_rect": [671.0, 302.0, 49.0, 16.0],
 					"presentation": 1,
-					"presentation_rect": [274.0, 140.0, 50.0, 18.0],
+					"presentation_rect": [274.0, 140.0, 46.0, 16.0],
 					"saved_attribute_attributes": {
 						"activebgcolor": {
 							"expression": ""
@@ -261,7 +261,7 @@
 					},
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
 					"textjustification": 2,
-					"varname": "pedal-max"
+					"varname": "pedal_max"
 				}
 			},
 			{
@@ -269,7 +269,7 @@
 					"activebgcolor": [0.223529411764706, 0.223529411764706, 0.223529411764706, 0.0],
 					"bordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 0.0],
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
-					"fontname": "Arial",
+					"fontname": "Moderat Trial Medium",
 					"fontsize": 13.0,
 					"id": "obj-23",
 					"maxclass": "live.numbox",
@@ -277,9 +277,9 @@
 					"numoutlets": 2,
 					"outlettype": ["", "float"],
 					"parameter_enable": 1,
-					"patching_rect": [512.0, 302.0, 54.0, 18.0],
+					"patching_rect": [512.5, 302.0, 55.0, 16.0],
 					"presentation": 1,
-					"presentation_rect": [274.0, 112.0, 50.0, 18.0],
+					"presentation_rect": [274.0, 112.0, 50.0, 16.0],
 					"saved_attribute_attributes": {
 						"activebgcolor": {
 							"expression": ""
@@ -304,7 +304,7 @@
 					},
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
 					"textjustification": 2,
-					"varname": "pedal-min"
+					"varname": "pedal_min"
 				}
 			},
 			{
@@ -336,14 +336,15 @@
 			{
 				"box": {
 					"bgcolor": [0.329411764705882, 0.701960784313725, 0.470588235294118, 1.0],
+					"fontname": "Moderat Trial Medium",
 					"id": "obj-97",
 					"linecount": 2,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [720.0, 20.5, 74.0, 33.0],
+					"patching_rect": [719.0, 8.5, 76.0, 30.0],
 					"presentation": 1,
-					"presentation_rect": [0.0, 0.0, 350.0, 20.0],
+					"presentation_rect": [1.0, 0.0, 344.0, 18.0],
 					"text": "Expression Pedal",
 					"textcolor": [1.0, 1.0, 1.0, 1.0]
 				}
@@ -352,11 +353,11 @@
 				"box": {
 					"comment": "Pedal Input",
 					"id": "obj-73",
-					"index": 1,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": ["signal"],
+					"outlettype": [""],
 					"patching_rect": [26.0, 26.0, 30.0, 30.0]
 				}
 			},
@@ -364,7 +365,7 @@
 				"box": {
 					"comment": "Carrier Signal",
 					"id": "obj-72",
-					"index": 2,
+					"index": 0,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -374,6 +375,7 @@
 			{
 				"box": {
 					"bgcolor": [0.329411764705882, 0.701960784313725, 0.470588235294118, 1.0],
+					"fontname": "Moderat Trial Medium",
 					"id": "obj-69",
 					"maxclass": "textbutton",
 					"numinlets": 1,
@@ -435,7 +437,7 @@
 				"box": {
 					"comment": "Pedal Output",
 					"id": "obj-29",
-					"index": 1,
+					"index": 0,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -473,6 +475,22 @@
 					"outlettype": ["signal"],
 					"patching_rect": [768.0, 364.0, 80.0, 22.0],
 					"text": "cycle~ 20000"
+				}
+			},
+			{
+				"box": {
+					"angle": 270.0,
+					"bgcolor": [0.329411764705882, 0.701960784313725, 0.470588235294118, 1.0],
+					"id": "obj-7",
+					"maxclass": "panel",
+					"mode": 0,
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [719.0, 40.5, 42.0, 21.0],
+					"presentation": 1,
+					"presentation_rect": [0.0, 0.0, 350.0, 20.0],
+					"proportion": 0.5,
+					"rounded": 0
 				}
 			},
 			{
@@ -686,6 +704,20 @@
 				}
 			}
 		],
+		"parameters": {
+			"obj-23": ["live.numbox[4]", "live.numbox", 0],
+			"obj-5": ["live.numbox[5]", "live.numbox", 0],
+			"parameterbanks": {
+				"0": {
+					"index": 0,
+					"name": "",
+					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
+				}
+			},
+			"inherited_shortname": 1
+		},
+		"dependency_cache": [],
+		"autosave": 0,
 		"styles": [
 			{
 				"name": "rnbodefault",

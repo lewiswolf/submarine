@@ -19,14 +19,19 @@
 					"buffer-delay::reverse_fade": [0.5],
 					"buffer-delay::reverse_toggle": [0],
 					"buffer-delay::tone": [2000.0],
+					"pitch-shift::bypass": [0],
+					"pitch-shift::mix[1]": [50.0],
+					"pitch-shift::pitch_shift": [7.0],
+					"pitch-shift::vibrato_amount": [0.0],
+					"pitch-shift::vibrato_rate": [0.0],
 					"enveloper::attack": [500.0],
 					"enveloper::bypass": [0],
 					"enveloper::curvature": [2.0],
 					"enveloper::release": [300.0],
 					"enveloper::sustain": [300.0],
 					"enveloper::threshold": [-70.0],
-					"expression-pedal::pedal-max": [1.0],
-					"expression-pedal::pedal-min": [0.0]
+					"expression-pedal::pedal_max": [1.0],
+					"expression-pedal::pedal_min": [0.0]
 				}
 			}
 		}

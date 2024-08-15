@@ -2,8 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3805268274,
-	"viewrect": [0.0, 143.0, 1323.0, 723.0],
+	"modificationdate": 3806590874,
+	"viewrect": [124.0, 115.0, 1255.0, 751.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -81,27 +81,51 @@
 			},
 			"harmonic-tremolo.maxhelp": {
 				"kind": "helpfile",
-				"local": 1
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
 			},
 			"hex-fuzz.maxhelp": {
 				"kind": "helpfile",
-				"local": 1
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
 			},
 			"hex-tone.maxhelp": {
 				"kind": "helpfile",
-				"local": 1
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
 			},
 			"pitch-shift.maxhelp": {
 				"kind": "helpfile",
-				"local": 1
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
 			},
 			"spread-lfo.maxhelp": {
 				"kind": "helpfile",
-				"local": 1
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
 			},
 			"stereo-imager.maxhelp": {
 				"kind": "helpfile",
-				"local": 1
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
 			}
 		},
 		"code": {
