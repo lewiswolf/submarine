@@ -5,6 +5,7 @@
 			"1": {
 				"id": 1,
 				"data": {
+					"hex-fuzz::asymmetry": [0.0],
 					"hex-fuzz::bypass": [0],
 					"hex-fuzz::distortion_amount": [0.5],
 					"hex-fuzz::gain": [0.0],
