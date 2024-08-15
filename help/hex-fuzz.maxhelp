@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 951.0, 751.0],
+		"rect": [158.0, 115.0, 1187.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -40,79 +40,117 @@
 		"boxes": [
 			{
 				"box": {
-					"bubble": 1,
-					"bubbleside": 3,
-					"fontname": "Arial",
-					"fontsize": 12.0,
+					"fontname": "Moderat Trial",
+					"id": "obj-22",
+					"linecount": 14,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [626.0, 270.0, 388.0, 175.0],
+					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nSet the soft clipping algorithm (Hyperbolic Tangent, Two State Quadratic, Recipricol)\n\nSet the gain of the input signal before hard clipping.\n\nControl the bias of the input the gain.\n\nControl the presence of the soft clipping algorithm.\n\nLow pass filter acting on the output signal.\n\nControl the mix of the main output.",
+					"textjustification": 2
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"fontname": "Moderat Trial",
+					"id": "obj-21",
+					"linecount": 14,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 270.0, 147.0, 175.0],
+					"text": "Bypass\n\nAlgorithm\n\n\nGain [-30, 30] (dB)\n\nAsymmetry [-1, 1]\n\nAmmount [0, 1]\n\nTone [20, 24000] (Hz)\n\nDry / Wet [0, 100] (%)"
+				}
+			},
+			{
+				"box": {
+					"fontname": "Moderat Trial",
+					"id": "obj-20",
+					"linecount": 11,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [626.0, 71.0, 390.0, 139.0],
+					"text": "Main dry input.\n\nSet 'Gain' independently.\n\nSet 'Asymmetry' independently.\n\nSet 'Distortion Amount' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
+					"textjustification": 2
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"fontname": "Moderat Trial",
+					"id": "obj-19",
+					"linecount": 11,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 71.0, 147.0, 139.0],
+					"text": "Hexaphonic Input\n\nGain [-30, 30] (dB)\n\nAsymmetry [-1, 1]\n\nDistortion Amount [0, 1]\n\nTone [0, ∞) (Hz)\n\nDry / Wet [0, 1]"
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"fontname": "Moderat Trial",
+					"id": "obj-18",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 505.0, 147.0, 18.0],
+					"text": "Hexaphonic Output"
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"fontname": "Moderat Trial",
+					"id": "obj-17",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 484.0, 540.0, 18.0],
+					"text": "Outputs",
+					"textjustification": 1
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"fontname": "Moderat Trial",
+					"id": "obj-16",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [475.0, 248.0, 539.0, 18.0],
+					"text": "Controls",
+					"textjustification": 1
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"fontname": "Moderat Trial",
+					"id": "obj-15",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 49.0, 542.0, 18.0],
+					"text": "Multichannel Inputs",
+					"textjustification": 1
+				}
+			},
+			{
+				"box": {
+					"fontname": "Moderat Trial",
 					"id": "obj-8",
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [15.0, 229.0, 273.0, 24.0],
-					"text": "Distortion for singal beneath the zero crossing."
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-7",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [664.0, 207.0, 262.0, 24.0],
-					"text": "Distortion for singal above the zero crossing."
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-6",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [664.0, 254.0, 206.0, 24.0],
-					"text": "Mix noise into the distorted signal."
-				}
-			},
-			{
-				"box": {
-					"id": "obj-5",
-					"maxclass": "message",
-					"numinlets": 2,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [321.218134919802367, 90.604030787944794, 50.0, 22.0]
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"bubbleside": 3,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-3",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [136.0, 184.0, 152.0, 24.0],
-					"text": "Gain of the input signal."
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-27",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [664.0, 164.0, 181.0, 24.0],
-					"text": "Mix between input and effect."
+					"patching_rect": [626.0, 505.0, 388.0, 18.0],
+					"text": "Mixed signal between original and delayed signal.",
+					"textjustification": 2
 				}
 			},
 			{
@@ -127,39 +165,39 @@
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
 					"name": "hex-fuzz.maxpat",
-					"numinlets": 6,
+					"numinlets": 7,
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [295.973166999999989, 138.765106000000003, 350.0, 175.0],
-					"varname": "hex-fuzz",
+					"patching_rect": [72.0, 49.0, 350.0, 175.0],
+					"varname": "buffer-delay",
 					"viewvisibility": 1
 				}
 			},
 			{
 				"box": {
 					"hidden": 1,
-					"id": "obj-9",
+					"id": "obj-3",
 					"ignoreclick": 1,
 					"linecount": 2,
 					"maxclass": "message",
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [10.0, 34.0, 161.0, 35.0],
+					"patching_rect": [732.0, 685.0, 153.0, 35.0],
 					"text": ";\rmax closefile hex-fuzz-help"
 				}
 			},
 			{
 				"box": {
 					"hidden": 1,
-					"id": "obj-1",
+					"id": "obj-4",
 					"ignoreclick": 1,
 					"maxclass": "newobj",
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["bang"],
-					"patching_rect": [10.0, 10.0, 63.0, 22.0],
+					"patching_rect": [732.0, 661.0, 63.0, 22.0],
 					"text": "closebang"
 				}
 			}
@@ -168,14 +206,8 @@
 			{
 				"patchline": {
 					"color": [0.701961, 0.701961, 0.701961, 0.0],
-					"destination": ["obj-9", 0],
-					"source": ["obj-1", 0]
-				}
-			},
-			{
-				"patchline": {
-					"destination": ["obj-2", 1],
-					"source": ["obj-5", 0]
+					"destination": ["obj-3", 0],
+					"source": ["obj-4", 0]
 				}
 			}
 		],
@@ -184,6 +216,7 @@
 			"obj-2::obj-101": ["Gain", "Gain", 0],
 			"obj-2::obj-35": ["Amount", "Amount", 0],
 			"obj-2::obj-41": ["number[8]", "Dry / Wet", 0],
+			"obj-2::obj-72": ["Asymmetry", "Asymmetry", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,

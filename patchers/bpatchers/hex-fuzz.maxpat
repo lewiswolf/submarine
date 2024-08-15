@@ -157,12 +157,12 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [1194.0, 98.0, 56.0, 22.0],
 					"restore": {
-						"asymmetry": [-0.41732283464567],
+						"asymmetry": [-0.503937007874016],
 						"bypass": [0],
-						"distortion_amount": [0.578740157480315],
-						"gain": [0.0],
-						"mix": [50.0],
-						"tone": [9774.65186930373784],
+						"distortion_amount": [0.5],
+						"gain": [16.535433070866134],
+						"mix": [64.173228346456696],
+						"tone": [16411.561783123575879],
 						"waveshape": [0]
 					},
 					"text": "autopattr",
@@ -227,7 +227,7 @@
 			},
 			{
 				"box": {
-					"comment": "Distortion Amount [0, 1]",
+					"comment": "Tone [0, ∞) (Hz)",
 					"id": "obj-6",
 					"index": 5,
 					"maxclass": "inlet",
@@ -313,7 +313,7 @@
 					"numinlets": 6,
 					"numoutlets": 1,
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [197.0, 344.0, 789.000000000000114, 22.0],
+					"patching_rect": [197.0, 344.0, 789.000000000000227, 22.0],
 					"text": "mc.gen~ hex-fuzz @chans 6"
 				}
 			},
@@ -455,7 +455,7 @@
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": ["multichannelsignal"],
+					"outlettype": [""],
 					"patching_rect": [115.0, 297.0, 30.0, 30.0]
 				}
 			},
@@ -1723,7 +1723,7 @@
 					"numoutlets": 0,
 					"patching_rect": [1393.0, 31.0, 35.0, 21.0],
 					"presentation": 1,
-					"presentation_rect": [0.0, -7.0, 350.0, 27.0],
+					"presentation_rect": [0.0, -1.0, 350.0, 21.0],
 					"proportion": 0.5,
 					"rounded": 0
 				}

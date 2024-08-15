@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1258.0, 875.0],
+		"rect": [158.0, 115.0, 1187.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -72,7 +72,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 379.0, 115.0],
+					"patching_rect": [626.0, 71.0, 388.0, 115.0],
 					"text": "Main dry input.\n\nSet 'Delay Time' independently.\n\nSet 'Feedback' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
 					"textjustification": 2
 				}
@@ -111,8 +111,9 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 484.0, 58.0, 18.0],
-					"text": "Outputs"
+					"patching_rect": [474.0, 484.0, 540.0, 18.0],
+					"text": "Outputs",
+					"textjustification": 1
 				}
 			},
 			{
@@ -123,8 +124,9 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [475.0, 232.0, 56.0, 18.0],
-					"text": "Controls"
+					"patching_rect": [475.0, 232.0, 539.0, 18.0],
+					"text": "Controls",
+					"textjustification": 1
 				}
 			},
 			{
@@ -135,8 +137,9 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 49.0, 117.0, 18.0],
-					"text": "Multichannel Inputs"
+					"patching_rect": [474.0, 49.0, 540.0, 18.0],
+					"text": "Multichannel Inputs",
+					"textjustification": 1
 				}
 			},
 			{
@@ -147,7 +150,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 505.0, 377.0, 91.0],
+					"patching_rect": [626.0, 505.0, 388.0, 91.0],
 					"text": "Mixed signal between original and delayed signal.\n\nDelay signal unattenuated.\n\nDelay tap at 2/3 of the delay time (unused with reverse delay).\n\nDelay tap at 1/3 of the delay time (unused with reverse delay).",
 					"textjustification": 2
 				}
