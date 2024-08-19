@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [158.0, 115.0, 1187.0, 751.0],
+		"rect": [-1482.0, 108.0, 1187.0, 723.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -149,7 +149,7 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [626.0, 505.0, 388.0, 18.0],
-					"text": "Mixed signal between original and delayed signal.",
+					"text": "Mixed signal between original and distorted signal.",
 					"textjustification": 2
 				}
 			},
@@ -235,21 +235,21 @@
 			{
 				"name": "hex-fuzz.gendsp",
 				"bootpath": "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath": "../code",
+				"patcherrelativepath": "../../code",
 				"type": "gDSP",
 				"implicit": 1
 			},
 			{
 				"name": "hex-fuzz.maxpat",
 				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
-				"patcherrelativepath": "../patchers/bpatchers",
+				"patcherrelativepath": "../bpatchers",
 				"type": "JSON",
 				"implicit": 1
 			},
 			{
 				"name": "number-input.gendsp",
 				"bootpath": "~/Dropbox/Work/Submarine/code",
-				"patcherrelativepath": "../code",
+				"patcherrelativepath": "../../code",
 				"type": "gDSP",
 				"implicit": 1
 			}
