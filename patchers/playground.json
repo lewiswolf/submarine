@@ -1,6 +1,6 @@
 {
 	"pattrstorage": {
-		"name": "u387005125",
+		"name": "submarine-playground",
 		"slots": {
 			"1": {
 				"id": 1,
@@ -12,6 +12,10 @@
 					"hex-fuzz::mix": [50.0],
 					"hex-fuzz::tone": [2000.0],
 					"hex-fuzz::waveshape": [0],
+					"harmonic-tremolo::LFO_source": [1],
+					"harmonic-tremolo::bypass": [0],
+					"harmonic-tremolo::depth": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+					"harmonic-tremolo::octave_harmonic": [-3.0],
 					"buffer-delay::bypass": [0],
 					"buffer-delay::delay_time": [500.0],
 					"buffer-delay::feedback": [0.25],

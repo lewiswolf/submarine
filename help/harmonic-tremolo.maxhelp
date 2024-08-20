@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 199.0, 1068.0, 667.0],
+		"rect": [158.0, 143.0, 1187.0, 723.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -40,79 +40,119 @@
 		"boxes": [
 			{
 				"box": {
-					"bubble": 1,
-					"bubbleside": 3,
-					"fontname": "Arial",
-					"fontsize": 12.0,
+					"fontname": "Moderat Trial",
+					"id": "obj-22",
+					"linecount": 9,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [626.0, 252.0, 474.0, 115.0],
+					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nSet the harmonic by octave (1 is the 2nd harmonic, 2 is the 4th harmonic, 3 is the 8th harmonic and so on). Negative values produce the corresponding subharmonics.\n\nSwitch between the internal harmonics calculator and an external LFO source.\n\n\nControl how much the LFO effects the signal. ",
+					"textjustification": 2
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"fontname": "Moderat Trial",
+					"id": "obj-21",
+					"linecount": 9,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 252.0, 147.0, 127.0],
+					"text": "Bypass\n\nHarmonic Octave [-8, 8]\n\n\nInternal Harmonics / External Input\n\nDepth [0, 1]\n"
+				}
+			},
+			{
+				"box": {
+					"fontname": "Moderat Trial",
+					"id": "obj-20",
+					"linecount": 9,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [626.0, 71.0, 474.0, 115.0],
+					"text": "Main dry input.\n\nUse an external signal for the tremolo.\n\nSet the precise harmonics using the harmonic index (1 is unity, 2 is an octave above, 3 is a compound fifth above and so on). Values < 1 produce subharmonics (1/2 is an octave below, 1/3 is a compund fifth below and so on).\n\nSet 'Depth' independently.",
+					"textjustification": 2
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"fontname": "Moderat Trial",
+					"id": "obj-19",
+					"linecount": 9,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 71.0, 147.0, 115.0],
+					"text": "Hexaphonic Input\n\nExternal Input [0, 1]\n\nSubharmonic Index [0, ∞)\n\n\n\nDepth [0, 1]"
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"fontname": "Moderat Trial",
+					"id": "obj-18",
+					"linecount": 3,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 505.0, 154.0, 43.0],
+					"text": "Hexaphonic Output\n\nEnvelope Output [0, 1]"
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"fontname": "Moderat Trial",
+					"id": "obj-17",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 484.0, 626.0, 18.0],
+					"text": "Outputs",
+					"textjustification": 1
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"fontname": "Moderat Trial",
+					"id": "obj-16",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [475.0, 232.0, 625.0, 18.0],
+					"text": "Controls",
+					"textjustification": 1
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"fontname": "Moderat Trial",
+					"id": "obj-15",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [474.0, 49.0, 626.0, 18.0],
+					"text": "Multichannel Inputs",
+					"textjustification": 1
+				}
+			},
+			{
+				"box": {
+					"fontname": "Moderat Trial",
 					"id": "obj-8",
+					"linecount": 3,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [20.973166999999989, 350.588241040706635, 273.0, 24.0],
-					"text": "Distortion for singal beneath the zero crossing."
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-7",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [468.553451299667358, 327.450985759496689, 262.0, 24.0],
-					"text": "Distortion for singal above the zero crossing."
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-6",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [468.627458661794662, 374.11765319108963, 206.0, 24.0],
-					"text": "Mix noise into the distorted signal."
-				}
-			},
-			{
-				"box": {
-					"id": "obj-5",
-					"maxclass": "message",
-					"numinlets": 2,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [321.218134919802367, 90.604030787944794, 50.0, 22.0]
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"bubbleside": 3,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-3",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [141.973166999999989, 305.882357954978943, 152.0, 24.0],
-					"text": "Gain of the input signal."
-				}
-			},
-			{
-				"box": {
-					"bubble": 1,
-					"fontname": "Arial",
-					"fontsize": 12.0,
-					"id": "obj-27",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [468.553451299667358, 283.921573281288147, 181.0, 24.0],
-					"text": "Mix between input and effect."
+					"patching_rect": [626.0, 505.0, 474.0, 42.0],
+					"text": "Original signal with the amplitude envelopes applied.\n\nGenerated envelopes.",
+					"textjustification": 2
 				}
 			},
 			{
@@ -128,37 +168,38 @@
 					"maxclass": "bpatcher",
 					"name": "harmonic-tremolo.maxpat",
 					"numinlets": 5,
-					"numoutlets": 1,
+					"numoutlets": 2,
 					"offset": [0.0, 0.0],
-					"outlettype": ["multichannelsignal"],
-					"patching_rect": [295.973166999999989, 138.765106000000003, 170.0, 273.825514999999996],
+					"outlettype": ["multichannelsignal", "multichannelsignal"],
+					"patching_rect": [72.0, 49.0, 350.0, 175.0],
+					"varname": "buffer-delay",
 					"viewvisibility": 1
 				}
 			},
 			{
 				"box": {
 					"hidden": 1,
-					"id": "obj-9",
+					"id": "obj-3",
 					"ignoreclick": 1,
 					"linecount": 2,
 					"maxclass": "message",
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [10.0, 34.0, 201.0, 35.0],
+					"patching_rect": [732.0, 685.0, 201.0, 35.0],
 					"text": ";\rmax closefile harmonic-tremolo-help"
 				}
 			},
 			{
 				"box": {
 					"hidden": 1,
-					"id": "obj-1",
+					"id": "obj-4",
 					"ignoreclick": 1,
 					"maxclass": "newobj",
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["bang"],
-					"patching_rect": [10.0, 10.0, 63.0, 22.0],
+					"patching_rect": [732.0, 661.0, 63.0, 22.0],
 					"text": "closebang"
 				}
 			}
@@ -167,19 +208,15 @@
 			{
 				"patchline": {
 					"color": [0.701961, 0.701961, 0.701961, 0.0],
-					"destination": ["obj-9", 0],
-					"source": ["obj-1", 0]
-				}
-			},
-			{
-				"patchline": {
-					"destination": ["obj-2", 1],
-					"source": ["obj-5", 0]
+					"destination": ["obj-3", 0],
+					"source": ["obj-4", 0]
 				}
 			}
 		],
 		"parameters": {
-			"obj-2::obj-14": ["textbutton[5]", "textbutton[2]", 0],
+			"obj-2::obj-14": ["LFO Source", "LFO Source", 0],
+			"obj-2::obj-49": ["Octave", "Octave", 0],
+			"obj-2::obj-92": ["Depth", "Depth", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,
@@ -192,8 +229,8 @@
 		"dependency_cache": [
 			{
 				"name": "harmonic-tremolo.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
-				"patcherrelativepath": "../code/gen",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../code",
 				"type": "gDSP",
 				"implicit": 1
 			},
@@ -206,8 +243,8 @@
 			},
 			{
 				"name": "number-input.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
-				"patcherrelativepath": "../code/gen",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../code",
 				"type": "gDSP",
 				"implicit": 1
 			}
