@@ -241,7 +241,8 @@
 						},
 						"valueof": {
 							"parameter_longname": "live.numbox[5]",
-							"parameter_mmax": 10000.0,
+							"parameter_mmax": 24000.0,
+							"parameter_mmin": -24000.0,
 							"parameter_modmode": 3,
 							"parameter_shortname": "live.numbox",
 							"parameter_type": 0,
@@ -283,8 +284,9 @@
 							"expression": ""
 						},
 						"valueof": {
-							"parameter_longname": "live.numbox[4]",
-							"parameter_mmax": 10000.0,
+							"parameter_longname": "live.numbox",
+							"parameter_mmax": 24000.0,
+							"parameter_mmin": -24000.0,
 							"parameter_modmode": 3,
 							"parameter_shortname": "live.numbox",
 							"parameter_type": 0,
@@ -346,7 +348,7 @@
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": ["signal"],
+					"outlettype": [""],
 					"patching_rect": [26.0, 26.0, 30.0, 30.0]
 				}
 			},

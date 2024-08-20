@@ -2,8 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3806590874,
-	"viewrect": [124.0, 115.0, 1255.0, 751.0],
+	"modificationdate": 3807011318,
+	"viewrect": [0.0, 143.0, 1379.0, 723.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -72,6 +72,14 @@
 				}
 			},
 			"enveloper.maxhelp": {
+				"kind": "helpfile",
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
+			},
+			"expression-pedal.maxhelp": {
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
