@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "dsp.gen",
-		"rect": [158.0, 143.0, 1187.0, 723.0],
+		"rect": [34.0, 143.0, 1311.0, 723.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -38,6 +38,16 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"id": "obj-2",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [548.0, 908.0, 192.0, 22.0],
+					"text": "out 2 @comment distortion_output"
+				}
+			},
 			{
 				"box": {
 					"id": "obj-15",
@@ -819,8 +829,16 @@
 			},
 			{
 				"patchline": {
+					"destination": ["obj-2", 0],
+					"order": 0,
+					"source": ["obj-20", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-32", 0],
 					"midpoints": [557.5, 860.0, 148.5, 860.0],
+					"order": 1,
 					"source": ["obj-20", 0]
 				}
 			},
@@ -1064,8 +1082,17 @@
 			},
 			{
 				"patchline": {
+					"destination": ["obj-2", 0],
+					"midpoints": [241.5, 873.5, 557.5, 873.5],
+					"order": 0,
+					"source": ["obj-55", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-32", 0],
 					"midpoints": [241.5, 860.5, 148.5, 860.5],
+					"order": 1,
 					"source": ["obj-55", 0]
 				}
 			},
@@ -1131,7 +1158,16 @@
 			},
 			{
 				"patchline": {
+					"destination": ["obj-2", 0],
+					"midpoints": [148.5, 873.0, 557.5, 873.0],
+					"order": 0,
+					"source": ["obj-7", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-32", 0],
+					"order": 1,
 					"source": ["obj-7", 0]
 				}
 			},
@@ -1155,7 +1191,6 @@
 					"source": ["obj-9", 0]
 				}
 			}
-		],
-		"autosave": 0
+		]
 	}
 }
