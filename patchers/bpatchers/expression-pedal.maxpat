@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [158.0, 115.0, 1187.0, 751.0],
+		"rect": [34.0, 143.0, 1007.0, 723.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -133,9 +133,9 @@
 					"numinlets": 1,
 					"numoutlets": 4,
 					"outlettype": ["", "", "", ""],
-					"patching_rect": [521.0, 103.0, 56.0, 22.0],
+					"patching_rect": [512.0, 103.0, 56.0, 22.0],
 					"restore": {
-						"pedal_max": [1.0],
+						"pedal_max": [30.0],
 						"pedal_min": [0.0]
 					},
 					"text": "autopattr",
@@ -149,7 +149,7 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [562.0, 22.0, 58.0, 22.0],
+					"patching_rect": [553.0, 22.0, 58.0, 22.0],
 					"text": "loadbang"
 				}
 			},
@@ -157,12 +157,12 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-83",
-					"index": 0,
+					"index": 2,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [521.0, 22.0, 30.0, 30.0]
+					"patching_rect": [512.0, 22.0, 30.0, 30.0]
 				}
 			},
 			{
@@ -172,7 +172,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["bang"],
-					"patching_rect": [648.0, 103.0, 22.0, 22.0],
+					"patching_rect": [639.0, 103.0, 22.0, 22.0],
 					"text": "t b"
 				}
 			},
@@ -183,7 +183,7 @@
 					"numinlets": 3,
 					"numoutlets": 3,
 					"outlettype": ["", "", ""],
-					"patching_rect": [521.0, 69.0, 273.0, 22.0],
+					"patching_rect": [512.0, 69.0, 273.0, 22.0],
 					"text": "route loadbang help"
 				}
 			},
@@ -195,19 +195,8 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [648.0, 128.0, 150.0, 62.0],
+					"patching_rect": [639.0, 128.0, 150.0, 62.0],
 					"text": ";\rmax openfile expression-pedal-help expression-pedal.maxhelp"
-				}
-			},
-			{
-				"box": {
-					"id": "obj-9",
-					"maxclass": "newobj",
-					"numinlets": 1,
-					"numoutlets": 1,
-					"outlettype": ["bang"],
-					"patching_rect": [512.5, 229.0, 58.0, 22.0],
-					"text": "loadbang"
 				}
 			},
 			{
@@ -236,7 +225,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [671.0, 302.0, 49.0, 16.0],
 					"presentation": 1,
-					"presentation_rect": [274.0, 140.0, 46.0, 16.0],
+					"presentation_rect": [289.0, 111.0, 46.0, 16.0],
 					"saved_attribute_attributes": {
 						"activebgcolor": {
 							"expression": ""
@@ -279,7 +268,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [512.5, 302.0, 55.0, 16.0],
 					"presentation": 1,
-					"presentation_rect": [274.0, 112.0, 50.0, 16.0],
+					"presentation_rect": [285.0, 79.5, 50.0, 16.0],
 					"saved_attribute_attributes": {
 						"activebgcolor": {
 							"expression": ""
@@ -315,7 +304,7 @@
 					"numoutlets": 0,
 					"patching_rect": [734.0, 301.0, 31.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [184.5, 139.0, 31.0, 20.0],
+					"presentation_rect": [179.0, 109.0, 31.0, 20.0],
 					"text": "Max",
 					"textcolor": [1.0, 1.0, 1.0, 1.0]
 				}
@@ -328,7 +317,7 @@
 					"numoutlets": 0,
 					"patching_rect": [577.0, 301.0, 28.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [186.0, 111.0, 28.0, 20.0],
+					"presentation_rect": [180.0, 80.0, 28.0, 20.0],
 					"text": "Min",
 					"textcolor": [1.0, 1.0, 1.0, 1.0]
 				}
@@ -342,7 +331,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [719.0, 8.5, 76.0, 30.0],
+					"patching_rect": [710.0, 9.0, 76.0, 30.0],
 					"presentation": 1,
 					"presentation_rect": [1.0, 0.0, 344.0, 18.0],
 					"text": "Expression Pedal",
@@ -353,11 +342,11 @@
 				"box": {
 					"comment": "Pedal Input",
 					"id": "obj-73",
-					"index": 0,
+					"index": 1,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": [""],
+					"outlettype": ["signal"],
 					"patching_rect": [26.0, 26.0, 30.0, 30.0]
 				}
 			},
@@ -365,7 +354,7 @@
 				"box": {
 					"comment": "Carrier Signal",
 					"id": "obj-72",
-					"index": 0,
+					"index": 2,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -382,9 +371,9 @@
 					"numoutlets": 3,
 					"outlettype": ["", "", "int"],
 					"parameter_enable": 0,
-					"patching_rect": [232.0, 232.0, 72.600000000000023, 22.0],
+					"patching_rect": [232.0, 232.0, 103.0, 22.0],
 					"presentation": 1,
-					"presentation_rect": [186.0, 76.5, 138.0, 22.0],
+					"presentation_rect": [180.0, 138.0, 155.0, 20.0],
 					"text": "Calibrate Pedal",
 					"textoncolor": [1.0, 1.0, 1.0, 1.0]
 				}
@@ -437,7 +426,7 @@
 				"box": {
 					"comment": "Pedal Output",
 					"id": "obj-29",
-					"index": 0,
+					"index": 1,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -486,7 +475,7 @@
 					"mode": 0,
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [719.0, 40.5, 42.0, 21.0],
+					"patching_rect": [710.0, 41.0, 42.0, 21.0],
 					"presentation": 1,
 					"presentation_rect": [0.0, 0.0, 350.0, 20.0],
 					"proportion": 0.5,
@@ -502,7 +491,7 @@
 					"mode": 0,
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [757.0, 40.5, 37.0, 21.0],
+					"patching_rect": [748.0, 41.0, 37.0, 21.0],
 					"presentation": 1,
 					"presentation_rect": [0.0, 0.0, 350.0, 175.0],
 					"proportion": 0.5
@@ -681,7 +670,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-87", 0],
-					"midpoints": [571.5, 58.5, 530.5, 58.5],
+					"midpoints": [562.5, 58.5, 521.5, 58.5],
 					"source": ["obj-82", 0]
 				}
 			},
@@ -700,24 +689,10 @@
 			{
 				"patchline": {
 					"destination": ["obj-8", 0],
-					"source": ["obj-9", 0]
+					"source": ["obj-87", 0]
 				}
 			}
 		],
-		"parameters": {
-			"obj-23": ["live.numbox[4]", "live.numbox", 0],
-			"obj-5": ["live.numbox[5]", "live.numbox", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"inherited_shortname": 1
-		},
-		"dependency_cache": [],
-		"autosave": 0,
 		"styles": [
 			{
 				"name": "rnbodefault",

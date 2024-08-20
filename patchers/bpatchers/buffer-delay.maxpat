@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1258.0, 875.0],
+		"rect": [34.0, 143.0, 1007.0, 723.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -201,7 +201,7 @@
 						205.350028494993808, 211.930555075407028, 98.61111581325531, 20.138889849185944
 					],
 					"presentation": 1,
-					"presentation_rect": [170.0, 149.027777016162872, 112.5, 16.176470279693604],
+					"presentation_rect": [170.0, 145.0, 112.5, 20.0],
 					"text": "Reverse Delay",
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
 					"texton": "Reverse Delay",

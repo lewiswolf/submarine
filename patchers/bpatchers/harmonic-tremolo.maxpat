@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [158.0, 143.0, 883.0, 723.0],
+		"rect": [34.0, 143.0, 1007.0, 723.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -83,7 +83,6 @@
 						"style": "",
 						"subpatcher_template": "",
 						"assistshowspatchername": 0,
-						"visible": 1,
 						"boxes": [
 							{
 								"box": {
@@ -206,7 +205,7 @@
 													"maxclass": "inlet",
 													"numinlets": 0,
 													"numoutlets": 1,
-													"outlettype": ["multichannelsignal"],
+													"outlettype": [""],
 													"patching_rect": [50.0, 40.0, 30.0, 30.0]
 												}
 											},
@@ -354,7 +353,7 @@
 									"maxclass": "inlet",
 									"numinlets": 0,
 									"numoutlets": 1,
-									"outlettype": ["multichannelsignal"],
+									"outlettype": [""],
 									"patching_rect": [32.0, 28.0, 30.0, 30.0]
 								}
 							},
@@ -583,7 +582,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [748.000022292137146, 144.000004291534424, 52.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [222.396310925483704, 30.19723894596099, 75.0, 65.0],
+					"presentation_rect": [222.0, 28.0, 75.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -998,7 +997,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [917.33336067199707, 169.333338379859924, 66.0, 41.0],
 					"presentation": 1,
-					"presentation_rect": [180.0, 115.0, 160.0, 50.0],
+					"presentation_rect": [180.0, 117.0, 160.0, 50.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_invisible": 1,
@@ -1058,7 +1057,7 @@
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": ["multichannelsignal"],
+					"outlettype": [""],
 					"patching_rect": [709.333354473114014, 249.333340764045715, 30.0, 30.0]
 				}
 			},
@@ -1196,7 +1195,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [370.666677713394165, 256.000007629394531, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [180.0, 97.0, 160.0, 14.0],
+					"presentation_rect": [180.0, 93.0, 160.0, 20.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_enum": ["off", "on"],
@@ -1222,7 +1221,7 @@
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": ["multichannelsignal"],
+					"outlettype": [""],
 					"patching_rect": [120.000003576278687, 305.333342432975769, 30.0, 30.0]
 				}
 			},
