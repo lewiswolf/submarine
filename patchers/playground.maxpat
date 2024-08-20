@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 1311.0, 723.0],
+		"rect": [34.0, 172.0, 1311.0, 695.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -67,18 +67,7 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [370.0, 577.0, 195.0, 20.0],
-					"presentation_linecount": 6,
 					"text": "infinite sustain, add external trigger"
-				}
-			},
-			{
-				"box": {
-					"id": "obj-27",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [730.0, 361.0, 48.0, 20.0],
-					"text": "clicks..."
 				}
 			},
 			{
@@ -593,12 +582,6 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-1", 0],
-					"source": ["obj-2", 0]
-				}
-			},
-			{
-				"patchline": {
 					"destination": ["obj-12", 5],
 					"midpoints": [463.5, 934.0, 399.5, 934.0],
 					"source": ["obj-21", 0]
@@ -763,6 +746,7 @@
 				},
 				"obj-122::obj-41": {
 					"parameter_longname": "resonance",
+					"parameter_range": [0.0, 30.0],
 					"parameter_shortname": "Resonance",
 					"parameter_unitstyle": 1
 				},
