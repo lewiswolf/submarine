@@ -284,7 +284,7 @@
 							"expression": ""
 						},
 						"valueof": {
-							"parameter_longname": "live.numbox",
+							"parameter_longname": "live.numbox[4]",
 							"parameter_mmax": 24000.0,
 							"parameter_mmin": -24000.0,
 							"parameter_modmode": 3,
@@ -342,19 +342,19 @@
 			},
 			{
 				"box": {
-					"comment": "Pedal Input",
+					"comment": "Pedal Input (Mono)",
 					"id": "obj-73",
 					"index": 1,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": [""],
+					"outlettype": ["signal"],
 					"patching_rect": [26.0, 26.0, 30.0, 30.0]
 				}
 			},
 			{
 				"box": {
-					"comment": "Carrier Signal",
+					"comment": "Carrier Signal (Mono)",
 					"id": "obj-72",
 					"index": 2,
 					"maxclass": "outlet",
@@ -426,7 +426,7 @@
 			},
 			{
 				"box": {
-					"comment": "Pedal Output",
+					"comment": "Hexaphonic Pedal Output",
 					"id": "obj-29",
 					"index": 1,
 					"maxclass": "outlet",
