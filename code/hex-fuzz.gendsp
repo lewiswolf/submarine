@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "dsp.gen",
-		"rect": [158.0, 115.0, 1187.0, 751.0],
+		"rect": [158.0, 143.0, 1187.0, 723.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -660,8 +660,8 @@
 					"numinlets": 0,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [262.0, 1013.0, 309.0, 22.0],
-					"text": "in 6 @comment dry_wet @default 0.5 @max 1. @min 0."
+					"patching_rect": [262.0, 1013.0, 303.0, 22.0],
+					"text": "in 6 @comment dry_wet @default 1. @max 1. @min 0."
 				}
 			},
 			{
@@ -1155,6 +1155,7 @@
 					"source": ["obj-9", 0]
 				}
 			}
-		]
+		],
+		"autosave": 0
 	}
 }
