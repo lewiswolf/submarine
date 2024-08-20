@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 5,
+					"linecount": 9,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 252.0, 388.0, 67.0],
-					"text": "Set the minimum value output by the pedal (setting this as the maximum inverts the polarity of the pedal).\n\nSet the maximum value output by the pedal (setting this as the minimum inverts the polarity of the pedal).",
+					"patching_rect": [626.0, 252.0, 388.0, 115.0],
+					"text": "Set the minimum value output by the pedal (setting this as the maximum inverts the polarity of the pedal).\n\nSet the maximum value output by the pedal (setting this as the minimum inverts the polarity of the pedal).\n\nEvery analog expression pedal is slightly different. Clicking this button resets the calibration for the pedal, which is set by moving the pedal to the minimum and maxmimum.",
 					"textjustification": 2
 				}
 			},
@@ -56,12 +56,12 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 4,
+					"linecount": 7,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 147.0, 67.0],
-					"text": "Min [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
+					"patching_rect": [474.0, 252.0, 147.0, 91.0],
+					"text": "Min [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n\n\nCalibrate Pedal"
 				}
 			},
 			{
