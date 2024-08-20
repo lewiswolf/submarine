@@ -693,6 +693,7 @@
 				"box": {
 					"bgcolor": [1.0, 1.0, 1.0, 0.0],
 					"id": "obj-55",
+					"margins": [4.0, 2.0, 4.0, 2.0],
 					"maxclass": "plot~",
 					"numinlets": 1,
 					"numoutlets": 1,
@@ -849,7 +850,7 @@
 						"distortion_amount": [0.5],
 						"gain": [0.0],
 						"mix": [50.0],
-						"tone": [1999.999999999999545],
+						"tone": [2000.0],
 						"waveshape": [0]
 					},
 					"text": "autopattr",
