@@ -5,6 +5,11 @@
 			"1": {
 				"id": 1,
 				"data": {
+					"pitch-shift::bypass": [0],
+					"pitch-shift::mix": [50.0],
+					"pitch-shift::pitch_shift": [7.0],
+					"pitch-shift::vibrato_amount": [0.0],
+					"pitch-shift::vibrato_rate": [1.0],
 					"hex-fuzz::asymmetry": [0.0],
 					"hex-fuzz::bypass": [0],
 					"hex-fuzz::distortion_amount": [0.5],
@@ -12,6 +17,10 @@
 					"hex-fuzz::mix": [50.0],
 					"hex-fuzz::tone": [2000.0],
 					"hex-fuzz::waveshape": [0],
+					"hex-tone::bypass": [0],
+					"hex-tone::frequency": [2000.0],
+					"hex-tone::gain": [0.0],
+					"hex-tone::resonance": [1.0],
 					"harmonic-tremolo::LFO_source": [1],
 					"harmonic-tremolo::bypass": [0],
 					"harmonic-tremolo::depth": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
@@ -30,12 +39,7 @@
 					"enveloper::sustain": [300.0],
 					"enveloper::threshold": [-70.0],
 					"expression-pedal::pedal_max": [1.0],
-					"expression-pedal::pedal_min": [0.0],
-					"pitch-shift::bypass": [0],
-					"pitch-shift::mix": [50.0],
-					"pitch-shift::pitch_shift": [7.0],
-					"pitch-shift::vibrato_amount": [0.0],
-					"pitch-shift::vibrato_rate": [1.0]
+					"expression-pedal::pedal_min": [0.0]
 				}
 			}
 		}
