@@ -2,8 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3807011318,
-	"viewrect": [0.0, 143.0, 1379.0, 723.0],
+	"modificationdate": 3807534533,
+	"viewrect": [51.0, 199.0, 1697.0, 832.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -32,6 +32,10 @@
 				"local": 1
 			},
 			"hex-tone.maxpat": {
+				"kind": "patcher",
+				"local": 1
+			},
+			"multislider.maxpat": {
 				"kind": "patcher",
 				"local": 1
 			},
@@ -103,7 +107,7 @@
 					"projectrelativepath": "./help"
 				}
 			},
-			"volume-pedal.maxhelp": {
+			"multislider.maxhelp": {
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
@@ -128,6 +132,14 @@
 				}
 			},
 			"stereo-imager.maxhelp": {
+				"kind": "helpfile",
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
+			},
+			"volume-pedal.maxhelp": {
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {

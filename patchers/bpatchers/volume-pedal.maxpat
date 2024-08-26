@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 1007.0, 723.0],
+		"rect": [85.0, 199.0, 1232.0, 832.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -135,7 +135,7 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [512.0, 103.0, 56.0, 22.0],
 					"restore": {
-						"pedal_max": [30.0],
+						"pedal_max": [1.0],
 						"pedal_min": [0.0]
 					},
 					"text": "autopattr",
@@ -335,7 +335,7 @@
 					"numoutlets": 0,
 					"patching_rect": [710.0, 9.0, 76.0, 30.0],
 					"presentation": 1,
-					"presentation_rect": [1.0, 0.0, 344.0, 18.0],
+					"presentation_rect": [0.0, 1.0, 345.5, 18.0],
 					"text": "Volume Pedal",
 					"textcolor": [1.0, 1.0, 1.0, 1.0]
 				}

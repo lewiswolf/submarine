@@ -40,6 +40,49 @@
 		"boxes": [
 			{
 				"box": {
+					"id": "obj-22",
+					"maxclass": "toggle",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": ["int"],
+					"parameter_enable": 0,
+					"patching_rect": [701.0, 113.0, 24.0, 24.0]
+				}
+			},
+			{
+				"box": {
+					"id": "obj-23",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [""],
+					"patching_rect": [701.0, 142.0, 42.0, 22.0],
+					"text": "mute~"
+				}
+			},
+			{
+				"box": {
+					"bgmode": 0,
+					"border": 0,
+					"clickthrough": 0,
+					"enablehscroll": 0,
+					"enablevscroll": 0,
+					"id": "obj-8",
+					"lockeddragscroll": 0,
+					"lockedsize": 0,
+					"maxclass": "bpatcher",
+					"name": "multislider.maxpat",
+					"numinlets": 2,
+					"numoutlets": 1,
+					"offset": [0.0, 0.0],
+					"outlettype": ["multichannelsignal"],
+					"patching_rect": [370.0, 170.0, 350.0, 175.0],
+					"varname": "multislider",
+					"viewvisibility": 1
+				}
+			},
+			{
+				"box": {
 					"id": "obj-36",
 					"maxclass": "toggle",
 					"numinlets": 1,
@@ -320,12 +363,12 @@
 			{
 				"box": {
 					"id": "obj-16",
-					"linecount": 12,
+					"linecount": 8,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [792.0, 940.0, 100.0, 167.0],
-					"text": "ISSUE\nadd back offset\n\nadd rampsmooth\n\nget manual out of here!\n\nadd min max\n\nflip horizontal display"
+					"patching_rect": [792.0, 940.0, 100.0, 114.0],
+					"text": "ISSUE\n\nadd rampsmooth\n\nadd min max\n\nflip horizontal display"
 				}
 			},
 			{
@@ -589,6 +632,18 @@
 			},
 			{
 				"patchline": {
+					"destination": ["obj-23", 0],
+					"source": ["obj-22", 0]
+				}
+			},
+			{
+				"patchline": {
+					"destination": ["obj-8", 1],
+					"source": ["obj-23", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-11", 0],
 					"source": ["obj-25", 0]
 				}
@@ -681,7 +736,6 @@
 			"obj-1::obj-41": ["mix", "Dry / Wet", 0],
 			"obj-1::obj-72": ["Asymmetry", "Asymmetry", 0],
 			"obj-3::obj-11": ["number[11]", "number[2]", 0],
-			"obj-3::obj-14": ["textbutton[4]", "textbutton[2]", 0],
 			"obj-3::obj-21": ["number[12]", "number[1]", 0],
 			"obj-3::obj-46": ["textbutton[6]", "textbutton[2]", 0],
 			"obj-5::obj-36": ["mix[2]", "Dry / Wet", 0],
@@ -693,6 +747,9 @@
 			"obj-6::obj-7": ["Time", "Time", 0],
 			"obj-6::obj-8": ["Feedback", "Feedback", 0],
 			"obj-6::obj-9": ["Tone", "Tone", 0],
+			"obj-8::obj-23": ["live.numbox[6]", "live.numbox", 0],
+			"obj-8::obj-5": ["live.numbox[7]", "live.numbox", 0],
+			"obj-8::obj-51": ["multislider", "multislider", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,
@@ -814,6 +871,12 @@
 				"obj-6::obj-9": {
 					"parameter_longname": "Tone",
 					"parameter_shortname": "Tone"
+				},
+				"obj-8::obj-23": {
+					"parameter_longname": "live.numbox[6]"
+				},
+				"obj-8::obj-5": {
+					"parameter_longname": "live.numbox[7]"
 				}
 			},
 			"inherited_shortname": 1
@@ -891,6 +954,13 @@
 			},
 			{
 				"name": "hex-tone.maxpat",
+				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath": "./bpatchers",
+				"type": "JSON",
+				"implicit": 1
+			},
+			{
+				"name": "multislider.maxpat",
 				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
 				"patcherrelativepath": "./bpatchers",
 				"type": "JSON",
