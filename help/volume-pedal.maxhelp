@@ -47,7 +47,7 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [626.0, 252.0, 388.0, 115.0],
-					"text": "Set the minimum value output by the pedal (setting this as the maximum inverts the polarity of the pedal).\n\nSet the maximum value output by the pedal (setting this as the minimum inverts the polarity of the pedal).\n\nEvery analog expression pedal is slightly different. Clicking this button resets the calibration for the pedal, which is set by moving the pedal to the minimum and maxmimum.",
+					"text": "Set the minimum value output by the pedal (setting this as the maximum inverts the polarity of the pedal).\n\nSet the maximum value output by the pedal (setting this as the minimum inverts the polarity of the pedal).\n\nEvery analog volume pedal is slightly different. Clicking this button resets the calibration for the pedal, which is set by moving the pedal to the minimum and maxmimum.",
 					"textjustification": 2
 				}
 			},
@@ -72,7 +72,7 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [626.0, 71.0, 388.0, 18.0],
-					"text": "Input from an analog expression pedal.",
+					"text": "Input from an analog volume pedal.",
 					"textjustification": 2
 				}
 			},
@@ -149,7 +149,7 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [626.0, 505.0, 388.0, 42.0],
-					"text": "Scaled pedal output.\n\nCarrier signal to send to the input of an analog expression pedal.",
+					"text": "Scaled pedal output.\n\nCarrier signal to send to the input of an analog volume pedal.",
 					"textjustification": 2
 				}
 			},
@@ -164,7 +164,7 @@
 					"lockeddragscroll": 0,
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
-					"name": "expression-pedal.maxpat",
+					"name": "volume-pedal.maxpat",
 					"numinlets": 2,
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
@@ -185,7 +185,7 @@
 					"numoutlets": 1,
 					"outlettype": [""],
 					"patching_rect": [732.0, 685.0, 199.0, 35.0],
-					"text": ";\rmax closefile expression-pedal-help"
+					"text": ";\rmax closefile volume-pedal-help"
 				}
 			},
 			{
@@ -234,7 +234,7 @@
 		},
 		"dependency_cache": [
 			{
-				"name": "expression-pedal.maxpat",
+				"name": "volume-pedal.maxpat",
 				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
 				"patcherrelativepath": "../patchers/bpatchers",
 				"type": "JSON",

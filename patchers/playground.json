@@ -38,8 +38,8 @@
 					"enveloper::release": [300.0],
 					"enveloper::sustain": [300.0],
 					"enveloper::threshold": [-70.0],
-					"expression-pedal::pedal_max": [1.0],
-					"expression-pedal::pedal_min": [0.0]
+					"volume-pedal::pedal_max": [1.0],
+					"volume-pedal::pedal_min": [0.0]
 				}
 			}
 		}

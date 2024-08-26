@@ -23,10 +23,6 @@
 				"kind": "patcher",
 				"local": 1
 			},
-			"expression-pedal.maxpat": {
-				"kind": "patcher",
-				"local": 1
-			},
 			"harmonic-tremolo.maxpat": {
 				"kind": "patcher",
 				"local": 1
@@ -59,6 +55,10 @@
 				"kind": "patcher",
 				"local": 1
 			},
+			"volume-pedal.maxpat": {
+				"kind": "patcher",
+				"local": 1
+			},
 			"sp.onset~.maxpat": {
 				"kind": "patcher",
 				"local": 1
@@ -72,14 +72,6 @@
 				}
 			},
 			"enveloper.maxhelp": {
-				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
-					"projectrelativepath": "./help"
-				}
-			},
-			"expression-pedal.maxhelp": {
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
@@ -104,6 +96,14 @@
 				}
 			},
 			"hex-tone.maxhelp": {
+				"kind": "helpfile",
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"projectrelativepath": "./help"
+				}
+			},
+			"volume-pedal.maxhelp": {
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {

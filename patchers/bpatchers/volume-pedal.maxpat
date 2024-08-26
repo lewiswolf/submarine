@@ -196,7 +196,7 @@
 					"numoutlets": 1,
 					"outlettype": [""],
 					"patching_rect": [639.0, 128.0, 150.0, 62.0],
-					"text": ";\rmax openfile expression-pedal-help expression-pedal.maxhelp"
+					"text": ";\rmax openfile volume-pedal-help volume-pedal.maxhelp"
 				}
 			},
 			{
@@ -336,7 +336,7 @@
 					"patching_rect": [710.0, 9.0, 76.0, 30.0],
 					"presentation": 1,
 					"presentation_rect": [1.0, 0.0, 344.0, 18.0],
-					"text": "Expression Pedal",
+					"text": "Volume Pedal",
 					"textcolor": [1.0, 1.0, 1.0, 1.0]
 				}
 			},

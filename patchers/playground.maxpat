@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 172.0, 1311.0, 695.0],
+		"rect": [85.0, 199.0, 1232.0, 832.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -135,13 +135,13 @@
 					"lockeddragscroll": 0,
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
-					"name": "expression-pedal.maxpat",
+					"name": "volume-pedal.maxpat",
 					"numinlets": 2,
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "signal"],
 					"patching_rect": [10.0, 170.0, 350.0, 175.0],
-					"varname": "expression-pedal",
+					"varname": "volume-pedal",
 					"viewvisibility": 1
 				}
 			},
@@ -858,13 +858,6 @@
 				"implicit": 1
 			},
 			{
-				"name": "expression-pedal.maxpat",
-				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
 				"name": "fluid.ampfeature~.mxo",
 				"type": "iLaX"
 			},
@@ -961,6 +954,13 @@
 			},
 			{
 				"name": "stereo-imager.maxpat",
+				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath": "./bpatchers",
+				"type": "JSON",
+				"implicit": 1
+			},
+			{
+				"name": "volume-pedal.maxpat",
 				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
 				"patcherrelativepath": "./bpatchers",
 				"type": "JSON",
