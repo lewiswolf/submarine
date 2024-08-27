@@ -342,7 +342,7 @@
 					},
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
 					"textjustification": 2,
-					"varname": "pedal_max"
+					"varname": "max"
 				}
 			},
 			{
@@ -386,7 +386,7 @@
 					},
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
 					"textjustification": 2,
-					"varname": "pedal_min"
+					"varname": "min"
 				}
 			},
 			{
@@ -424,9 +424,9 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [281.531306776404449, 111.0, 56.0, 22.0],
 					"restore": {
-						"multislider": [1.0, 0.8, 0.6, 0.4, 0.2, 0.0],
-						"pedal_max": [9071.866141732289179],
-						"pedal_min": [11905.51181102361079]
+						"max": [1.0],
+						"min": [0.0],
+						"multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
 					},
 					"text": "autopattr",
 					"varname": "u790011379"

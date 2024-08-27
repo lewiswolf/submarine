@@ -17,6 +17,14 @@
 					"hex-fuzz::mix": [50.0],
 					"hex-fuzz::tone": [2000.0],
 					"hex-fuzz::waveshape": [0],
+					"spread_lfo::conitnuous_discrete": [0],
+					"spread_lfo::depth": [1.0],
+					"spread_lfo::invert": [0],
+					"spread_lfo::linear_logarithmic": [0],
+					"spread_lfo::max": [1.0],
+					"spread_lfo::min": [0.0],
+					"spread_lfo::rate": [0.5],
+					"spread_lfo::spread": [0.0],
 					"hex-tone::bypass": [0],
 					"hex-tone::frequency": [2000.0],
 					"hex-tone::gain": [0.0],
@@ -40,9 +48,9 @@
 					"enveloper::threshold": [-70.0],
 					"volume-pedal::pedal_max": [1.0],
 					"volume-pedal::pedal_min": [0.0],
-					"spread::multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
-					"spread::pedal_max": [1.0],
-					"spread::pedal_min": [0.0]
+					"spread::max": [1.0],
+					"spread::min": [0.0],
+					"spread::multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
 				}
 			}
 		}

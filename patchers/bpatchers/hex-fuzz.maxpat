@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 227.0, 1232.0, 804.0],
+		"rect": [84.0, 227.0, 1629.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -55,7 +55,7 @@
 							"modernui": 1
 						},
 						"classnamespace": "box",
-						"rect": [85.0, 227.0, 1629.0, 804.0],
+						"rect": [84.0, 227.0, 1629.0, 804.0],
 						"bglocked": 0,
 						"openinpresentation": 0,
 						"default_fontsize": 12.0,
@@ -83,6 +83,7 @@
 						"style": "",
 						"subpatcher_template": "",
 						"assistshowspatchername": 0,
+						"visible": 1,
 						"boxes": [
 							{
 								"box": {
@@ -146,7 +147,7 @@
 									"numinlets": 1,
 									"numoutlets": 1,
 									"outlettype": ["bang"],
-									"patching_rect": [56.557376861572266, 100.0, 58.0, 22.0],
+									"patching_rect": [66.262293815612793, 100.0, 58.0, 22.0],
 									"text": "loadbang"
 								}
 							},
@@ -201,7 +202,7 @@
 									"numinlets": 2,
 									"numoutlets": 3,
 									"outlettype": ["bang", "bang", "int"],
-									"patching_rect": [56.557376861572266, 130.327867984771729, 47.0, 22.0],
+									"patching_rect": [66.262293815612793, 129.0, 47.0, 22.0],
 									"text": "uzi 146"
 								}
 							},
@@ -435,7 +436,7 @@
 								"patchline": {
 									"destination": ["obj-102", 0],
 									"midpoints": [
-										80.057376861572266, 190.860652923583984, 104.172130584716797,
+										89.762293815612793, 190.860652923583984, 104.172130584716797,
 										190.860652923583984
 									],
 									"source": ["obj-96", 1]
