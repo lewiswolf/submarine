@@ -48,6 +48,8 @@
 					"enveloper::threshold": [-70.0],
 					"volume-pedal::pedal_max": [1.0],
 					"volume-pedal::pedal_min": [0.0],
+					"spread::conitnuous_discrete": [0],
+					"spread::linear_logarithmic": [0],
 					"spread::max": [1.0],
 					"spread::min": [0.0],
 					"spread::multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]

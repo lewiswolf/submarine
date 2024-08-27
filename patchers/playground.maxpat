@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 227.0, 1629.0, 804.0],
+		"rect": [34.0, 227.0, 1680.0, 819.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -91,16 +91,6 @@
 					"outlettype": [""],
 					"patching_rect": [1112.0, 582.0, 31.0, 22.0],
 					"text": "help"
-				}
-			},
-			{
-				"box": {
-					"id": "obj-20",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [449.0, 143.0, 150.0, 20.0],
-					"text": "float/int button, log lin"
 				}
 			},
 			{
@@ -734,9 +724,11 @@
 			"obj-6::obj-7": ["Time", "Time", 0],
 			"obj-6::obj-8": ["Feedback", "Feedback", 0],
 			"obj-6::obj-9": ["Tone", "Tone", 0],
-			"obj-8::obj-23": ["live.numbox[6]", "live.numbox", 0],
-			"obj-8::obj-5": ["live.numbox[7]", "live.numbox", 0],
+			"obj-8::obj-11": ["linear_logarithmic[1]", "linear_logarithmic", 0],
+			"obj-8::obj-28": ["min", "min", 0],
+			"obj-8::obj-30": ["max", "max", 0],
 			"obj-8::obj-51": ["multislider", "multislider", 0],
+			"obj-8::obj-52": ["conitnuous_discrete[1]", "conitnuous_discrete", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,
@@ -833,6 +825,9 @@
 					"parameter_shortname": "Dry / Wet",
 					"parameter_unitstyle": 5
 				},
+				"obj-3::obj-13": {
+					"parameter_exponent": 1.0
+				},
 				"obj-3::obj-23": {
 					"parameter_longname": "linear_logarithmic",
 					"parameter_shortname": "linear_logarithmic"
@@ -867,11 +862,13 @@
 					"parameter_longname": "Tone",
 					"parameter_shortname": "Tone"
 				},
-				"obj-8::obj-23": {
-					"parameter_longname": "live.numbox[6]"
+				"obj-8::obj-28": {
+					"parameter_longname": "min",
+					"parameter_shortname": "min"
 				},
-				"obj-8::obj-5": {
-					"parameter_longname": "live.numbox[7]"
+				"obj-8::obj-30": {
+					"parameter_longname": "max",
+					"parameter_shortname": "max"
 				}
 			},
 			"inherited_shortname": 1
