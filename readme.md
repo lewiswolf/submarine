@@ -20,6 +20,7 @@ To use the _Enveloper_, you will also need to install these dependencies in the 
 ### Modulation
 
 -   Expression Pedal
+-   Spread
 -   Spread LFO
 
 ### Dynamic

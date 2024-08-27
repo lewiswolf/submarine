@@ -35,11 +35,11 @@
 				"kind": "patcher",
 				"local": 1
 			},
-			"multislider.maxpat": {
+			"pitch-shift.maxpat": {
 				"kind": "patcher",
 				"local": 1
 			},
-			"pitch-shift.maxpat": {
+			"spread.maxpat": {
 				"kind": "patcher",
 				"local": 1
 			},
@@ -107,7 +107,7 @@
 					"projectrelativepath": "./help"
 				}
 			},
-			"multislider.maxhelp": {
+			"pitch-shift.maxhelp": {
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
@@ -115,7 +115,7 @@
 					"projectrelativepath": "./help"
 				}
 			},
-			"pitch-shift.maxhelp": {
+			"spread.maxhelp": {
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {

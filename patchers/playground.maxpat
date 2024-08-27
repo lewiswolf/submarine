@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 199.0, 1232.0, 832.0],
+		"rect": [85.0, 227.0, 1629.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -38,6 +38,16 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"id": "obj-20",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [449.0, 143.0, 150.0, 20.0],
+					"text": "float/int button"
+				}
+			},
 			{
 				"box": {
 					"id": "obj-22",
@@ -71,13 +81,13 @@
 					"lockeddragscroll": 0,
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
-					"name": "multislider.maxpat",
+					"name": "spread.maxpat",
 					"numinlets": 2,
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
 					"patching_rect": [370.0, 170.0, 350.0, 175.0],
-					"varname": "multislider",
+					"varname": "spread",
 					"viewvisibility": 1
 				}
 			},
@@ -960,13 +970,6 @@
 				"implicit": 1
 			},
 			{
-				"name": "multislider.maxpat",
-				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
 				"name": "number-input.gendsp",
 				"bootpath": "~/Dropbox/Work/Submarine/code",
 				"patcherrelativepath": "../code",
@@ -1010,6 +1013,13 @@
 			},
 			{
 				"name": "spread-lfo.maxpat",
+				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"patcherrelativepath": "./bpatchers",
+				"type": "JSON",
+				"implicit": 1
+			},
+			{
+				"name": "spread.maxpat",
 				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
 				"patcherrelativepath": "./bpatchers",
 				"type": "JSON",

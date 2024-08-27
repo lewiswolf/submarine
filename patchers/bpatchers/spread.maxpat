@@ -279,7 +279,7 @@
 					"numoutlets": 1,
 					"outlettype": [""],
 					"patching_rect": [408.411211788654327, 139.252335369586945, 113.028036832809448, 62.0],
-					"text": ";\rmax openfile multislider-help multislider.maxhelp"
+					"text": ";\rmax openfile spread-help spread.maxhelp"
 				}
 			},
 			{
@@ -293,7 +293,7 @@
 					"patching_rect": [479.439248621463776, 7.476635456085205, 78.0, 18.0],
 					"presentation": 1,
 					"presentation_rect": [0.0, 1.0, 344.0, 18.0],
-					"text": "Multislider",
+					"text": "Spread",
 					"textcolor": [1.0, 1.0, 1.0, 1.0]
 				}
 			},

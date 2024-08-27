@@ -161,7 +161,7 @@
 					"lockeddragscroll": 0,
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
-					"name": "multislider.maxpat",
+					"name": "spread.maxpat",
 					"numinlets": 2,
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
@@ -182,7 +182,7 @@
 					"numoutlets": 1,
 					"outlettype": [""],
 					"patching_rect": [732.0, 685.0, 162.0, 35.0],
-					"text": ";\rmax closefile multislider-help"
+					"text": ";\rmax closefile spread-help"
 				}
 			},
 			{
@@ -232,7 +232,7 @@
 		},
 		"dependency_cache": [
 			{
-				"name": "multislider.maxpat",
+				"name": "spread.maxpat",
 				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
 				"patcherrelativepath": "../patchers/bpatchers",
 				"type": "JSON",

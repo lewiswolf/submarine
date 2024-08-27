@@ -40,9 +40,9 @@
 					"enveloper::threshold": [-70.0],
 					"volume-pedal::pedal_max": [1.0],
 					"volume-pedal::pedal_min": [0.0],
-					"multislider::multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
-					"multislider::pedal_max": [1.0],
-					"multislider::pedal_min": [0.0]
+					"spread::multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+					"spread::pedal_max": [1.0],
+					"spread::pedal_min": [0.0]
 				}
 			}
 		}
