@@ -18,7 +18,7 @@
 					"hex-fuzz::tone": [2000.0],
 					"hex-fuzz::waveshape": [0],
 					"spread_lfo::conitnuous_discrete": [0],
-					"spread_lfo::depth": [1.0],
+					"spread_lfo::depth": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
 					"spread_lfo::invert": [0],
 					"spread_lfo::linear_logarithmic": [0],
 					"spread_lfo::max": [1.0],
