@@ -231,7 +231,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [152.0, 227.0, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [185.0, 65.0, 75.0, 20.0],
+					"presentation_rect": [185.0, 148.0, 75.0, 20.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_enum": ["off", "on"],
@@ -288,7 +288,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [318.0, 190.0, 52.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [196.5, 103.0, 52.0, 65.0],
+					"presentation_rect": [196.5, 42.5, 52.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -351,7 +351,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [454.0, 190.0, 52.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [276.5, 103.0, 52.0, 65.0],
+					"presentation_rect": [276.5, 42.5, 52.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -398,7 +398,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [742.0, 447.0, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [265.0, 65.0, 75.0, 20.0],
+					"presentation_rect": [265.0, 148.0, 75.0, 20.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_enum": ["off", "on"],
@@ -480,8 +480,8 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [880.0, 139.0, 56.0, 22.0],
 					"restore": {
-						"conitnuous_discrete": [0],
-						"depth": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+						"conitnuous_discrete": [1],
+						"depth": [0.0, 0.2, 0.636363636363636, 0.6, 0.8, 1.0],
 						"invert": [0],
 						"linear_logarithmic": [0],
 						"max": [0.0],
@@ -594,7 +594,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [152.0, 300.0, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [265.0, 30.0, 75.0, 20.0],
+					"presentation_rect": [265.0, 124.0, 75.0, 20.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_enum": ["off", "on"],
@@ -656,7 +656,7 @@
 					"parameter_enable": 0,
 					"patching_rect": [31.0, 300.0, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [185.0, 30.0, 75.0, 20.0]
+					"presentation_rect": [185.0, 124.0, 75.0, 20.0]
 				}
 			},
 			{

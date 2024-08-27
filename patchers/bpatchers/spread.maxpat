@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 227.0, 1283.0, 819.0],
+		"rect": [34.0, 227.0, 1680.0, 819.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -223,7 +223,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [451.47196239233017, 219.252335369586945, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [185.0, 73.0, 75.0, 20.0],
+					"presentation_rect": [185.0, 97.0, 75.0, 20.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_enum": ["off", "on"],
@@ -254,7 +254,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [566.0, 219.252335369586945, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [265.0, 73.0, 75.0, 20.0],
+					"presentation_rect": [265.0, 97.0, 75.0, 20.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_enum": ["off", "on"],
@@ -487,7 +487,7 @@
 					"parameter_enable": 0,
 					"patching_rect": [29.0, 21.560747504234314, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [185.0, 97.0, 155.0, 20.0]
+					"presentation_rect": [185.0, 73.0, 155.0, 20.0]
 				}
 			},
 			{
