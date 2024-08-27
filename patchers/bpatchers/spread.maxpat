@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 227.0, 1680.0, 819.0],
+		"rect": [34.0, 227.0, 1283.0, 819.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -713,7 +713,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [28.97196239233017, 139.252335369586945, 160.0, 100.0],
 					"presentation": 1,
-					"presentation_rect": [5.0, 30.0, 165.0, 135.0],
+					"presentation_rect": [10.0, 30.0, 160.0, 135.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_invisible": 1,
