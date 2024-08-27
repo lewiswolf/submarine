@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 1311.0, 723.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 9,
+					"linecount": 13,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 252.0, 388.0, 115.0],
-					"text": "Set the minimum value output by the pedal (setting this as the maximum inverts the polarity of the pedal).\n\nSet the maximum value output by the pedal (setting this as the minimum inverts the polarity of the pedal).\n\nEvery analog volume pedal is slightly different. Clicking this button resets the calibration for the pedal, which is set by moving the pedal to the minimum and maxmimum.",
+					"patching_rect": [626.0, 252.0, 389.0, 163.0],
+					"text": "Every analog volume pedal is slightly different. Clicking this button resets the calibration for the pedal, which is set by moving the pedal to the minimum and maxmimum.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSet the minimum value output by the pedal (setting this as the maximum inverts the polarity of the pedal).\n\nSet the maximum value output by the pedal (setting this as the minimum inverts the polarity of the pedal).",
 					"textjustification": 2
 				}
 			},
@@ -56,12 +56,12 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 7,
+					"linecount": 12,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 147.0, 91.0],
-					"text": "Min [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n\n\nCalibrate Pedal"
+					"patching_rect": [474.0, 252.0, 147.0, 163.0],
+					"text": "Calibrate Pedal\n\n\n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nMin [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
 				}
 			},
 			{
@@ -212,22 +212,15 @@
 			}
 		],
 		"parameters": {
-			"obj-2::obj-23": ["live.numbox", "live.numbox", 0],
-			"obj-2::obj-5": ["live.numbox[5]", "live.numbox", 0],
+			"obj-2::obj-12": ["linear_logarithmic[2]", "linear_logarithmic", 0],
+			"obj-2::obj-28": ["min[1]", "min", 0],
+			"obj-2::obj-30": ["max[1]", "max", 0],
+			"obj-2::obj-52": ["conitnuous_discrete[2]", "conitnuous_discrete", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,
 					"name": "",
 					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"parameter_overrides": {
-				"obj-2::obj-23": {
-					"parameter_longname": "live.numbox",
-					"parameter_range": [-24000.0, 24000.0]
-				},
-				"obj-2::obj-5": {
-					"parameter_range": [-24000.0, 24000.0]
 				}
 			},
 			"inherited_shortname": 1

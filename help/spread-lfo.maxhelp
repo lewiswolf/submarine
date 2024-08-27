@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 199.0, 1068.0, 667.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -40,6 +40,121 @@
 		"boxes": [
 			{
 				"box": {
+					"fontname": "Moderat Trial",
+					"id": "obj-22",
+					"linecount": 17,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [625.0, 204.0, 415.0, 211.0],
+					"text": "Set the rate of the internal LFOs.\n\nOffset the phase of the internal LFOs.\n\nSet the max output of the LFO.\n\nSwitch between Sine, Triangle, Square, Sawtooth and Random waveforms.\n\nInvert the polarity of the output.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSet the minimum value output by the pedal.\n\nSet the maximum value output by the pedal.",
+					"textjustification": 2
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"fontname": "Moderat Trial",
+					"id": "obj-21",
+					"linecount": 17,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [464.0, 204.0, 157.0, 211.0],
+					"text": "Rate [0, 50] (Hz)\n\nSpread [0, 1]\n\nDepth [0, 1]\n\nWaveform\n\nInvert \n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nMin [-24000., 24000.]\n\nMax [-24000., 24000.]"
+				}
+			},
+			{
+				"box": {
+					"fontname": "Moderat Trial",
+					"id": "obj-20",
+					"linecount": 5,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [626.0, 71.0, 414.0, 67.0],
+					"text": "Set 'Rate' independently.\n\nSet 'Spread' independently.\n\nSet 'Depth' independently.",
+					"textjustification": 2
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"fontname": "Moderat Trial",
+					"id": "obj-19",
+					"linecount": 5,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [464.0, 71.0, 157.0, 67.0],
+					"text": "Rate [0, ∞) (Hz)\n\nSpread [0, 1]\n\nDepth [0, 1]"
+				}
+			},
+			{
+				"box": {
+					"fontface": 0,
+					"fontname": "Moderat Trial",
+					"id": "obj-18",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [464.0, 505.0, 164.0, 18.0],
+					"text": "Hexaphonic Control Output "
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"fontname": "Moderat Trial",
+					"id": "obj-17",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [464.0, 484.0, 576.0, 18.0],
+					"text": "Outputs",
+					"textjustification": 1
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"fontname": "Moderat Trial",
+					"id": "obj-16",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [464.0, 184.0, 576.0, 18.0],
+					"text": "Controls",
+					"textjustification": 1
+				}
+			},
+			{
+				"box": {
+					"fontface": 1,
+					"fontname": "Moderat Trial",
+					"id": "obj-15",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [464.0, 49.0, 576.0, 18.0],
+					"text": "Inputs",
+					"textjustification": 1
+				}
+			},
+			{
+				"box": {
+					"fontname": "Moderat Trial",
+					"id": "obj-8",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [626.0, 505.0, 414.0, 18.0],
+					"text": "Scaled control output.",
+					"textjustification": 2
+				}
+			},
+			{
+				"box": {
 					"bgmode": 0,
 					"border": 0,
 					"clickthrough": 0,
@@ -54,46 +169,36 @@
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [268.0, 189.0, 280.0, 245.0],
+					"patching_rect": [72.0, 49.0, 350.0, 175.0],
+					"varname": "buffer-delay",
 					"viewvisibility": 1
 				}
 			},
 			{
 				"box": {
 					"hidden": 1,
-					"id": "obj-9",
+					"id": "obj-3",
 					"ignoreclick": 1,
 					"linecount": 2,
 					"maxclass": "message",
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [10.0, 34.0, 161.0, 35.0],
+					"patching_rect": [732.0, 685.0, 161.0, 35.0],
 					"text": ";\rmax closefile spread-lfo-help"
 				}
 			},
 			{
 				"box": {
 					"hidden": 1,
-					"id": "obj-1",
+					"id": "obj-4",
 					"ignoreclick": 1,
 					"maxclass": "newobj",
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["bang"],
-					"patching_rect": [10.0, 10.0, 63.0, 22.0],
+					"patching_rect": [732.0, 661.0, 63.0, 22.0],
 					"text": "closebang"
-				}
-			},
-			{
-				"box": {
-					"id": "obj-3",
-					"maxclass": "message",
-					"numinlets": 2,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [441.0, 136.0, 29.5, 22.0],
-					"text": "hi"
 				}
 			}
 		],
@@ -101,16 +206,20 @@
 			{
 				"patchline": {
 					"color": [0.701961, 0.701961, 0.701961, 0.0],
-					"destination": ["obj-9", 0],
-					"source": ["obj-1", 0]
+					"destination": ["obj-3", 0],
+					"source": ["obj-4", 0]
 				}
 			}
 		],
 		"parameters": {
-			"obj-2::obj-11": ["number[11]", "number[2]", 0],
-			"obj-2::obj-14": ["textbutton[4]", "textbutton[2]", 0],
-			"obj-2::obj-21": ["number[12]", "number[1]", 0],
-			"obj-2::obj-46": ["textbutton[6]", "textbutton[2]", 0],
+			"obj-2::obj-23": ["linear_logarithmic", "linear_logarithmic", 0],
+			"obj-2::obj-28": ["min[2]", "min", 0],
+			"obj-2::obj-46": ["textbutton[6]", "invert", 0],
+			"obj-2::obj-5": ["max[2]", "max", 0],
+			"obj-2::obj-52": ["conitnuous_discrete", "conitnuous_discrete", 0],
+			"obj-2::obj-59": ["Spread", "Spread", 0],
+			"obj-2::obj-61": ["Rate", "Rate", 0],
+			"obj-2::obj-92": ["Depth[1]", "Depth", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,
@@ -123,15 +232,15 @@
 		"dependency_cache": [
 			{
 				"name": "number-input.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
-				"patcherrelativepath": "../code/gen",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../code",
 				"type": "gDSP",
 				"implicit": 1
 			},
 			{
 				"name": "spread-lfo.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code/gen",
-				"patcherrelativepath": "../code/gen",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../code",
 				"type": "gDSP",
 				"implicit": 1
 			},

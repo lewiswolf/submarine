@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [84.0, 227.0, 1629.0, 804.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 7,
+					"linecount": 11,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [646.0, 252.0, 389.0, 91.0],
-					"text": "Choose from a range of preset configurations.\n\nSet the minimum value of the output by (setting this as the maximum inverts the polarity of the interface).\n\nSet the maximum value of the output (setting this as the minimum inverts the polarity of the interface).",
+					"patching_rect": [646.0, 252.0, 389.0, 139.0],
+					"text": "Choose from a range of preset configurations.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSet the minimum value of the output by (setting this as the maximum inverts the polarity of the interface).\n\nSet the maximum value of the output (setting this as the minimum inverts the polarity of the interface).",
 					"textjustification": 2
 				}
 			},
@@ -56,12 +56,12 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 6,
+					"linecount": 10,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 162.0, 91.0],
-					"text": "Presets\n\nMin [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
+					"patching_rect": [474.0, 252.0, 162.0, 139.0],
+					"text": "Presets\n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nMin [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
 				}
 			},
 			{
@@ -209,24 +209,16 @@
 			}
 		],
 		"parameters": {
-			"obj-2::obj-23": ["live.numbox", "live.numbox", 0],
-			"obj-2::obj-5": ["live.numbox[5]", "live.numbox", 0],
+			"obj-2::obj-11": ["linear_logarithmic[1]", "linear_logarithmic", 0],
+			"obj-2::obj-28": ["min", "min", 0],
+			"obj-2::obj-30": ["max", "max", 0],
 			"obj-2::obj-51": ["multislider", "multislider", 0],
+			"obj-2::obj-52": ["conitnuous_discrete[1]", "conitnuous_discrete", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,
 					"name": "",
 					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"parameter_overrides": {
-				"obj-2::obj-23": {
-					"parameter_longname": "live.numbox",
-					"parameter_range": [-24000.0, 24000.0]
-				},
-				"obj-2::obj-5": {
-					"parameter_longname": "live.numbox[5]",
-					"parameter_range": [-24000.0, 24000.0]
 				}
 			},
 			"inherited_shortname": 1
