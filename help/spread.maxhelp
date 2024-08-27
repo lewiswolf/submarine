@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 199.0, 1232.0, 832.0],
+		"rect": [84.0, 227.0, 1629.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 5,
+					"linecount": 7,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [646.0, 252.0, 389.0, 67.0],
-					"text": "Set the minimum value of the output by (setting this as the maximum inverts the polarity of the interface).\n\nSet the maximum value of the output (setting this as the minimum inverts the polarity of the interface).",
+					"patching_rect": [646.0, 252.0, 389.0, 91.0],
+					"text": "Choose from a range of preset configurations.\n\nSet the minimum value of the output by (setting this as the maximum inverts the polarity of the interface).\n\nSet the maximum value of the output (setting this as the minimum inverts the polarity of the interface).",
 					"textjustification": 2
 				}
 			},
@@ -56,12 +56,12 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 4,
+					"linecount": 6,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 162.0, 67.0],
-					"text": "Min [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
+					"patching_rect": [474.0, 252.0, 162.0, 91.0],
+					"text": "Presets\n\nMin [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
 				}
 			},
 			{
@@ -211,6 +211,7 @@
 		"parameters": {
 			"obj-2::obj-23": ["live.numbox", "live.numbox", 0],
 			"obj-2::obj-5": ["live.numbox[5]", "live.numbox", 0],
+			"obj-2::obj-51": ["multislider", "multislider", 0],
 			"parameterbanks": {
 				"0": {
 					"index": 0,
