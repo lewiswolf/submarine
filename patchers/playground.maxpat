@@ -40,12 +40,12 @@
 		"boxes": [
 			{
 				"box": {
-					"id": "obj-20",
+					"id": "obj-21",
 					"maxclass": "message",
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [1424.0, 576.0, 31.0, 22.0],
+					"patching_rect": [276.0, 121.0, 31.0, 22.0],
 					"text": "help"
 				}
 			},
@@ -185,7 +185,7 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [701.0, 576.0, 31.0, 22.0],
+					"patching_rect": [702.0, 576.0, 31.0, 22.0],
 					"text": "help"
 				}
 			},
@@ -613,8 +613,8 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-12", 5],
-					"source": ["obj-20", 0]
+					"destination": ["obj-3", 3],
+					"source": ["obj-21", 0]
 				}
 			},
 			{

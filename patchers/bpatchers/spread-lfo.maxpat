@@ -129,7 +129,7 @@
 					"numinlets": 2,
 					"numoutlets": 2,
 					"outlettype": ["", ""],
-					"patching_rect": [726.0, 211.0, 43.0, 22.0],
+					"patching_rect": [590.0, 211.0, 43.0, 22.0],
 					"text": "list.rev"
 				}
 			},
@@ -140,7 +140,7 @@
 					"numinlets": 2,
 					"numoutlets": 2,
 					"outlettype": ["", ""],
-					"patching_rect": [726.0, 139.0, 151.0, 22.0],
+					"patching_rect": [590.0, 139.0, 151.0, 22.0],
 					"text": "list.reg 0. 0.2 0.4 0.6 0.8 1."
 				}
 			},
@@ -155,7 +155,7 @@
 					"orientation": 0,
 					"outlettype": ["", ""],
 					"parameter_enable": 1,
-					"patching_rect": [726.0, 165.0, 66.0, 41.0],
+					"patching_rect": [590.0, 165.0, 66.0, 41.0],
 					"presentation": 1,
 					"presentation_rect": [10.0, 30.0, 160.0, 90.0],
 					"saved_attribute_attributes": {
@@ -330,7 +330,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [726.0, 237.0, 107.0, 22.0],
+					"patching_rect": [590.0, 237.0, 107.0, 22.0],
 					"text": "mc.list~ @chans 6"
 				}
 			},
@@ -689,7 +689,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["signal"],
-					"patching_rect": [763.0, 272.0, 58.0, 22.0],
+					"patching_rect": [627.0, 272.0, 58.0, 22.0],
 					"text": "mc.sum~"
 				}
 			},
@@ -701,7 +701,7 @@
 					"numinlets": 3,
 					"numoutlets": 1,
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [688.0, 301.0, 94.0, 49.0],
+					"patching_rect": [552.0, 301.0, 94.0, 49.0],
 					"text": "mc.gen~ number-input @chans 6"
 				}
 			},
@@ -736,7 +736,7 @@
 					"numinlets": 0,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [688.0, 227.0, 30.0, 30.0]
+					"patching_rect": [552.0, 227.0, 30.0, 30.0]
 				}
 			},
 			{
@@ -1056,7 +1056,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-44", 0],
-					"midpoints": [889.5, 129.5, 735.5, 129.5],
+					"midpoints": [889.5, 129.5, 599.5, 129.5],
 					"order": 1,
 					"source": ["obj-26", 0]
 				}
@@ -1081,7 +1081,7 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-37", 3],
+					"destination": ["obj-37", 2],
 					"source": ["obj-30", 0]
 				}
 			},
@@ -1175,7 +1175,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-22", 0],
-					"midpoints": [697.5, 264.0, 772.5, 264.0],
+					"midpoints": [561.5, 264.0, 636.5, 264.0],
 					"order": 0,
 					"source": ["obj-40", 0]
 				}
