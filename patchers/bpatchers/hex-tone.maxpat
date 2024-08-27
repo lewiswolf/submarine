@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 172.0, 1311.0, 695.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -108,7 +108,7 @@
 							"modernui": 1
 						},
 						"classnamespace": "box",
-						"rect": [34.0, 172.0, 1007.0, 695.0],
+						"rect": [34.0, 115.0, 1372.0, 751.0],
 						"bglocked": 0,
 						"openinpresentation": 0,
 						"default_fontsize": 12.0,
@@ -251,7 +251,7 @@
 									"maxclass": "inlet",
 									"numinlets": 0,
 									"numoutlets": 1,
-									"outlettype": ["multichannelsignal"],
+									"outlettype": [""],
 									"patching_rect": [50.0, 34.0, 30.0, 30.0]
 								}
 							},
@@ -430,7 +430,7 @@
 							}
 						]
 					},
-					"patching_rect": [189.0, 309.0, 635.0, 22.0],
+					"patching_rect": [189.0, 315.0, 635.0, 22.0],
 					"saved_object_attributes": {
 						"description": "",
 						"digest": "",
@@ -526,7 +526,7 @@
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": ["multichannelsignal"],
+					"outlettype": [""],
 					"patching_rect": [107.0, 268.0, 30.0, 30.0]
 				}
 			},
@@ -540,9 +540,9 @@
 					"patching_rect": [979.0, 96.0, 56.0, 22.0],
 					"restore": {
 						"bypass": [0],
-						"frequency": [380.92876185753272],
-						"gain": [-21.496062992125992],
-						"resonance": [8.855477710955412]
+						"frequency": [2000.0],
+						"gain": [0.0],
+						"resonance": [1.0]
 					},
 					"text": "autopattr",
 					"varname": "u790011379"

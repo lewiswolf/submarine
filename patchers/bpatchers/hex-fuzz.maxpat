@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 1311.0, 723.0],
+		"rect": [85.0, 227.0, 1232.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -55,7 +55,7 @@
 							"modernui": 1
 						},
 						"classnamespace": "box",
-						"rect": [34.0, 143.0, 1311.0, 723.0],
+						"rect": [85.0, 227.0, 1629.0, 804.0],
 						"bglocked": 0,
 						"openinpresentation": 0,
 						"default_fontsize": 12.0,
@@ -190,8 +190,8 @@
 									"numinlets": 6,
 									"numoutlets": 1,
 									"outlettype": [""],
-									"patching_rect": [94.262293815612793, 158.196719646453857, 91.0, 22.0],
-									"text": "scale 1 41 -1 1."
+									"patching_rect": [94.262293815612793, 158.196719646453857, 97.0, 22.0],
+									"text": "scale 1 146 -1 1."
 								}
 							},
 							{
@@ -201,8 +201,8 @@
 									"numinlets": 2,
 									"numoutlets": 3,
 									"outlettype": ["bang", "bang", "int"],
-									"patching_rect": [56.557376861572266, 130.327867984771729, 57.0, 22.0],
-									"text": "uzi 41"
+									"patching_rect": [56.557376861572266, 130.327867984771729, 47.0, 22.0],
+									"text": "uzi 146"
 								}
 							},
 							{
@@ -435,7 +435,7 @@
 								"patchline": {
 									"destination": ["obj-102", 0],
 									"midpoints": [
-										85.057376861572266, 190.860652923583984, 104.172130584716797,
+										80.057376861572266, 190.860652923583984, 104.172130584716797,
 										190.860652923583984
 									],
 									"source": ["obj-96", 1]
@@ -476,7 +476,7 @@
 							"modernui": 1
 						},
 						"classnamespace": "box",
-						"rect": [0.0, 0.0, 640.0, 480.0],
+						"rect": [85.0, 227.0, 1629.0, 804.0],
 						"bglocked": 0,
 						"openinpresentation": 0,
 						"default_fontsize": 12.0,
@@ -653,11 +653,11 @@
 					"maxclass": "plot~",
 					"numinlets": 1,
 					"numoutlets": 1,
-					"numpoints": 41,
+					"numpoints": 146,
 					"outlettype": [""],
 					"patching_rect": [351.0, 469.333347320556641, 221.0, 221.0],
 					"presentation": 1,
-					"presentation_rect": [15.0, 30.0, 149.999995708465576, 109.836062431335449],
+					"presentation_rect": [15.0, 30.0, 150.0, 110.0],
 					"subplots": [
 						{
 							"color": [1.0, 1.0, 1.0, 1.0],
@@ -801,12 +801,12 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [1194.0, 98.0, 56.0, 22.0],
 					"restore": {
-						"asymmetry": [0.0],
+						"asymmetry": [0.165354330708663],
 						"bypass": [0],
-						"distortion_amount": [0.5],
-						"gain": [0.0],
+						"distortion_amount": [1.0],
+						"gain": [2.125984251968553],
 						"mix": [50.0],
-						"tone": [1999.999999999999545],
+						"tone": [2000.000000000000455],
 						"waveshape": [0]
 					},
 					"text": "autopattr",
@@ -955,9 +955,9 @@
 					"id": "obj-99",
 					"maxclass": "newobj",
 					"numinlets": 6,
-					"numoutlets": 1,
-					"outlettype": ["multichannelsignal"],
-					"patching_rect": [197.0, 344.0, 789.000000000000227, 22.0],
+					"numoutlets": 2,
+					"outlettype": ["multichannelsignal", "multichannelsignal"],
+					"patching_rect": [197.0, 344.0, 789.000000000000114, 22.0],
 					"text": "mc.gen~ hex-fuzz @chans 6"
 				}
 			},
