@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 227.0, 1680.0, 819.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -40,6 +40,49 @@
 		"boxes": [
 			{
 				"box": {
+					"id": "obj-20",
+					"maxclass": "message",
+					"numinlets": 2,
+					"numoutlets": 1,
+					"outlettype": [""],
+					"patching_rect": [1424.0, 576.0, 31.0, 22.0],
+					"text": "help"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-18",
+					"linecount": 2,
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [1131.5, 565.0, 273.0, 33.0],
+					"text": "switching is manual to lfo is glitchy\nmanual multislider should save, not preset umenu"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-9",
+					"maxclass": "meter~",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"orientation": 1,
+					"outlettype": ["float"],
+					"patching_rect": [506.666665494441986, 49.333334803581238, 114.5, 68.0]
+				}
+			},
+			{
+				"box": {
+					"id": "obj-26",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [61.0, 148.0, 176.0, 20.0],
+					"text": "depth sliders not log or inverted"
+				}
+			},
+			{
+				"box": {
 					"id": "obj-17",
 					"maxclass": "toggle",
 					"numinlets": 1,
@@ -68,7 +111,7 @@
 					"numoutlets": 1,
 					"outlettype": ["int"],
 					"parameter_enable": 0,
-					"patching_rect": [678.0, 113.0, 24.0, 24.0]
+					"patching_rect": [679.256855010986328, 113.119270801544189, 24.0, 24.0]
 				}
 			},
 			{
@@ -78,19 +121,8 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [678.0, 142.0, 42.0, 22.0],
+					"patching_rect": [679.256855010986328, 142.477066516876221, 42.0, 22.0],
 					"text": "mute~"
-				}
-			},
-			{
-				"box": {
-					"id": "obj-33",
-					"maxclass": "message",
-					"numinlets": 2,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [1112.0, 582.0, 31.0, 22.0],
-					"text": "help"
 				}
 			},
 			{
@@ -109,7 +141,7 @@
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [370.0, 170.0, 350.0, 175.0],
+					"patching_rect": [371.0, 170.0, 350.0, 175.0],
 					"varname": "spread",
 					"viewvisibility": 1
 				}
@@ -122,7 +154,7 @@
 					"numoutlets": 1,
 					"outlettype": ["int"],
 					"parameter_enable": 0,
-					"patching_rect": [1038.0, 113.0, 24.0, 24.0]
+					"patching_rect": [1039.339423894882202, 113.119270801544189, 24.0, 24.0]
 				}
 			},
 			{
@@ -132,7 +164,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [1038.0, 142.0, 42.0, 22.0],
+					"patching_rect": [1039.339423894882202, 142.477066516876221, 42.0, 22.0],
 					"text": "mute~"
 				}
 			},
@@ -186,7 +218,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["signal"],
-					"patching_rect": [730.0, 142.0, 45.0, 22.0],
+					"patching_rect": [732.0, 142.477066516876221, 45.0, 22.0],
 					"text": "adc~ 1"
 				}
 			},
@@ -196,7 +228,7 @@
 					"maxclass": "newobj",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1061.0, 353.0, 45.0, 22.0],
+					"patching_rect": [1062.275201797485352, 353.486223220825195, 45.0, 22.0],
 					"text": "dac~ 3"
 				}
 			},
@@ -216,7 +248,7 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "signal"],
-					"patching_rect": [730.0, 170.0, 350.0, 175.0],
+					"patching_rect": [732.0, 170.0, 350.0, 175.0],
 					"varname": "volume-pedal",
 					"viewvisibility": 1
 				}
@@ -275,7 +307,7 @@
 					"outlettype": [""],
 					"patching_rect": [10.0, 74.0, 202.0, 22.0],
 					"saved_object_attributes": {
-						"client_rect": [51, 227, 1748, 1031],
+						"client_rect": [0, 115, 1440, 866],
 						"parameter_enable": 0,
 						"parameter_mappable": 0,
 						"storage_rect": [583, 69, 1034, 197]
@@ -300,7 +332,7 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "multichannelsignal"],
-					"patching_rect": [370.0, 606.0, 350.0, 175.0],
+					"patching_rect": [371.0, 606.0, 350.0, 175.0],
 					"varname": "enveloper",
 					"viewvisibility": 1
 				}
@@ -337,18 +369,7 @@
 					"maxclass": "ezdac~",
 					"numinlets": 2,
 					"numoutlets": 0,
-					"patching_rect": [239.0, 1357.0, 56.75, 56.75]
-				}
-			},
-			{
-				"box": {
-					"id": "obj-37",
-					"linecount": 5,
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [416.0, 940.0, 100.0, 74.0],
-					"text": "ISSUE\nadd rampsmooth\n\nflip horizontal display"
+					"patching_rect": [1093.0, 856.0, 56.75, 56.75]
 				}
 			},
 			{
@@ -367,7 +388,7 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "multichannelsignal"],
-					"patching_rect": [730.0, 606.0, 350.0, 175.0],
+					"patching_rect": [732.0, 606.0, 350.0, 175.0],
 					"varname": "harmonic-tremolo",
 					"viewvisibility": 1
 				}
@@ -388,31 +409,9 @@
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [370.0, 388.0, 350.0, 175.0],
+					"patching_rect": [371.0, 388.0, 350.0, 175.0],
 					"varname": "hex-tone",
 					"viewvisibility": 1
-				}
-			},
-			{
-				"box": {
-					"id": "obj-18",
-					"maxclass": "toggle",
-					"numinlets": 1,
-					"numoutlets": 1,
-					"outlettype": ["int"],
-					"parameter_enable": 0,
-					"patching_rect": [454.0, 882.0, 24.0, 24.0]
-				}
-			},
-			{
-				"box": {
-					"id": "obj-21",
-					"maxclass": "newobj",
-					"numinlets": 1,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [454.0, 907.0, 42.0, 22.0],
-					"text": "mute~"
 				}
 			},
 			{
@@ -463,7 +462,8 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["signal", "signal"],
-					"patching_rect": [239.0, 940.0, 170.0, 350.0],
+					"patching_rect": [1093.0, 606.0, 350.0, 175.0],
+					"varname": "stereo-imager",
 					"viewvisibility": 1
 				}
 			},
@@ -474,7 +474,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [10.0, 353.0, 114.0, 22.0],
+					"patching_rect": [436.000012993812561, 9.0, 114.0, 22.0],
 					"text": "mc.adc~ 3 4 5 6 7 8"
 				}
 			},
@@ -488,7 +488,7 @@
 					"orientation": 1,
 					"outlettype": ["signal", "signal", "", "float", "list"],
 					"parameter_enable": 1,
-					"patching_rect": [239.0, 1300.0, 170.0, 47.0],
+					"patching_rect": [1093.0, 799.0, 350.0, 47.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_longname": "live.gain~",
@@ -540,7 +540,7 @@
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [730.0, 388.0, 350.0, 175.0],
+					"patching_rect": [732.0, 388.0, 350.0, 175.0],
 					"varname": "pitch-shift",
 					"viewvisibility": 1
 				}
@@ -568,6 +568,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-7", 1],
+					"midpoints": [1185.25, 850.5, 1140.25, 850.5],
 					"source": ["obj-13", 1]
 				}
 			},
@@ -597,33 +598,29 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-21", 0],
-					"source": ["obj-18", 0]
-				}
-			},
-			{
-				"patchline": {
 					"destination": ["obj-3", 3],
 					"source": ["obj-19", 0]
 				}
 			},
 			{
 				"patchline": {
+					"destination": ["obj-9", 0],
+					"midpoints": [
+						445.500012993812561, 39.666667401790619, 516.166665494441986, 39.666667401790619
+					],
+					"source": ["obj-2", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-12", 5],
-					"midpoints": [463.5, 934.0, 399.5, 934.0],
-					"source": ["obj-21", 0]
+					"source": ["obj-20", 0]
 				}
 			},
 			{
 				"patchline": {
 					"destination": ["obj-11", 0],
 					"source": ["obj-25", 0]
-				}
-			},
-			{
-				"patchline": {
-					"destination": ["obj-15", 4],
-					"source": ["obj-33", 0]
 				}
 			},
 			{
@@ -689,15 +686,19 @@
 			"obj-103::obj-19": ["Release", "Release", 0],
 			"obj-103::obj-23": ["live.numbox", "live.numbox", 0],
 			"obj-103::obj-24": ["live.numbox[1]", "Threshold", 0],
-			"obj-11::obj-23": ["live.numbox[4]", "live.numbox", 0],
-			"obj-11::obj-5": ["live.numbox[5]", "live.numbox", 0],
+			"obj-11::obj-12": ["linear_logarithmic[2]", "linear_logarithmic", 0],
+			"obj-11::obj-28": ["min[1]", "min", 0],
+			"obj-11::obj-30": ["max[1]", "max", 0],
+			"obj-11::obj-52": ["conitnuous_discrete[2]", "conitnuous_discrete", 0],
 			"obj-122::obj-101": ["Gain[1]", "Gain", 0],
 			"obj-122::obj-40": ["frequency", "Frequency", 0],
 			"obj-122::obj-41": ["resonance", "Resonance", 0],
-			"obj-12::obj-11": ["number[2]", "number[2]", 0],
-			"obj-12::obj-14": ["textbutton[2]", "textbutton[2]", 0],
-			"obj-12::obj-21": ["number[1]", "number[1]", 0],
-			"obj-12::obj-8": ["number", "number", 0],
+			"obj-12::obj-10": ["lfo_manual", "lfo_manual", 0],
+			"obj-12::obj-116": ["linear_logarithmic[4]", "linear_logarithmic", 0],
+			"obj-12::obj-117": ["Rate[2]", "Rate", 0],
+			"obj-12::obj-118": ["Spread[2]", "Spread", 0],
+			"obj-12::obj-131": ["Depth[4]", "Depth", 0],
+			"obj-12::obj-20": ["offset", "offset", 0],
 			"obj-13": ["live.gain~", "live.gain~", 0],
 			"obj-15::obj-14": ["LFO Source", "LFO Source", 0],
 			"obj-15::obj-49": ["Octave", "Octave", 0],
@@ -707,10 +708,10 @@
 			"obj-1::obj-35": ["Amount", "Amount", 0],
 			"obj-1::obj-41": ["mix", "Dry / Wet", 0],
 			"obj-1::obj-72": ["Asymmetry", "Asymmetry", 0],
-			"obj-3::obj-13": ["live.numbox[9]", "live.numbox", 0],
 			"obj-3::obj-23": ["linear_logarithmic", "linear_logarithmic", 0],
+			"obj-3::obj-28": ["min[2]", "min", 0],
 			"obj-3::obj-46": ["invert", "invert", 0],
-			"obj-3::obj-5": ["live.numbox[8]", "live.numbox", 0],
+			"obj-3::obj-5": ["max[2]", "max", 0],
 			"obj-3::obj-52": ["conitnuous_discrete", "conitnuous_discrete", 0],
 			"obj-3::obj-59": ["Spread", "Spread", 0],
 			"obj-3::obj-61": ["Rate", "Rate", 0],
@@ -769,9 +770,6 @@
 					"parameter_type": 0,
 					"parameter_unitstyle": 1
 				},
-				"obj-11::obj-23": {
-					"parameter_longname": "live.numbox[4]"
-				},
 				"obj-122::obj-101": {
 					"parameter_longname": "Gain[1]"
 				},
@@ -785,6 +783,15 @@
 					"parameter_range": [0.0, 30.0],
 					"parameter_shortname": "Resonance",
 					"parameter_unitstyle": 1
+				},
+				"obj-12::obj-10": {
+					"parameter_longname": "lfo_manual",
+					"parameter_shortname": "lfo_manual"
+				},
+				"obj-12::obj-20": {
+					"parameter_longname": "offset",
+					"parameter_range": [-1.0, 1.0],
+					"parameter_shortname": "offset"
 				},
 				"obj-15::obj-14": {
 					"parameter_longname": "LFO Source",
@@ -824,9 +831,6 @@
 					"parameter_range": [0.0, 100.0],
 					"parameter_shortname": "Dry / Wet",
 					"parameter_unitstyle": 5
-				},
-				"obj-3::obj-13": {
-					"parameter_exponent": 1.0
 				},
 				"obj-3::obj-23": {
 					"parameter_longname": "linear_logarithmic",
