@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "dsp.gen",
-		"rect": [158.0, 143.0, 1187.0, 723.0],
+		"rect": [84.0, 227.0, 1629.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -46,7 +46,7 @@
 					"numinlets": 0,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [44.0, 117.0, 125.0, 35.0],
+					"patching_rect": [44.0, 130.0, 125.0, 35.0],
 					"text": "param external_input 0 @max 1 @min 0"
 				}
 			},
@@ -63,25 +63,14 @@
 			},
 			{
 				"box": {
-					"id": "obj-14",
-					"maxclass": "newobj",
-					"numinlets": 1,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [201.0, 165.0, 47.0, 22.0],
-					"text": "clip 0 1"
-				}
-			},
-			{
-				"box": {
 					"id": "obj-13",
-					"linecount": 2,
+					"linecount": 3,
 					"maxclass": "newobj",
 					"numinlets": 0,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [201.0, 117.0, 96.0, 35.0],
-					"text": "in 2 @comment external_lfo"
+					"patching_rect": [201.0, 130.0, 103.0, 49.0],
+					"text": "in 2 @comment external_lfo @max 1 @min 0"
 				}
 			},
 			{
@@ -232,14 +221,8 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-14", 0],
-					"source": ["obj-13", 0]
-				}
-			},
-			{
-				"patchline": {
 					"destination": ["obj-15", 0],
-					"source": ["obj-14", 0]
+					"source": ["obj-13", 0]
 				}
 			},
 			{
