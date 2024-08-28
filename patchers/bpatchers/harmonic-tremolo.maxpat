@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 143.0, 1007.0, 723.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -836,7 +836,7 @@
 					"restore": {
 						"LFO_source": [1],
 						"bypass": [0],
-						"depth": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+						"depth": [0.0, 0.2, 0.4, 0.6, 0.8, 0.46],
 						"octave_harmonic": [-3.0]
 					},
 					"text": "autopattr",
@@ -997,7 +997,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [917.33336067199707, 169.333338379859924, 66.0, 41.0],
 					"presentation": 1,
-					"presentation_rect": [180.0, 117.0, 160.0, 50.0],
+					"presentation_rect": [180.0, 116.785717070102692, 160.0, 50.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_invisible": 1,

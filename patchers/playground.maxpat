@@ -40,13 +40,34 @@
 		"boxes": [
 			{
 				"box": {
-					"id": "obj-21",
-					"maxclass": "message",
-					"numinlets": 2,
+					"id": "obj-10",
+					"maxclass": "toggle",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": ["int"],
+					"parameter_enable": 0,
+					"patching_rect": [1401.0, 547.0, 24.0, 24.0]
+				}
+			},
+			{
+				"box": {
+					"id": "obj-20",
+					"maxclass": "newobj",
+					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [276.0, 121.0, 31.0, 22.0],
-					"text": "help"
+					"patching_rect": [1401.0, 576.0, 42.0, 22.0],
+					"text": "mute~"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-22",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [732.0, 361.0, 107.0, 20.0],
+					"text": "add tuning presets"
 				}
 			},
 			{
@@ -56,7 +77,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1131.5, 565.0, 273.0, 33.0],
+					"patching_rect": [1093.0, 565.0, 273.0, 33.0],
 					"text": "switching is manual to lfo is glitchy\nmanual multislider should save, not preset umenu"
 				}
 			},
@@ -77,7 +98,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [61.0, 148.0, 176.0, 20.0],
+					"patching_rect": [10.0, 143.0, 176.0, 20.0],
 					"text": "depth sliders not log or inverted"
 				}
 			},
@@ -228,7 +249,7 @@
 					"maxclass": "newobj",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1062.275201797485352, 353.486223220825195, 45.0, 22.0],
+					"patching_rect": [1063.0, 353.333343863487244, 45.0, 22.0],
 					"text": "dac~ 3"
 				}
 			},
@@ -549,6 +570,12 @@
 		"lines": [
 			{
 				"patchline": {
+					"destination": ["obj-20", 0],
+					"source": ["obj-10", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-24", 0],
 					"source": ["obj-11", 1]
 				}
@@ -587,6 +614,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-8", 1],
+					"midpoints": [688.756855010986328, 166.73853325843811, 711.5, 166.73853325843811],
 					"source": ["obj-16", 0]
 				}
 			},
@@ -599,6 +627,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-3", 3],
+					"midpoints": [327.5, 166.5, 350.5, 166.5],
 					"source": ["obj-19", 0]
 				}
 			},
@@ -613,8 +642,9 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-3", 3],
-					"source": ["obj-21", 0]
+					"destination": ["obj-12", 5],
+					"midpoints": [1410.5, 601.5, 1433.5, 601.5],
+					"source": ["obj-20", 0]
 				}
 			},
 			{
@@ -632,6 +662,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-11", 1],
+					"midpoints": [1048.839423894882202, 166.73853325843811, 1072.5, 166.73853325843811],
 					"source": ["obj-38", 0]
 				}
 			},

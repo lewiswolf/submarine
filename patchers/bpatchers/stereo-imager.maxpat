@@ -104,7 +104,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [1019.000029265880585, 316.333345174789429, 50.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [286.0, 110.0, 50.0, 20.0],
+					"presentation_rect": [289.0, 110.0, 50.0, 20.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_longname": "offset",
@@ -348,7 +348,7 @@
 					"parameter_enable": 0,
 					"patching_rect": [421.333345890045166, 530.666682481765747, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [180.0, 30.0, 156.122447490692139, 20.0],
+					"presentation_rect": [180.0, 30.0, 160.0, 20.0],
 					"varname": "spread_preset"
 				}
 			},
@@ -446,7 +446,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [866.000024676322937, 269.333345174789429, 52.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [284.0, 30.0, 52.0, 65.0],
+					"presentation_rect": [288.0, 30.0, 52.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -558,9 +558,9 @@
 					"numoutlets": 2,
 					"outlettype": ["", "float"],
 					"parameter_enable": 1,
-					"patching_rect": [712.00002121925354, 269.333341360092163, 52.0, 65.0],
+					"patching_rect": [711.500020086765289, 269.333343863487244, 52.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [232.0, 30.0, 52.0, 65.0],
+					"presentation_rect": [234.0, 30.0, 52.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -601,7 +601,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["float"],
-					"patching_rect": [710.666687846183777, 153.333337903022766, 25.0, 22.0],
+					"patching_rect": [711.500020086765289, 153.333337903022766, 25.0, 22.0],
 					"text": "t 0."
 				}
 			},
@@ -640,7 +640,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [218.666673183441162, 392.000011682510376, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [260.0, 145.0, 75.0, 20.0],
+					"presentation_rect": [264.0, 145.0, 75.0, 20.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_enum": ["off", "on"],
@@ -847,7 +847,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["signal"],
-					"patching_rect": [749.333355665206909, 353.333343863487244, 58.0, 22.0],
+					"patching_rect": [748.500020086765289, 353.333343863487244, 58.0, 22.0],
 					"text": "mc.sum~"
 				}
 			},
@@ -858,7 +858,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["signal"],
-					"patching_rect": [712.00002121925354, 353.333343863487244, 31.0, 22.0],
+					"patching_rect": [711.500020086765289, 353.333343863487244, 31.0, 22.0],
 					"text": "sig~"
 				}
 			},
@@ -870,7 +870,7 @@
 					"numinlets": 3,
 					"numoutlets": 1,
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [673.333353400230408, 397.333345174789429, 94.0, 49.0],
+					"patching_rect": [674.000020086765289, 397.333345174789429, 94.0, 49.0],
 					"text": "mc.gen~ number-input @chans 6"
 				}
 			},
@@ -1543,7 +1543,7 @@
 					"numinlets": 0,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [673.333353400230408, 310.666675925254822, 30.0, 30.0]
+					"patching_rect": [674.000020086765289, 311.333345174789429, 30.0, 30.0]
 				}
 			},
 			{
@@ -1900,7 +1900,7 @@
 				"patchline": {
 					"destination": ["obj-18", 0],
 					"midpoints": [
-						682.833353400230408, 345.666681408882141, 758.833355665206909, 345.666681408882141
+						683.500020086765289, 346.333350658416748, 758.000020086765289, 346.333350658416748
 					],
 					"order": 0,
 					"source": ["obj-33", 0]
@@ -2060,7 +2060,7 @@
 				"patchline": {
 					"destination": ["obj-118", 0],
 					"midpoints": [
-						485.404767785753506, 253.666682183742523, 721.50002121925354, 253.666682183742523
+						485.404767785753506, 253.666682183742523, 721.000020086765289, 253.666682183742523
 					],
 					"order": 3,
 					"source": ["obj-61", 6]
@@ -2118,7 +2118,7 @@
 				"patchline": {
 					"destination": ["obj-29", 0],
 					"midpoints": [
-						392.547624928610674, 385.166681408882141, 682.833353400230408, 385.166681408882141
+						392.547624928610674, 385.166681408882141, 683.500020086765289, 385.166681408882141
 					],
 					"order": 2,
 					"source": ["obj-61", 4]
@@ -2216,7 +2216,7 @@
 				"patchline": {
 					"destination": ["obj-119", 0],
 					"midpoints": [
-						1196.166702032089233, 124.25001323223114, 720.166687846183777, 124.25001323223114
+						1196.166702032089233, 124.25001323223114, 721.000020086765289, 124.25001323223114
 					],
 					"order": 2,
 					"source": ["obj-87", 0]
