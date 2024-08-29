@@ -4,12 +4,12 @@
 		"appversion": {
 			"major": 8,
 			"minor": 6,
-			"revision": 3,
+			"revision": 4,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "dsp.gen",
-		"rect": [100.0, 267.0, 1731.0, 779.0],
+		"rect": [85.0, 227.0, 1629.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -38,6 +38,16 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"id": "obj-6",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [212.0, 268.0, 130.0, 22.0],
+					"text": "out 2 pitch_shift_visual"
+				}
+			},
 			{
 				"box": {
 					"id": "obj-11",
@@ -182,6 +192,15 @@
 			{
 				"patchline": {
 					"destination": ["obj-2", 1],
+					"order": 1,
+					"source": ["obj-5", 0]
+				}
+			},
+			{
+				"patchline": {
+					"destination": ["obj-6", 0],
+					"midpoints": [98.5, 228.214285714285722, 221.5, 228.214285714285722],
+					"order": 0,
 					"source": ["obj-5", 0]
 				}
 			},
