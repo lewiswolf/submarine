@@ -10,6 +10,7 @@
 					"pitch-shift::pitch_shift": [7.0],
 					"pitch-shift::vibrato_amount": [0.0],
 					"pitch-shift::vibrato_rate": [1.0],
+					"pitch-shift::tuning_preset": [0],
 					"hex-fuzz::asymmetry": [0.0],
 					"hex-fuzz::bypass": [0],
 					"hex-fuzz::distortion_amount": [0.5],

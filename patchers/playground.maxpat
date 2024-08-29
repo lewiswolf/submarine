@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 1372.0, 751.0],
+		"rect": [85.0, 227.0, 1629.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -58,16 +58,6 @@
 					"outlettype": [""],
 					"patching_rect": [1401.0, 576.0, 42.0, 22.0],
 					"text": "mute~"
-				}
-			},
-			{
-				"box": {
-					"id": "obj-22",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [732.0, 361.0, 107.0, 20.0],
-					"text": "add tuning presets"
 				}
 			},
 			{
@@ -750,6 +740,7 @@
 			"obj-5::obj-36": ["mix[2]", "Dry / Wet", 0],
 			"obj-5::obj-41": ["mix[1]", "Pitch Shift", 0],
 			"obj-5::obj-45": ["vibrato_amount", "Vibrato Amt", 0],
+			"obj-5::obj-6": ["tuning", "tuning_preset", 0],
 			"obj-5::obj-63": ["vibrato_rate", "Vibrato Rate", 0],
 			"obj-6::obj-10": ["Dry / Wet", "Dry / Wet", 0],
 			"obj-6::obj-24": ["Fade", "Fade", 0],

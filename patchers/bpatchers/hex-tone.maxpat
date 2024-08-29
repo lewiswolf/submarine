@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 1372.0, 751.0],
+		"rect": [34.0, 115.0, 1068.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -55,7 +55,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [689.0, 129.0, 50.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [274.0, 32.5, 65.0, 65.0],
+					"presentation_rect": [275.0, 32.5, 65.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -840,7 +840,7 @@
 					"parameter_enable": 0,
 					"patching_rect": [805.0, 277.0, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [165.0, 140.0, 170.0, 20.0]
+					"presentation_rect": [165.0, 145.0, 175.0, 20.0]
 				}
 			},
 			{
@@ -914,7 +914,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [535.0, 129.0, 50.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [227.0, 32.5, 50.0, 65.0],
+					"presentation_rect": [225.0, 32.5, 50.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
