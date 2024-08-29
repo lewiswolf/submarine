@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [157.0, 143.0, 1187.0, 723.0],
+		"rect": [85.0, 227.0, 1629.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 9,
+					"linecount": 11,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [663.0, 270.0, 411.0, 115.0],
-					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nPitch shift the input by a given semitone.\n\nSet the rate of vibrato.\n\nControl how much the vibrato shifts around the pitch shifted frequency.\n\nControl the mix of the main output.",
+					"patching_rect": [663.0, 270.0, 442.0, 139.0],
+					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nRetune your guitar input. All pitch shifting/vibrato is applied after this retuning.\n\nPitch shift the input by a given semitone.\n\nSet the rate of vibrato.\n\nControl how much the vibrato shifts around the pitch shifted frequency.\n\nControl the mix of the main output.",
 					"textjustification": 2
 				}
 			},
@@ -56,12 +56,12 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 9,
+					"linecount": 11,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [460.0, 270.0, 198.0, 115.0],
-					"text": "Bypass\n\nPitch Shift [-48, 48] (semitones)\n\nVibrato Rate [0, 50) (Hz)\n\nVibrato Amount [0, 24] (semitones)\n\nDry / Wet [0, 100] (%)"
+					"patching_rect": [460.0, 270.0, 198.0, 139.0],
+					"text": "Bypass\n\nTuning Preset\n\nPitch Shift [-48, 48] (semitones)\n\nVibrato Rate [0, 50) (Hz)\n\nVibrato Amount [0, 24] (semitones)\n\nDry / Wet [0, 100] (%)"
 				}
 			},
 			{
@@ -72,7 +72,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [663.0, 71.0, 413.0, 115.0],
+					"patching_rect": [663.0, 71.0, 444.0, 115.0],
 					"text": "Main dry input.\n\nSet 'Pitch Shift' independently.\n\nSet 'Vibrato Rate' independently.\n\nSet 'Vibrato Amount' independently.\n\nSet 'Dry / Wet' independently.",
 					"textjustification": 2
 				}
@@ -110,7 +110,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [460.0, 484.0, 614.0, 18.0],
+					"patching_rect": [460.0, 484.0, 645.0, 18.0],
 					"text": "Outputs",
 					"textjustification": 1
 				}
@@ -123,7 +123,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [461.0, 248.0, 613.0, 18.0],
+					"patching_rect": [461.0, 248.0, 644.0, 18.0],
 					"text": "Controls",
 					"textjustification": 1
 				}
@@ -136,7 +136,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [460.0, 49.0, 616.0, 18.0],
+					"patching_rect": [460.0, 49.0, 647.0, 18.0],
 					"text": "Multichannel Inputs",
 					"textjustification": 1
 				}
@@ -148,7 +148,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [663.0, 505.0, 411.0, 18.0],
+					"patching_rect": [663.0, 505.0, 442.0, 18.0],
 					"text": "Mixed signal between original and pitch shifted signal.",
 					"textjustification": 2
 				}
@@ -215,6 +215,7 @@
 			"obj-2::obj-36": ["mix[1]", "Dry / Wet", 0],
 			"obj-2::obj-41": ["pitch_shift", "Pitch Shift", 0],
 			"obj-2::obj-45": ["vibrato_amount", "Vibrato Amt", 0],
+			"obj-2::obj-6": ["tuning", "tuning_preset", 0],
 			"obj-2::obj-63": ["vibrato_rate", "Vibrato Rate", 0],
 			"parameterbanks": {
 				"0": {
@@ -224,6 +225,9 @@
 				}
 			},
 			"parameter_overrides": {
+				"obj-2::obj-36": {
+					"parameter_longname": "mix[1]"
+				},
 				"obj-2::obj-41": {
 					"parameter_longname": "pitch_shift"
 				}
