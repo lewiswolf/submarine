@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 227.0, 1232.0, 804.0],
+		"rect": [85.0, 227.0, 1629.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -63,12 +63,11 @@
 			{
 				"box": {
 					"id": "obj-18",
-					"linecount": 2,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1093.0, 565.0, 273.0, 33.0],
-					"text": "switching is manual to lfo is glitchy\nmanual multislider should save, not preset umenu"
+					"patching_rect": [1093.0, 577.0, 273.0, 20.0],
+					"text": "manual multislider should save, not preset umenu"
 				}
 			},
 			{
@@ -843,6 +842,9 @@
 					"parameter_range": [0.0, 100.0],
 					"parameter_shortname": "Dry / Wet",
 					"parameter_unitstyle": 5
+				},
+				"obj-1::obj-72": {
+					"parameter_exponent": 1.0
 				},
 				"obj-3::obj-23": {
 					"parameter_longname": "linear_logarithmic",
