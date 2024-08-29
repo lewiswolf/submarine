@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 227.0, 1629.0, 804.0],
+		"rect": [85.0, 227.0, 1232.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -80,16 +80,6 @@
 					"orientation": 1,
 					"outlettype": ["float"],
 					"patching_rect": [506.666665494441986, 49.333334803581238, 114.5, 68.0]
-				}
-			},
-			{
-				"box": {
-					"id": "obj-26",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [10.0, 143.0, 176.0, 20.0],
-					"text": "depth sliders not log or inverted"
 				}
 			},
 			{
