@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 227.0, 1629.0, 804.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -58,16 +58,6 @@
 					"outlettype": [""],
 					"patching_rect": [1401.0, 576.0, 42.0, 22.0],
 					"text": "mute~"
-				}
-			},
-			{
-				"box": {
-					"id": "obj-18",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [1093.0, 577.0, 273.0, 20.0],
-					"text": "manual multislider should save, not preset umenu"
 				}
 			},
 			{
@@ -307,7 +297,7 @@
 					"outlettype": [""],
 					"patching_rect": [10.0, 74.0, 202.0, 22.0],
 					"saved_object_attributes": {
-						"client_rect": [0, 115, 1440, 866],
+						"client_rect": [0, 116, 1440, 867],
 						"parameter_enable": 0,
 						"parameter_mappable": 0,
 						"storage_rect": [583, 69, 1034, 197]
