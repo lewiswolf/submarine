@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 1372.0, 751.0],
+		"rect": [85.0, 227.0, 1629.0, 804.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -57,7 +57,6 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [12.0, 11.0, 288.0, 33.0],
-					"presentation_linecount": 5,
 					"text": "This saves and restores your last patch configuration when opening and closing playground."
 				}
 			},
@@ -68,7 +67,6 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [753.0, 66.0, 189.0, 20.0],
-					"presentation_linecount": 2,
 					"text": "<- use to read about any bpatcher"
 				}
 			},
@@ -929,6 +927,24 @@
 				},
 				"obj-5::obj-45": {
 					"parameter_exponent": 6.0
+				},
+				"obj-5::obj-6": {
+					"parameter_invisible": 0,
+					"parameter_modmode": 0,
+					"parameter_range": [
+						"Standard",
+						"Drop D",
+						"Nashville",
+						"DADGAD",
+						"DADF#AD",
+						"DGDGBD",
+						"CGCFCE",
+						"CGCGCE",
+						" CEGACE",
+						"CGEbFBbD",
+						"CCCCCC"
+					],
+					"parameter_unitstyle": 10
 				},
 				"obj-6::obj-10": {
 					"parameter_range": [0.0, 100.0],
