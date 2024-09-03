@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 255.0, 1629.0, 776.0],
+		"rect": [85.0, 283.0, 1629.0, 748.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -587,7 +587,7 @@
 					"lockedsize": 1,
 					"maxclass": "bpatcher",
 					"name": "hex-fuzz.maxpat",
-					"numinlets": 7,
+					"numinlets": 8,
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
@@ -798,6 +798,7 @@
 			"obj-1::obj-1": ["tone", "Tone", 0],
 			"obj-1::obj-101": ["Gain", "Gain", 0],
 			"obj-1::obj-35": ["Amount", "Amount", 0],
+			"obj-1::obj-36": ["Spread[4]", "Spread", 0],
 			"obj-1::obj-41": ["mix", "Dry / Wet", 0],
 			"obj-1::obj-72": ["Asymmetry", "Asymmetry", 0],
 			"obj-3::obj-23": ["linear_logarithmic", "linear_logarithmic", 0],
@@ -918,6 +919,10 @@
 					"parameter_range": [0.0, 1.0],
 					"parameter_shortname": "Amount",
 					"parameter_unitstyle": 1
+				},
+				"obj-1::obj-36": {
+					"parameter_longname": "Spread[4]",
+					"parameter_shortname": "Spread"
 				},
 				"obj-1::obj-41": {
 					"parameter_linknames": 1,

@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [158.0, 143.0, 1187.0, 723.0],
+		"rect": [85.0, 283.0, 1629.0, 748.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 14,
+					"linecount": 16,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 270.0, 388.0, 175.0],
-					"text": "Bypass the effect and pass the input.\n\nSet the soft clipping algorithm (Hyperbolic Tangent, Two State Quadratic, Recipricol)\n\nSet the gain of the input signal before hard clipping.\n\nControl the bias of the input the gain.\n\nControl the presence of the soft clipping algorithm.\n\nLow pass filter acting on the output signal.\n\nControl the mix of the main output.",
+					"patching_rect": [626.0, 270.0, 388.0, 199.0],
+					"text": "Bypass the effect and pass the input.\n\nSet the soft clipping algorithm (Hyperbolic Tangent, Two State Quadratic, Recipricol)\n\nSet the gain of the input signal before hard clipping.\n\nControl the bias of the input the gain.\n\nControl the presence of the soft clipping algorithm.\n\nDistribute 'Distortion Amount' across the 6 strings of the guitar.\n\nLow pass filter acting on the output signal.\n\nControl the mix of the main output.",
 					"textjustification": 2
 				}
 			},
@@ -56,24 +56,24 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 14,
+					"linecount": 16,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 270.0, 147.0, 175.0],
-					"text": "Bypass\n\nAlgorithm\n\n\nGain [-30, 30] (dB)\n\nAsymmetry [-1, 1]\n\nAmmount [0, 1]\n\nTone [20, 24000] (Hz)\n\nDry / Wet [0, 100] (%)"
+					"patching_rect": [474.0, 270.0, 147.0, 199.0],
+					"text": "Bypass\n\nAlgorithm\n\n\nGain [-30, 30] (dB)\n\nAsymmetry [-1, 1]\n\nAmmount [0, 1]\n\nSpread [-1, 1]\n\nTone [20, 24000] (Hz)\n\nDry / Wet [0, 100] (%)"
 				}
 			},
 			{
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-20",
-					"linecount": 11,
+					"linecount": 13,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 390.0, 139.0],
-					"text": "Main dry input.\n\nSet 'Gain' independently.\n\nSet 'Asymmetry' independently.\n\nSet 'Distortion Amount' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
+					"patching_rect": [626.0, 71.0, 390.0, 163.0],
+					"text": "Main dry input.\n\nSet 'Gain' independently.\n\nSet 'Asymmetry' independently.\n\nSet 'Distortion Amount' independently.\n\nSet 'Spread' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
 					"textjustification": 2
 				}
 			},
@@ -82,12 +82,13 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-19",
-					"linecount": 11,
+					"linecount": 13,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 71.0, 147.0, 139.0],
-					"text": "Hexaphonic Input\n\nGain [-30, 30] (dB)\n\nAsymmetry [-1, 1]\n\nDistortion Amount [0, 1]\n\nTone [0, ∞) (Hz)\n\nDry / Wet [0, 1]"
+					"patching_rect": [474.0, 71.0, 147.0, 163.0],
+					"presentation_linecount": 13,
+					"text": "Hexaphonic Input\n\nGain [-30, 30] (dB)\n\nAsymmetry [-1, 1]\n\nDistortion Amount [0, 1]\n\nSpread [-1, 1]\n\nTone [0, ∞) (Hz)\n\nDry / Wet [0, 1]"
 				}
 			},
 			{
@@ -165,7 +166,7 @@
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
 					"name": "hex-fuzz.maxpat",
-					"numinlets": 7,
+					"numinlets": 8,
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
@@ -215,6 +216,7 @@
 			"obj-2::obj-1": ["tone", "Tone", 0],
 			"obj-2::obj-101": ["Gain", "Gain", 0],
 			"obj-2::obj-35": ["Amount", "Amount", 0],
+			"obj-2::obj-36": ["Spread[4]", "Spread", 0],
 			"obj-2::obj-41": ["number[8]", "Dry / Wet", 0],
 			"obj-2::obj-72": ["Asymmetry", "Asymmetry", 0],
 			"parameterbanks": {
@@ -248,6 +250,13 @@
 			},
 			{
 				"name": "number-input.gendsp",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../code",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "spread-input.gendsp",
 				"bootpath": "~/Dropbox/Work/Submarine/code",
 				"patcherrelativepath": "../code",
 				"type": "gDSP",
