@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 227.0, 1629.0, 804.0],
+		"rect": [85.0, 255.0, 1629.0, 776.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -38,6 +38,17 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"id": "obj-23",
+					"maxclass": "message",
+					"numinlets": 2,
+					"numoutlets": 1,
+					"outlettype": [""],
+					"patching_rect": [1159.0, 914.375, 35.0, 22.0],
+					"text": "open"
+				}
+			},
 			{
 				"box": {
 					"id": "obj-37",
@@ -410,7 +421,7 @@
 					"lockedsize": 1,
 					"maxclass": "bpatcher",
 					"name": "buffer-delay.maxpat",
-					"numinlets": 6,
+					"numinlets": 7,
 					"numoutlets": 4,
 					"offset": [0.0, 0.0],
 					"outlettype": [
@@ -687,6 +698,12 @@
 			},
 			{
 				"patchline": {
+					"destination": ["obj-7", 0],
+					"source": ["obj-23", 0]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-11", 0],
 					"source": ["obj-25", 0]
 				}
@@ -800,6 +817,7 @@
 			"obj-6::obj-24": ["Fade", "Fade", 0],
 			"obj-6::obj-7": ["Time", "Time", 0],
 			"obj-6::obj-8": ["Feedback", "Feedback", 0],
+			"obj-6::obj-81": ["Spread[3]", "Spread", 0],
 			"obj-6::obj-9": ["Tone", "Tone", 0],
 			"obj-8::obj-11": ["linear_logarithmic[1]", "linear_logarithmic", 0],
 			"obj-8::obj-28": ["min", "min", 0],
@@ -940,7 +958,7 @@
 						"DGDGBD",
 						"CGCFCE",
 						"CGCGCE",
-						" CEGACE",
+						"CEGACE",
 						"CGEbFBbD",
 						"CCCCCC"
 					],
@@ -958,6 +976,11 @@
 				"obj-6::obj-7": {
 					"parameter_longname": "Time",
 					"parameter_shortname": "Time"
+				},
+				"obj-6::obj-81": {
+					"parameter_longname": "Spread[3]",
+					"parameter_range": [-1.0, 1.0],
+					"parameter_shortname": "Spread"
 				},
 				"obj-6::obj-9": {
 					"parameter_longname": "Tone",
@@ -1085,6 +1108,13 @@
 				"bootpath": "~/Dropbox/Work/Submarine/externals",
 				"patcherrelativepath": "../externals",
 				"type": "JSON",
+				"implicit": 1
+			},
+			{
+				"name": "spread-input.gendsp",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../code",
+				"type": "gDSP",
 				"implicit": 1
 			},
 			{

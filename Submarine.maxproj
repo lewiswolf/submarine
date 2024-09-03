@@ -2,8 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3807534533,
-	"viewrect": [51.0, 199.0, 1697.0, 832.0],
+	"modificationdate": 3808221547,
+	"viewrect": [51.0, 227.0, 1697.0, 804.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -170,6 +170,10 @@
 				"local": 1
 			},
 			"pitch-shift.gendsp": {
+				"kind": "gendsp",
+				"local": 1
+			},
+			"spread-input.gendsp": {
 				"kind": "gendsp",
 				"local": 1
 			},

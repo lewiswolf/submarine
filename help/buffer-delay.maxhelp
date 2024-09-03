@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [158.0, 115.0, 1187.0, 751.0],
+		"rect": [85.0, 255.0, 1629.0, 776.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 14,
+					"linecount": 16,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 252.0, 388.0, 175.0],
-					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nTime between each delay. \n\nControl the recursive amplitude of the delay feedback.\n\nLow pass filter acting on the delay feedback.\n\nControl the mix of the main output.\n\nToggle reversed delay. \n\nSet the amplitude envelope for each reverse delay, where 0 is no fade, 1 is a triangle envelope, and (0, 1) is a trapezoidal envelope.",
+					"patching_rect": [626.0, 252.0, 388.0, 199.0],
+					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nTime between each delay. \n\nDistribute 'Delay Time' across the 6 strings of the guitar.\n\nControl the recursive amplitude of the delay feedback.\n\nLow pass filter acting on the delay feedback.\n\nControl the mix of the main output.\n\nToggle reversed delay. \n\nSet the amplitude envelope for each reverse delay, where 0 is no fade, 1 is a triangle envelope, and (0, 1) is a trapezoidal envelope.",
 					"textjustification": 2
 				}
 			},
@@ -56,24 +56,24 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 14,
+					"linecount": 16,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 147.0, 187.0],
-					"text": "Bypass\n\nDelay Time [0, 4000] (ms)\n\nFeedback [0, 1]\n\nTone [20, 24000] (Hz)\n\nDry / Wet [0, 100] (%)\n\nReverse Delay\n\nFade [0, 1]\n\n"
+					"patching_rect": [474.0, 252.0, 147.0, 211.0],
+					"text": "Bypass\n\nDelay Time [0, 4000] (ms)\n\nSpread [-1, 1]\n\nFeedback [0, 1]\n\nTone [20, 24000] (Hz)\n\nDry / Wet [0, 100] (%)\n\nReverse Delay\n\nFade [0, 1]\n\n"
 				}
 			},
 			{
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-20",
-					"linecount": 9,
+					"linecount": 11,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 388.0, 115.0],
-					"text": "Main dry input.\n\nSet 'Delay Time' independently.\n\nSet 'Feedback' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
+					"patching_rect": [626.0, 71.0, 388.0, 139.0],
+					"text": "Main dry input.\n\nSet 'Delay Time' independently.\n\nSet 'Spread' independently.\n\nSet 'Feedback' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
 					"textjustification": 2
 				}
 			},
@@ -82,12 +82,12 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-19",
-					"linecount": 9,
+					"linecount": 11,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 71.0, 147.0, 115.0],
-					"text": "Hexaphonic Input\n\nDelay Time [0, 4000] (ms)\n\nFeedback [0, 1]\n\nTone [0, ∞) (Hz)\n\nDry / Wet [0, 1]"
+					"patching_rect": [474.0, 71.0, 147.0, 139.0],
+					"text": "Hexaphonic Input\n\nDelay Time [0, 4000] (ms)\n\nSpread [-1, 1]\n\nFeedback [0, 1]\n\nTone [0, ∞) (Hz)\n\nDry / Wet [0, 1]"
 				}
 			},
 			{
@@ -167,7 +167,7 @@
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
 					"name": "buffer-delay.maxpat",
-					"numinlets": 6,
+					"numinlets": 7,
 					"numoutlets": 4,
 					"offset": [0.0, 0.0],
 					"outlettype": [
@@ -223,6 +223,7 @@
 			"obj-2::obj-24": ["Fade", "Fade", 0],
 			"obj-2::obj-7": ["Delay Time", "Time", 0],
 			"obj-2::obj-8": ["Feedback", "Feedback", 0],
+			"obj-2::obj-81": ["Spread[3]", "Spread", 0],
 			"obj-2::obj-9": ["Filter Freq.", "Tone", 0],
 			"parameterbanks": {
 				"0": {
@@ -258,6 +259,13 @@
 			},
 			{
 				"name": "number-input.gendsp",
+				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"patcherrelativepath": "../code",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "spread-input.gendsp",
 				"bootpath": "~/Dropbox/Work/Submarine/code",
 				"patcherrelativepath": "../code",
 				"type": "gDSP",
