@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [-1601.0, 44.0, 1372.0, 748.0],
+		"rect": [34.0, 120.0, 1269.0, 746.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -378,7 +378,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [1034.0, 140.0, 50.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [222.5, 100.0, 65.0, 65.0],
+					"presentation_rect": [232.0, 100.0, 50.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -1190,7 +1190,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [704.5, 233.0, 50.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [166.5, 100.0, 65.0, 65.0],
+					"presentation_rect": [166.5, 100.0, 62.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -1234,12 +1234,12 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [1473.0, 107.0, 56.0, 22.0],
 					"restore": {
-						"asymmetry": [0.023622047244094],
+						"asymmetry": [0.0],
 						"bypass": [0],
 						"distortion_amount": [0.5],
 						"gain": [0.0],
 						"mix": [50.0],
-						"spread": [0.0],
+						"spread": [1.0],
 						"tone": [2000.000000000000455],
 						"waveshape": [0]
 					},
@@ -1412,7 +1412,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [1397.5, 233.0, 50.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [277.5, 100.0, 65.0, 65.0],
+					"presentation_rect": [285.0, 100.0, 54.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -1828,7 +1828,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [935.0, 233.0, 50.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [230.0, 30.0, 50.0, 65.0],
+					"presentation_rect": [232.0, 30.0, 50.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""
@@ -1879,7 +1879,7 @@
 					"parameter_enable": 1,
 					"patching_rect": [1166.5, 241.0, 50.0, 65.0],
 					"presentation": 1,
-					"presentation_rect": [285.0, 30.0, 50.0, 65.0],
+					"presentation_rect": [287.0, 30.0, 50.0, 65.0],
 					"saved_attribute_attributes": {
 						"activedialcolor": {
 							"expression": ""

@@ -56,6 +56,7 @@
 					"enveloper::attack": [500.0],
 					"enveloper::bypass": [0],
 					"enveloper::curvature": [2.0],
+					"enveloper::infinite_sustain": [0],
 					"enveloper::release": [300.0],
 					"enveloper::sustain": [300.0],
 					"enveloper::threshold": [-70.0],

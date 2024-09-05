@@ -82,7 +82,7 @@
 					"numinlets": 1,
 					"numoutlets": 3,
 					"outlettype": ["", "", ""],
-					"patching_rect": [982.0, 852.5, 102.0, 22.0],
+					"patching_rect": [982.666695952415466, 836.000024914741516, 102.0, 22.0],
 					"restore": [-6.0],
 					"saved_object_attributes": {
 						"parameter_enable": 0,
@@ -99,7 +99,7 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [1159.0, 914.375, 35.0, 22.0],
+					"patching_rect": [1158.666701197624207, 897.333360075950623, 35.0, 22.0],
 					"text": "open"
 				}
 			},
@@ -194,30 +194,9 @@
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [373.0, 211.0, 350.0, 175.0],
+					"patching_rect": [373.333344459533691, 194.666672468185425, 350.0, 175.0],
 					"varname": "spread",
 					"viewvisibility": 1
-				}
-			},
-			{
-				"box": {
-					"id": "obj-28",
-					"maxclass": "comment",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [372.0, 618.0, 195.0, 20.0],
-					"text": "infinite sustain, add external trigger"
-				}
-			},
-			{
-				"box": {
-					"id": "obj-48",
-					"maxclass": "message",
-					"numinlets": 2,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [704.0, 617.0, 31.0, 22.0],
-					"text": "help"
 				}
 			},
 			{
@@ -251,7 +230,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["signal"],
-					"patching_rect": [734.0, 182.0, 45.0, 22.0],
+					"patching_rect": [734.666688561439514, 165.333338260650635, 45.0, 22.0],
 					"text": "adc~ 1"
 				}
 			},
@@ -261,7 +240,7 @@
 					"maxclass": "newobj",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1065.0, 394.0, 45.0, 22.0],
+					"patching_rect": [1065.333365082740784, 377.333344578742981, 45.0, 22.0],
 					"text": "dac~ 3"
 				}
 			},
@@ -281,7 +260,7 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "signal"],
-					"patching_rect": [734.0, 211.0, 350.0, 175.0],
+					"patching_rect": [734.666688561439514, 194.666672468185425, 350.0, 175.0],
 					"varname": "volume-pedal",
 					"viewvisibility": 1
 				}
@@ -358,7 +337,7 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "multichannelsignal"],
-					"patching_rect": [373.0, 647.0, 350.0, 175.0],
+					"patching_rect": [373.333344459533691, 630.666685461997986, 350.0, 175.0],
 					"varname": "enveloper",
 					"viewvisibility": 1
 				}
@@ -384,7 +363,7 @@
 						"multichannelsignal",
 						"multichannelsignal"
 					],
-					"patching_rect": [12.0, 647.0, 350.0, 175.0],
+					"patching_rect": [12.000000357627869, 630.666685461997986, 350.0, 175.0],
 					"varname": "buffer-delay",
 					"viewvisibility": 1
 				}
@@ -395,7 +374,7 @@
 					"maxclass": "ezdac~",
 					"numinlets": 2,
 					"numoutlets": 0,
-					"patching_rect": [1095.0, 897.0, 56.75, 56.75]
+					"patching_rect": [1094.666699290275574, 880.000026226043701, 56.75, 56.75]
 				}
 			},
 			{
@@ -414,7 +393,7 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal", "multichannelsignal"],
-					"patching_rect": [734.0, 647.0, 350.0, 175.0],
+					"patching_rect": [734.666688561439514, 630.666685461997986, 350.0, 175.0],
 					"varname": "harmonic-tremolo",
 					"viewvisibility": 1
 				}
@@ -435,7 +414,7 @@
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [373.0, 429.0, 350.0, 175.0],
+					"patching_rect": [373.333344459533691, 412.000012278556824, 350.0, 175.0],
 					"varname": "hex-tone",
 					"viewvisibility": 1
 				}
@@ -456,7 +435,7 @@
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [12.0, 211.0, 350.0, 175.0],
+					"patching_rect": [12.000000357627869, 194.666672468185425, 350.0, 175.0],
 					"varname": "spread_lfo",
 					"viewvisibility": 1
 				}
@@ -488,7 +467,7 @@
 					"numoutlets": 2,
 					"offset": [0.0, 0.0],
 					"outlettype": ["signal", "signal"],
-					"patching_rect": [1095.0, 647.0, 350.0, 175.0],
+					"patching_rect": [1094.666699290275574, 630.666685461997986, 350.0, 175.0],
 					"varname": "stereo-imager",
 					"viewvisibility": 1
 				}
@@ -514,7 +493,7 @@
 					"orientation": 1,
 					"outlettype": ["signal", "signal", "", "float", "list"],
 					"parameter_enable": 1,
-					"patching_rect": [1095.0, 840.0, 350.0, 47.0],
+					"patching_rect": [1094.666699290275574, 822.666691184043884, 350.0, 47.0],
 					"saved_attribute_attributes": {
 						"valueof": {
 							"parameter_longname": "Master Gain",
@@ -545,7 +524,7 @@
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [12.0, 429.0, 350.0, 175.0],
+					"patching_rect": [12.000000357627869, 412.000012278556824, 350.0, 175.0],
 					"varname": "hex-fuzz",
 					"viewvisibility": 1
 				}
@@ -566,7 +545,7 @@
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [734.0, 429.0, 350.0, 175.0],
+					"patching_rect": [734.666688561439514, 412.000012278556824, 350.0, 175.0],
 					"varname": "pitch-shift",
 					"viewvisibility": 1
 				}
@@ -594,7 +573,9 @@
 			{
 				"patchline": {
 					"destination": ["obj-7", 1],
-					"midpoints": [1187.25, 891.5, 1142.25, 891.5],
+					"midpoints": [
+						1186.916699290275574, 874.458360075950623, 1141.916699290275574, 874.458360075950623
+					],
 					"source": ["obj-13", 1]
 				}
 			},
@@ -688,12 +669,6 @@
 					"destination": ["obj-42", 0],
 					"hidden": 1,
 					"source": ["obj-47", 0]
-				}
-			},
-			{
-				"patchline": {
-					"destination": ["obj-103", 4],
-					"source": ["obj-48", 0]
 				}
 			},
 			{
