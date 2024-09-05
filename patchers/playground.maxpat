@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [-1601.0, 44.0, 1068.0, 748.0],
+		"rect": [-1864.0, 100.0, 1640.0, 801.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -83,7 +83,7 @@
 					"numoutlets": 3,
 					"outlettype": ["", "", ""],
 					"patching_rect": [982.0, 852.5, 102.0, 22.0],
-					"restore": [0.0],
+					"restore": [-6.0],
 					"saved_object_attributes": {
 						"parameter_enable": 0,
 						"parameter_mappable": 0
@@ -121,7 +121,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [12.0, 11.0, 190.0, 47.0],
+					"patching_rect": [12.0, 11.0, 191.0, 47.0],
 					"text": "This saves and restores your last patch configuration when opening and closing playground."
 				}
 			},
@@ -165,17 +165,6 @@
 					"outlettype": [""],
 					"patching_rect": [681.0, 37.0, 58.0, 22.0],
 					"text": "loadbang"
-				}
-			},
-			{
-				"box": {
-					"id": "obj-10",
-					"maxclass": "toggle",
-					"numinlets": 1,
-					"numoutlets": 1,
-					"outlettype": ["int"],
-					"parameter_enable": 0,
-					"patching_rect": [1403.0, 588.0, 24.0, 24.0]
 				}
 			},
 			{
@@ -663,12 +652,6 @@
 		"lines": [
 			{
 				"patchline": {
-					"destination": ["obj-20", 0],
-					"source": ["obj-10", 0]
-				}
-			},
-			{
-				"patchline": {
 					"destination": ["obj-24", 0],
 					"source": ["obj-11", 1]
 				}
@@ -863,6 +846,7 @@
 			"obj-12::obj-118": ["Spread[2]", "Spread", 0],
 			"obj-12::obj-131": ["Depth[4]", "Depth", 0],
 			"obj-12::obj-20": ["offset", "offset", 0],
+			"obj-12::obj-24": ["reorder_channels[1]", "reorder_channels", 0],
 			"obj-13": ["live.gain~", "live.gain~", 0],
 			"obj-15::obj-14": ["LFO Source", "LFO Source", 0],
 			"obj-15::obj-49": ["Octave", "Octave", 0],
@@ -876,6 +860,7 @@
 			"obj-3::obj-23": ["linear_logarithmic", "linear_logarithmic", 0],
 			"obj-3::obj-28": ["min[2]", "min", 0],
 			"obj-3::obj-46": ["invert", "invert", 0],
+			"obj-3::obj-48": ["reorder_channels", "reorder_channels", 0],
 			"obj-3::obj-5": ["max[2]", "max", 0],
 			"obj-3::obj-52": ["conitnuous_discrete", "conitnuous_discrete", 0],
 			"obj-3::obj-59": ["Spread", "Spread", 0],
@@ -960,6 +945,11 @@
 					"parameter_range": [-1.0, 1.0],
 					"parameter_shortname": "offset"
 				},
+				"obj-12::obj-24": {
+					"parameter_linknames": 1,
+					"parameter_longname": "reorder_channels[1]",
+					"parameter_shortname": "reorder_channels"
+				},
 				"obj-15::obj-14": {
 					"parameter_longname": "LFO Source",
 					"parameter_shortname": "LFO Source"
@@ -1013,6 +1003,10 @@
 				"obj-3::obj-46": {
 					"parameter_longname": "invert",
 					"parameter_shortname": "invert"
+				},
+				"obj-3::obj-48": {
+					"parameter_longname": "reorder_channels",
+					"parameter_shortname": "reorder_channels"
 				},
 				"obj-5::obj-36": {
 					"parameter_longname": "mix[2]"

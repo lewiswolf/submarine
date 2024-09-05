@@ -5,6 +5,7 @@
 			"1": {
 				"id": 1,
 				"data": {
+					"master_gain": [-6.0],
 					"pitch-shift::bypass": [0],
 					"pitch-shift::mix": [50.0],
 					"pitch-shift::pitch_shift": [0.0],
@@ -17,7 +18,7 @@
 					"hex-fuzz::gain": [0.0],
 					"hex-fuzz::mix": [50.0],
 					"hex-fuzz::spread": [0.0],
-					"hex-fuzz::tone": [2000.0],
+					"hex-fuzz::tone": [1999.999999999999545],
 					"hex-fuzz::waveshape": [0],
 					"stereo-imager::depth": [0.5],
 					"stereo-imager::lfo_manual": [0],
@@ -25,6 +26,7 @@
 					"stereo-imager::offset": [0.0],
 					"stereo-imager::rate": [0.5],
 					"stereo-imager::spread": [0.0],
+					"stereo-imager::reorder_channels": [0],
 					"spread_lfo::conitnuous_discrete": [0],
 					"spread_lfo::depth": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
 					"spread_lfo::invert": [0],
@@ -33,6 +35,7 @@
 					"spread_lfo::min": [0.0],
 					"spread_lfo::rate": [0.5],
 					"spread_lfo::spread": [0.0],
+					"spread_lfo::reorder_channels": [0],
 					"hex-tone::bypass": [0],
 					"hex-tone::frequency": [2000.0],
 					"hex-tone::gain": [0.0],
@@ -48,7 +51,7 @@
 					"buffer-delay::reverse_fade": [0.25],
 					"buffer-delay::reverse_toggle": [0],
 					"buffer-delay::spread": [0.0],
-					"buffer-delay::tone": [2000.0],
+					"buffer-delay::tone": [2000.000000000000455],
 					"enveloper::attack": [500.0],
 					"enveloper::bypass": [0],
 					"enveloper::curvature": [2.0],
@@ -63,8 +66,7 @@
 					"spread::linear_logarithmic": [0],
 					"spread::max": [1.0],
 					"spread::min": [0.0],
-					"spread::multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
-					"master_gain": [0.0]
+					"spread::multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
 				}
 			}
 		}
