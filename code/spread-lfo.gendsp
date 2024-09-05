@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "dsp.gen",
-		"rect": [34.0, 115.0, 1372.0, 751.0],
+		"rect": [-1674.0, 146.0, 1372.0, 748.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -78,8 +78,8 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [20.0, 869.0, 93.0, 22.0],
-					"text": "slide 1024 1024"
+					"patching_rect": [20.0, 869.0, 80.0, 22.0],
+					"text": "slide 128 128"
 				}
 			},
 			{
