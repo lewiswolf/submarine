@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 1372.0, 751.0],
+		"rect": [34.0, 118.0, 1372.0, 748.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 13,
+					"linecount": 15,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 252.0, 389.0, 163.0],
-					"text": "Every analog volume pedal is slightly different. Clicking this button resets the calibration for the pedal, which is set by moving the pedal to the minimum and maxmimum.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSet the minimum value output by the pedal (setting this as the maximum inverts the polarity of the pedal).\n\nSet the maximum value output by the pedal (setting this as the minimum inverts the polarity of the pedal).",
+					"patching_rect": [626.0, 252.0, 389.0, 187.0],
+					"text": "Bypass the output entirely.\n\nEvery analog volume pedal is slightly different. Clicking this button resets the calibration for the pedal, which is set by moving the pedal to the minimum and maxmimum.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSet the minimum value output by the pedal (setting this as the maximum inverts the polarity of the pedal).\n\nSet the maximum value output by the pedal (setting this as the minimum inverts the polarity of the pedal).",
 					"textjustification": 2
 				}
 			},
@@ -56,12 +56,12 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 12,
+					"linecount": 14,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 147.0, 163.0],
-					"text": "Calibrate Pedal\n\n\n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nMin [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
+					"patching_rect": [474.0, 252.0, 147.0, 187.0],
+					"text": "Bypass\n\nCalibrate Pedal\n\n\n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nMin [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
 				}
 			},
 			{

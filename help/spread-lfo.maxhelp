@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [-1864.0, 100.0, 1640.0, 801.0],
+		"rect": [34.0, 118.0, 1372.0, 748.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 19,
+					"linecount": 21,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [625.0, 204.0, 415.0, 235.0],
-					"text": "Set the rate of the internal LFOs.\n\nOffset the phase of the internal LFOs.\n\nSet the max output of the LFO.\n\nSwitch between Sine, Triangle, Square, Sawtooth and Random waveforms.\n\nInvert the polarity of the output.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSwitch between 'Spread' channels being ordered 123456 or 142536.\n\nSet the minimum value output by the pedal.\n\nSet the maximum value output by the pedal.",
+					"patching_rect": [625.0, 204.0, 415.0, 259.0],
+					"text": "Bypass the output entirely.\n\nSet the rate of the internal LFOs.\n\nOffset the phase of the internal LFOs.\n\nSet the max output of the LFO.\n\nSwitch between Sine, Triangle, Square, Sawtooth and Random waveforms.\n\nInvert the polarity of the output.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSwitch between 'Spread' channels being ordered 123456 or 142536.\n\nSet the minimum value output by the pedal.\n\nSet the maximum value output by the pedal.",
 					"textjustification": 2
 				}
 			},
@@ -56,12 +56,12 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 19,
+					"linecount": 21,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [464.0, 204.0, 157.0, 235.0],
-					"text": "Rate [0, 50] (Hz)\n\nSpread [0, 1]\n\nDepth [0, 1]\n\nWaveform\n\nInvert \n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nReorder Channels\n\nMin [-24000., 24000.]\n\nMax [-24000., 24000.]"
+					"patching_rect": [464.0, 204.0, 157.0, 259.0],
+					"text": "Bypass\n\nRate [0, 50] (Hz)\n\nSpread [0, 1]\n\nDepth [0, 1]\n\nWaveform\n\nInvert \n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nReorder Channels\n\nMin [-24000., 24000.]\n\nMax [-24000., 24000.]"
 				}
 			},
 			{

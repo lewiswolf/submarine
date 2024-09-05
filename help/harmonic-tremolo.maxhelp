@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [158.0, 143.0, 1187.0, 723.0],
+		"rect": [34.0, 118.0, 1372.0, 748.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 9,
+					"linecount": 8,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 252.0, 474.0, 115.0],
-					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nSet the harmonic by octave (1 is the 2nd harmonic, 2 is the 4th harmonic, 3 is the 8th harmonic and so on). Negative values produce the corresponding subharmonics.\n\nSwitch between the internal harmonics calculator and an external LFO source.\n\n\nControl how much the LFO effects the signal. ",
+					"patching_rect": [683.0, 252.0, 476.0, 103.0],
+					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nSet the harmonic by octave (1 is the 2nd harmonic, 2 is the 4th harmonic, 3 is the 8th harmonic and so on). Negative values produce the corresponding subharmonics.\n\nSwitch between the internal harmonics calculator and an external LFO source.\n\nControl how much the LFO effects the signal. ",
 					"textjustification": 2
 				}
 			},
@@ -56,12 +56,12 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 9,
+					"linecount": 8,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 147.0, 127.0],
-					"text": "Bypass\n\nHarmonic Octave [-8, 8]\n\n\nInternal Harmonics / External Input\n\nDepth [0, 1]\n"
+					"patching_rect": [475.0, 252.0, 204.0, 103.0],
+					"text": "Bypass\n\nHarmonic Octave [-8, 8]\n\n\nInternal Harmonics / External Input\n\nDepth [0, 1]"
 				}
 			},
 			{
@@ -72,7 +72,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 474.0, 115.0],
+					"patching_rect": [684.0, 71.0, 474.0, 115.0],
 					"text": "Main dry input.\n\nUse an external signal for the tremolo.\n\nSet the precise harmonics using the harmonic index (1 is unity, 2 is an octave above, 3 is a compound fifth above and so on). Values < 1 produce subharmonics (1/2 is an octave below, 1/3 is a compund fifth below and so on).\n\nSet 'Depth' independently.",
 					"textjustification": 2
 				}
@@ -86,7 +86,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 71.0, 147.0, 115.0],
+					"patching_rect": [474.0, 71.0, 205.0, 115.0],
 					"text": "Hexaphonic Input\n\nExternal Input [0, 1]\n\nSubharmonic Index [0, ∞)\n\n\n\nDepth [0, 1]"
 				}
 			},
@@ -99,7 +99,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 505.0, 154.0, 43.0],
+					"patching_rect": [474.0, 505.0, 212.0, 43.0],
 					"text": "Hexaphonic Output\n\nEnvelope Output [0, 1]"
 				}
 			},
@@ -111,7 +111,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 484.0, 626.0, 18.0],
+					"patching_rect": [474.0, 484.0, 684.0, 18.0],
 					"text": "Outputs",
 					"textjustification": 1
 				}
@@ -124,7 +124,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [475.0, 232.0, 625.0, 18.0],
+					"patching_rect": [475.0, 232.0, 683.0, 18.0],
 					"text": "Controls",
 					"textjustification": 1
 				}
@@ -137,7 +137,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 49.0, 626.0, 18.0],
+					"patching_rect": [474.0, 49.0, 684.0, 18.0],
 					"text": "Multichannel Inputs",
 					"textjustification": 1
 				}
@@ -150,7 +150,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 505.0, 474.0, 42.0],
+					"patching_rect": [684.0, 505.5, 474.0, 42.0],
 					"text": "Original signal with the amplitude envelopes applied.\n\nGenerated envelopes.",
 					"textjustification": 2
 				}

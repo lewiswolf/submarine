@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 1372.0, 751.0],
+		"rect": [34.0, 118.0, 1372.0, 748.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -42,12 +42,12 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 11,
+					"linecount": 13,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [646.0, 252.0, 389.0, 139.0],
-					"text": "Choose from a range of preset configurations.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSet the minimum value of the output by (setting this as the maximum inverts the polarity of the interface).\n\nSet the maximum value of the output (setting this as the minimum inverts the polarity of the interface).",
+					"patching_rect": [646.0, 252.0, 389.0, 163.0],
+					"text": "Bypass the output entirely.\n\nChoose from a range of preset configurations.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSet the minimum value of the output by (setting this as the maximum inverts the polarity of the interface).\n\nSet the maximum value of the output (setting this as the minimum inverts the polarity of the interface).",
 					"textjustification": 2
 				}
 			},
@@ -56,12 +56,12 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 10,
+					"linecount": 12,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 162.0, 139.0],
-					"text": "Presets\n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nMin [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
+					"patching_rect": [474.0, 252.0, 162.0, 163.0],
+					"text": "Bypass\n\nPresets\n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nMin [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
 				}
 			},
 			{
