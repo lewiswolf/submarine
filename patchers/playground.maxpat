@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 118.0, 1372.0, 748.0],
+		"rect": [34.0, 120.0, 965.0, 746.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -38,17 +38,6 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
-			{
-				"box": {
-					"id": "obj-17",
-					"maxclass": "message",
-					"numinlets": 2,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [1021.0, 620.0, 31.0, 22.0],
-					"text": "help"
-				}
-			},
 			{
 				"box": {
 					"hidden": 1,
@@ -262,7 +251,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["signal"],
-					"patching_rect": [734.0, 183.0, 45.0, 22.0],
+					"patching_rect": [734.0, 182.0, 45.0, 22.0],
 					"text": "adc~ 1"
 				}
 			},
@@ -528,11 +517,11 @@
 					"patching_rect": [1095.0, 840.0, 350.0, 47.0],
 					"saved_attribute_attributes": {
 						"valueof": {
-							"parameter_longname": "live.gain~",
+							"parameter_longname": "Master Gain",
 							"parameter_mmax": 6.0,
 							"parameter_mmin": -70.0,
 							"parameter_modmode": 3,
-							"parameter_shortname": "live.gain~",
+							"parameter_shortname": "Master Gain",
 							"parameter_type": 0,
 							"parameter_unitstyle": 4
 						}
@@ -613,12 +602,6 @@
 				"patchline": {
 					"destination": ["obj-7", 0],
 					"source": ["obj-13", 0]
-				}
-			},
-			{
-				"patchline": {
-					"destination": ["obj-15", 4],
-					"source": ["obj-17", 0]
 				}
 			},
 			{
@@ -741,7 +724,7 @@
 			"obj-12::obj-131": ["Depth[4]", "Depth", 0],
 			"obj-12::obj-20": ["offset", "offset", 0],
 			"obj-12::obj-24": ["reorder_channels[1]", "reorder_channels", 0],
-			"obj-13": ["live.gain~", "live.gain~", 0],
+			"obj-13": ["Master Gain", "Master Gain", 0],
 			"obj-15::obj-14": ["LFO Source", "LFO Source", 0],
 			"obj-15::obj-49": ["Octave", "Octave", 0],
 			"obj-15::obj-92": ["Depth", "Depth", 0],
@@ -754,7 +737,6 @@
 			"obj-3::obj-23": ["linear_logarithmic", "linear_logarithmic", 0],
 			"obj-3::obj-28": ["min[2]", "min", 0],
 			"obj-3::obj-46": ["invert", "invert", 0],
-			"obj-3::obj-48": ["reorder_channels", "reorder_channels", 0],
 			"obj-3::obj-5": ["max[2]", "max", 0],
 			"obj-3::obj-52": ["conitnuous_discrete", "conitnuous_discrete", 0],
 			"obj-3::obj-59": ["Spread", "Spread", 0],
@@ -897,10 +879,6 @@
 				"obj-3::obj-46": {
 					"parameter_longname": "invert",
 					"parameter_shortname": "invert"
-				},
-				"obj-3::obj-48": {
-					"parameter_longname": "reorder_channels",
-					"parameter_shortname": "reorder_channels"
 				},
 				"obj-5::obj-36": {
 					"parameter_longname": "mix[2]"

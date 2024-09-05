@@ -36,7 +36,6 @@
 					"spread_lfo::max": [1.0],
 					"spread_lfo::min": [0.0],
 					"spread_lfo::rate": [0.5],
-					"spread_lfo::reorder_channels": [0],
 					"spread_lfo::spread": [0.0],
 					"hex-tone::bypass": [0],
 					"hex-tone::frequency": [2000.0],
