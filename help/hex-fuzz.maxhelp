@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 283.0, 1629.0, 748.0],
+		"rect": [34.0, 118.0, 1372.0, 748.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -73,7 +73,7 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [626.0, 71.0, 390.0, 163.0],
-					"text": "Main dry input.\n\nSet 'Gain' independently.\n\nSet 'Asymmetry' independently.\n\nSet 'Distortion Amount' independently.\n\nSet 'Spread' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
+					"text": "Main dry input.\n\nSet 'Gain' independently.\n\nSet 'Asymmetry' independently.\n\nSet 'Distortion Amount' independently, bypassing 'Spread'.\n\nSet 'Spread' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
 					"textjustification": 2
 				}
 			},
@@ -87,7 +87,6 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [474.0, 71.0, 147.0, 163.0],
-					"presentation_linecount": 13,
 					"text": "Hexaphonic Input\n\nGain [-30, 30] (dB)\n\nAsymmetry [-1, 1]\n\nDistortion Amount [0, 1]\n\nSpread [-1, 1]\n\nTone [0, ∞) (Hz)\n\nDry / Wet [0, 1]"
 				}
 			},

@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 255.0, 1629.0, 776.0],
+		"rect": [34.0, 118.0, 1372.0, 748.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -73,7 +73,7 @@
 					"numinlets": 1,
 					"numoutlets": 0,
 					"patching_rect": [626.0, 71.0, 388.0, 139.0],
-					"text": "Main dry input.\n\nSet 'Delay Time' independently.\n\nSet 'Spread' independently.\n\nSet 'Feedback' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
+					"text": "Main dry input.\n\nSet 'Delay Time' independently, bypassing 'Spread'.\n\nSet 'Spread' independently.\n\nSet 'Feedback' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
 					"textjustification": 2
 				}
 			},
