@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [85.0, 283.0, 1629.0, 748.0],
+		"rect": [-1601.0, 44.0, 1068.0, 748.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -38,6 +38,24 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"hidden": 1,
+					"id": "obj-22",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 3,
+					"outlettype": ["", "", ""],
+					"patching_rect": [982.0, 852.5, 102.0, 22.0],
+					"restore": [0.0],
+					"saved_object_attributes": {
+						"parameter_enable": 0,
+						"parameter_mappable": 0
+					},
+					"text": "pattr master_gain",
+					"varname": "master_gain"
+				}
+			},
 			{
 				"box": {
 					"id": "obj-23",
@@ -379,7 +397,7 @@
 					"outlettype": [""],
 					"patching_rect": [12.0, 115.0, 202.0, 22.0],
 					"saved_object_attributes": {
-						"client_rect": [0, 116, 1440, 867],
+						"client_rect": [0, 118, 1440, 866],
 						"parameter_enable": 0,
 						"parameter_mappable": 0,
 						"storage_rect": [583, 69, 1034, 197]
@@ -698,7 +716,15 @@
 			},
 			{
 				"patchline": {
+					"destination": ["obj-13", 0],
+					"hidden": 1,
+					"source": ["obj-22", 1]
+				}
+			},
+			{
+				"patchline": {
 					"destination": ["obj-7", 0],
+					"hidden": 1,
 					"source": ["obj-23", 0]
 				}
 			},
