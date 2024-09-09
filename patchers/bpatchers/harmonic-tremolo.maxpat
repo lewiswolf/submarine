@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [-1886.0, 82.0, 1404.0, 893.0],
+		"rect": [-1829.0, 57.0, 1708.0, 865.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"fontface": 2,
+					"fontname": "Moderat Trial Medium",
+					"fontsize": 16.0,
+					"id": "obj-17",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [38.666667819023132, 34.166667699813843, 268.0, 22.0],
+					"text": "by Lewis Wolstanholme & Pete Roe"
+				}
+			},
 			{
 				"box": {
 					"id": "obj-67",
@@ -912,11 +925,10 @@
 					"fontname": "Moderat Trial",
 					"fontsize": 12.0,
 					"id": "obj-97",
-					"linecount": 2,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1368.000040769577026, 10.666666984558105, 88.0, 30.0],
+					"patching_rect": [38.666667819023132, 12.666666984558105, 110.0, 18.0],
 					"presentation": 1,
 					"presentation_rect": [0.0, 1.0, 319.0, 18.0],
 					"text": "Harmonic Tremolo",

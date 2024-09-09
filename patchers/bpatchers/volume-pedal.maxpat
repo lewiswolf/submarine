@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 118.0, 1068.0, 748.0],
+		"rect": [-1886.0, 82.0, 1708.0, 893.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"fontface": 2,
+					"fontname": "Moderat Trial Medium",
+					"fontsize": 16.0,
+					"id": "obj-2",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [42.0, 52.0, 268.0, 22.0],
+					"text": "by Lewis Wolstanholme & Pete Roe"
+				}
+			},
 			{
 				"box": {
 					"id": "obj-44",
@@ -963,7 +976,7 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [765.0, 120.0, 56.0, 22.0],
 					"restore": {
-						"bypass": [0],
+						"bypass": [1],
 						"conitnuous_discrete": [0],
 						"linear_logarithmic": [0],
 						"max": [1.0],
@@ -1035,11 +1048,10 @@
 					"bgcolor": [0.329411764705882, 0.701960784313725, 0.470588235294118, 1.0],
 					"fontname": "Moderat Trial Medium",
 					"id": "obj-97",
-					"linecount": 2,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [963.0, 17.0, 76.0, 30.0],
+					"patching_rect": [42.0, 32.0, 84.0, 18.0],
 					"presentation": 1,
 					"presentation_rect": [0.0, 1.0, 345.5, 18.0],
 					"text": "Volume Pedal",

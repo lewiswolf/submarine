@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 120.0, 1269.0, 746.0],
+		"rect": [-1886.0, 82.0, 1708.0, 893.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"fontface": 2,
+					"fontname": "Moderat Trial Medium",
+					"fontsize": 16.0,
+					"id": "obj-7",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [41.0, 46.0, 268.0, 22.0],
+					"text": "by Lewis Wolstanholme & Pete Roe"
+				}
+			},
 			{
 				"box": {
 					"id": "obj-19",
@@ -488,7 +501,7 @@
 							"modernui": 1
 						},
 						"classnamespace": "box",
-						"rect": [84.0, 227.0, 1629.0, 804.0],
+						"rect": [-1886.0, 82.0, 1708.0, 893.0],
 						"bglocked": 0,
 						"openinpresentation": 0,
 						"default_fontsize": 12.0,
@@ -1239,7 +1252,7 @@
 						"distortion_amount": [0.5],
 						"gain": [0.0],
 						"mix": [50.0],
-						"spread": [1.0],
+						"spread": [0.0],
 						"tone": [2000.000000000000455],
 						"waveshape": [0]
 					},
@@ -1602,7 +1615,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1672.0, 20.0, 74.0, 18.0],
+					"patching_rect": [41.0, 26.0, 57.0, 18.0],
 					"presentation": 1,
 					"presentation_rect": [0.0, 1.0, 339.0, 18.0],
 					"text": "Hex Fuzz",
@@ -1730,7 +1743,7 @@
 					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": ["float"],
-					"patching_rect": [935.0, 109.0, 32.0, 22.0],
+					"patching_rect": [936.0, 109.0, 32.0, 22.0],
 					"text": "t 0.5"
 				}
 			},
@@ -1826,7 +1839,7 @@
 					"numoutlets": 2,
 					"outlettype": ["", "float"],
 					"parameter_enable": 1,
-					"patching_rect": [935.0, 233.0, 50.0, 65.0],
+					"patching_rect": [936.0, 233.0, 50.0, 65.0],
 					"presentation": 1,
 					"presentation_rect": [232.0, 30.0, 50.0, 65.0],
 					"saved_attribute_attributes": {
@@ -2403,7 +2416,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-38", 0],
-					"midpoints": [1482.5, 97.5, 944.5, 97.5],
+					"midpoints": [1482.5, 97.5, 945.5, 97.5],
 					"order": 3,
 					"source": ["obj-87", 0]
 				}
