@@ -41,6 +41,7 @@
 					"hex-tone::frequency": [2000.0],
 					"hex-tone::gain": [0.0],
 					"hex-tone::resonance": [1.0],
+					"hex-tone::filter-type": [0],
 					"harmonic-tremolo::LFO_source": [1],
 					"harmonic-tremolo::bypass": [0],
 					"harmonic-tremolo::depth": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],

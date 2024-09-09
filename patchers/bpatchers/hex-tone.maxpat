@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [-1886.0, 82.0, 1708.0, 893.0],
+		"rect": [-1735.0, 97.0, 1404.0, 837.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -809,6 +809,7 @@
 					"patching_rect": [979.0, 96.0, 56.0, 22.0],
 					"restore": {
 						"bypass": [0],
+						"filter-type": [0],
 						"frequency": [2000.0],
 						"gain": [0.0],
 						"resonance": [1.0]
@@ -1109,7 +1110,8 @@
 					"parameter_enable": 0,
 					"patching_rect": [805.0, 277.0, 100.0, 20.0],
 					"presentation": 1,
-					"presentation_rect": [194.0, 145.0, 146.0, 20.0]
+					"presentation_rect": [194.0, 145.0, 146.0, 20.0],
+					"varname": "filter-type"
 				}
 			},
 			{
