@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [-1886.0, 82.0, 1404.0, 893.0],
+		"rect": [-1886.0, 82.0, 1708.0, 893.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -38,6 +38,19 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"fontface": 2,
+					"fontname": "Moderat Trial Medium",
+					"fontsize": 16.0,
+					"id": "obj-57",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [123.0, 57.0, 268.0, 22.0],
+					"text": "by Lewis Wolstanholme & Pete Roe"
+				}
+			},
 			{
 				"box": {
 					"activebgcolor": [0.223529411764706, 0.223529411764706, 0.223529411764706, 0.0],
@@ -799,7 +812,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1634.0, 36.0, 83.0, 18.0],
+					"patching_rect": [123.0, 37.0, 77.0, 18.0],
 					"presentation": 1,
 					"presentation_rect": [0.0, 1.0, 319.0, 18.0],
 					"text": "Buffer Delay",
