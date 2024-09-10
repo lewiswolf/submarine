@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "dsp.gen",
-		"rect": [-1886.0, 82.0, 1708.0, 893.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -38,6 +38,27 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"id": "obj-31",
+					"maxclass": "comment",
+					"numinlets": 1,
+					"numoutlets": 0,
+					"patching_rect": [88.0, 1222.5, 64.0, 20.0],
+					"text": "-18dB trim"
+				}
+			},
+			{
+				"box": {
+					"id": "obj-6",
+					"maxclass": "newobj",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": [""],
+					"patching_rect": [14.0, 1221.5, 67.0, 22.0],
+					"text": "* 0.125893"
+				}
+			},
 			{
 				"box": {
 					"fontname": "Lato",
@@ -793,7 +814,7 @@
 					"maxclass": "newobj",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [14.0, 1218.0, 205.0, 22.0],
+					"patching_rect": [14.0, 1256.0, 205.0, 22.0],
 					"text": "out 1 @comment hexaphonic_output"
 				}
 			}
@@ -912,7 +933,7 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-4", 0],
+					"destination": ["obj-6", 0],
 					"source": ["obj-18", 0]
 				}
 			},
@@ -1214,6 +1235,12 @@
 				"patchline": {
 					"destination": ["obj-58", 2],
 					"source": ["obj-59", 0]
+				}
+			},
+			{
+				"patchline": {
+					"destination": ["obj-4", 0],
+					"source": ["obj-6", 0]
 				}
 			},
 			{

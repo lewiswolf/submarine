@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [-1886.0, 82.0, 1708.0, 893.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 1,
 		"default_fontsize": 12.0,
@@ -1523,7 +1523,7 @@
 					"numinlets": 3,
 					"numoutlets": 1,
 					"outlettype": ["multichannelsignal"],
-					"patching_rect": [41.0, 563.0, 183.0, 22.0],
+					"patching_rect": [41.0, 568.0, 183.0, 22.0],
 					"text": "mc.selector~ 2"
 				}
 			},
@@ -1535,7 +1535,7 @@
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [41.0, 598.0, 30.0, 30.0]
+					"patching_rect": [41.0, 603.0, 30.0, 30.0]
 				}
 			},
 			{

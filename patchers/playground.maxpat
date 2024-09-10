@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [-1708.0, 80.0, 1708.0, 809.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"bglocked": 0,
 		"openinpresentation": 0,
 		"default_fontsize": 12.0,
@@ -38,6 +38,17 @@
 		"subpatcher_template": "",
 		"assistshowspatchername": 0,
 		"boxes": [
+			{
+				"box": {
+					"id": "obj-10",
+					"maxclass": "button",
+					"numinlets": 1,
+					"numoutlets": 1,
+					"outlettype": ["bang"],
+					"parameter_enable": 0,
+					"patching_rect": [1998.0, 1316.0, 24.0, 24.0]
+				}
+			},
 			{
 				"box": {
 					"fontface": 2,
@@ -125,7 +136,7 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [1157.5, 886.0, 35.0, 22.0],
+					"patching_rect": [1157.5, 876.25, 35.0, 22.0],
 					"text": "open"
 				}
 			},
@@ -266,7 +277,7 @@
 					"maxclass": "newobj",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [1063.5, 366.0, 45.0, 22.0],
+					"patching_rect": [1064.5, 366.0, 45.0, 22.0],
 					"text": "dac~ 3"
 				}
 			},
@@ -400,7 +411,7 @@
 					"maxclass": "ezdac~",
 					"numinlets": 2,
 					"numoutlets": 0,
-					"patching_rect": [1093.5, 869.0, 56.75, 56.75]
+					"patching_rect": [1093.5, 876.25, 56.75, 56.75]
 				}
 			},
 			{
@@ -464,17 +475,6 @@
 					"patching_rect": [10.5, 184.0, 350.0, 175.0],
 					"varname": "spread_lfo",
 					"viewvisibility": 1
-				}
-			},
-			{
-				"box": {
-					"id": "obj-4",
-					"maxclass": "button",
-					"numinlets": 1,
-					"numoutlets": 1,
-					"outlettype": ["bang"],
-					"parameter_enable": 0,
-					"patching_rect": [5196.5, 2716.0, 24.0, 24.0]
 				}
 			},
 			{
@@ -599,7 +599,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-7", 1],
-					"midpoints": [1185.75, 863.458335161209106, 1140.75, 863.458335161209106],
+					"midpoints": [1185.75, 867.125, 1140.75, 867.125],
 					"source": ["obj-13", 1]
 				}
 			},
