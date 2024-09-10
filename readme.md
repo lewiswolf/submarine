@@ -5,10 +5,11 @@ A suite of hexaphonic effects designed in Max for the SubSix pickup by Submarine
 ## Setup
 
 -   [Max by Cycling '74](https://cycling74.com/shop/max)
+-   [SubSix by Submarine](https://www.submarinepickup.com/products/subsix)
 
-To use these plugins, you will need a valid Max license. Once setup, you can connect your SubPro to this patch via the `mc.adc~`.
+To use these plugins, you will need a valid Max license.
 
-To open all of the plugins in this project, open `Submarine.maxproj`, which will automatically open `playground.maxpat` as well. Each effect can be used in any order you want, and can even be installed in your own patchers using a `bpatcher`.
+To open all of the plugins in this project, open `Submarine.maxproj`, which will automatically open `playground.maxpat` as well. Once open, you can connect your SubSix to this patch via the `mc.adc~` object, which specifies your input channel numbers. Each effect can be used in any order you want, and can even be installed in your own patchers using a `bpatcher`.
 
 To use the _Enveloper_, you currently need to install these dependencies in the Max packages folder (`~/Documents/Max 8/Packages`).
 
