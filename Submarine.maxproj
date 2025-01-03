@@ -2,7 +2,7 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3808221547,
+	"modificationdate": 3818784330,
 	"viewrect": [51.0, 227.0, 1697.0, 804.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
@@ -63,15 +63,11 @@
 				"kind": "patcher",
 				"local": 1
 			},
-			"sp.onset~.maxpat": {
-				"kind": "patcher",
-				"local": 1
-			},
 			"buffer-delay.maxhelp": {
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"bootpath": "~/Desktop/submarine/help",
 					"projectrelativepath": "./help"
 				}
 			},
@@ -79,7 +75,7 @@
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"bootpath": "~/Desktop/submarine/help",
 					"projectrelativepath": "./help"
 				}
 			},
@@ -87,7 +83,7 @@
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"bootpath": "~/Desktop/submarine/help",
 					"projectrelativepath": "./help"
 				}
 			},
@@ -95,7 +91,7 @@
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"bootpath": "~/Desktop/submarine/help",
 					"projectrelativepath": "./help"
 				}
 			},
@@ -103,7 +99,7 @@
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"bootpath": "~/Desktop/submarine/help",
 					"projectrelativepath": "./help"
 				}
 			},
@@ -111,7 +107,7 @@
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"bootpath": "~/Desktop/submarine/help",
 					"projectrelativepath": "./help"
 				}
 			},
@@ -119,7 +115,7 @@
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"bootpath": "~/Desktop/submarine/help",
 					"projectrelativepath": "./help"
 				}
 			},
@@ -127,7 +123,7 @@
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"bootpath": "~/Desktop/submarine/help",
 					"projectrelativepath": "./help"
 				}
 			},
@@ -135,7 +131,7 @@
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"bootpath": "~/Desktop/submarine/help",
 					"projectrelativepath": "./help"
 				}
 			},
@@ -143,13 +139,17 @@
 				"kind": "helpfile",
 				"local": 1,
 				"singleton": {
-					"bootpath": "~/Dropbox/Work/Submarine/help",
+					"bootpath": "~/Desktop/submarine/help",
 					"projectrelativepath": "./help"
 				}
 			}
 		},
 		"code": {
 			"buffer-delay.gendsp": {
+				"kind": "gendsp",
+				"local": 1
+			},
+			"butterworth_2.gendsp": {
 				"kind": "gendsp",
 				"local": 1
 			},
@@ -192,12 +192,7 @@
 				"local": 1
 			}
 		},
-		"externals": {
-			"fluid.ampfeature~.mxo": {
-				"kind": "object",
-				"local": 1
-			}
-		}
+		"externals": {}
 	},
 	"layout": {},
 	"searchpath": {},
