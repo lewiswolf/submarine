@@ -9,7 +9,7 @@
 			"modernui": 1
 		},
 		"classnamespace": "dsp.gen",
-		"rect": [85.0, 283.0, 1214.0, 748.0],
+		"rect": [34.0, 115.0, 1372.0, 751.0],
 		"gridsize": [15.0, 15.0],
 		"boxes": [
 			{
@@ -18,13 +18,13 @@
 					"maxclass": "newobj",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [50.0, 373.0, 35.0, 22.0],
+					"patching_rect": [50.0, 468.0, 35.0, 22.0],
 					"text": "out 1"
 				}
 			},
 			{
 				"box": {
-					"code": "History mXnz1(0);\nHistory mXnz2(0);\nHistory mYnz1(0);\nHistory mYnz2(0);\r\n\r\nc = tan(pi * in2 / SAMPLERATE);\nmB0 = 1.0 / (1.0 + sqrt2 * c + pow(c, 2.0));\nmB1 = -2.0 * mB0;\nmB2 = mB0;\nmA0 = 2.0 * mB0 * (pow(c, 2.0) - 1.0);\nmA1 = mB0 * (1.0 - sqrt2 * c + pow(c, 2.0));\n\r\n\r\nout = mB0 * in1 + mB1 * mXnz1 + mB2 * mXnz2 - mA0 * mYnz1 - mA1 * mYnz2;\r\nmXnz2 = mXnz1;\nmXnz1 = in1;\nmYnz2 = mYnz1;\nmYnz1 = out;",
+					"code": "butterworth_2(x, b0, b1, b2, a0, a1) {\r\n\t// second order butterworth filter\n\tHistory mX1(0);\n\tHistory mX2(0);\n\tHistory mY1(0);\n\tHistory mY2(0);\r\n\t\n\ty = b0 * x + b1 * mX1 + b2 * mX2 - a0 * mY1 - a1 * mY2;\n\tmX2 = mX1;\n\tmX1 = x;\n\tmY2 = mY1;\n\tmY1 = y;\n\treturn y;\r\n}\r\n\r\n// calculate coefficients\r\nc = tan(pi * max(in2, 0) / SAMPLERATE);\r\nc2 = pow(c, 2.0);\nb0 = 1.0 / (1.0 + sqrt2 * c + c2);\r\nb1 = -2.0 * b0;\na0 = 2.0 * b0 * (c2 - 1.0);\na1 = b0 * (1.0 - sqrt2 * c + c2);\r\n\r\n// create LR filter with butterworth squared\r\nout2 = butterworth_2(butterworth_2(in1, b0, b1, b0, a0, a1), b0, b1, b0, a0, a1);",
 					"fontface": 0,
 					"fontname": "<Monospaced>",
 					"fontsize": 12.0,
@@ -33,7 +33,7 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [50.0, 47.0, 573.0, 306.0]
+					"patching_rect": [50.0, 47.0, 639.0, 402.0]
 				}
 			},
 			{
@@ -54,7 +54,7 @@
 					"numinlets": 0,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [604.0, 14.0, 252.0, 22.0],
+					"patching_rect": [670.0, 14.0, 252.0, 22.0],
 					"text": "in 2 @comment cutoff @default 2000 @min 0"
 				}
 			}
@@ -79,6 +79,6 @@
 				}
 			}
 		],
-		"originid": "pat-3322"
+		"originid": "pat-178"
 	}
 }
