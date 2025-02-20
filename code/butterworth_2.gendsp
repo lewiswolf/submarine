@@ -4,12 +4,12 @@
 		"appversion": {
 			"major": 9,
 			"minor": 0,
-			"revision": 3,
+			"revision": 4,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "dsp.gen",
-		"rect": [34.0, 115.0, 1372.0, 751.0],
+		"rect": [-1468.0, 419.0, 1427.0, 644.0],
 		"gridsize": [15.0, 15.0],
 		"boxes": [
 			{
@@ -24,13 +24,13 @@
 			},
 			{
 				"box": {
-					"code": "butterworth_2(x, b0, b1, b2, a0, a1) {\r\n\t// second order butterworth filter\n\tHistory mX1(0);\n\tHistory mX2(0);\n\tHistory mY1(0);\n\tHistory mY2(0);\r\n\t\n\ty = b0 * x + b1 * mX1 + b2 * mX2 - a0 * mY1 - a1 * mY2;\n\tmX2 = mX1;\n\tmX1 = x;\n\tmY2 = mY1;\n\tmY1 = y;\n\treturn y;\r\n}\r\n\r\n// calculate coefficients\r\nc = tan(pi * max(in2, 0) / SAMPLERATE);\r\nc2 = pow(c, 2.0);\nb0 = 1.0 / (1.0 + sqrt2 * c + c2);\r\nb1 = -2.0 * b0;\na0 = 2.0 * b0 * (c2 - 1.0);\na1 = b0 * (1.0 - sqrt2 * c + c2);\r\n\r\n// create LR filter with butterworth squared\r\nout2 = butterworth_2(butterworth_2(in1, b0, b1, b0, a0, a1), b0, b1, b0, a0, a1);",
+					"code": "butterworth_2(x, b0, b1, b2, a0, a1) {\r\n\t// second order butterworth filter\n\tHistory mX1(0);\n\tHistory mX2(0);\n\tHistory mY1(0);\n\tHistory mY2(0);\r\n\t\n\ty = b0 * x + b1 * mX1 + b2 * mX2 - a0 * mY1 - a1 * mY2;\n\tmX2 = mX1;\n\tmX1 = x;\n\tmY2 = mY1;\n\tmY1 = y;\n\treturn y;\r\n}\r\n\r\n// calculate coefficients\r\nParam cutoff(2000.0, min=0.0);\r\nc = tan(pi * cutoff / SAMPLERATE);\r\nc2 = pow(c, 2.0);\nb0 = 1.0 / (1.0 + sqrt2 * c + c2);\r\nb1 = -2.0 * b0;\na0 = 2.0 * b0 * (c2 - 1.0);\na1 = b0 * (1.0 - sqrt2 * c + c2);\r\n\r\n// create LR filter with butterworth squared\r\nout1 = butterworth_2(butterworth_2(in1, b0, b1, b0, a0, a1), b0, b1, b0, a0, a1);",
 					"fontface": 0,
 					"fontname": "<Monospaced>",
 					"fontsize": 12.0,
 					"id": "obj-3",
 					"maxclass": "codebox",
-					"numinlets": 2,
+					"numinlets": 1,
 					"numoutlets": 1,
 					"outlettype": [""],
 					"patching_rect": [50.0, 47.0, 639.0, 402.0]
@@ -46,17 +46,6 @@
 					"patching_rect": [50.0, 14.0, 102.0, 22.0],
 					"text": "in 1 @comment x"
 				}
-			},
-			{
-				"box": {
-					"id": "obj-2",
-					"maxclass": "newobj",
-					"numinlets": 0,
-					"numoutlets": 1,
-					"outlettype": [""],
-					"patching_rect": [670.0, 14.0, 252.0, 22.0],
-					"text": "in 2 @comment cutoff @default 2000 @min 0"
-				}
 			}
 		],
 		"lines": [
@@ -68,17 +57,11 @@
 			},
 			{
 				"patchline": {
-					"destination": ["obj-3", 1],
-					"source": ["obj-2", 0]
-				}
-			},
-			{
-				"patchline": {
 					"destination": ["obj-7", 0],
 					"source": ["obj-3", 0]
 				}
 			}
 		],
-		"originid": "pat-178"
+		"originid": "pat-259"
 	}
 }
