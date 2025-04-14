@@ -2,8 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3818784330,
-	"viewrect": [51.0, 227.0, 1697.0, 804.0],
+	"modificationdate": 3827519017,
+	"viewrect": [0.0, 143.0, 1440.0, 723.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -65,83 +65,43 @@
 			},
 			"buffer-delay.maxhelp": {
 				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/help",
-					"projectrelativepath": "./help"
-				}
+				"local": 1
 			},
 			"enveloper.maxhelp": {
 				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/help",
-					"projectrelativepath": "./help"
-				}
+				"local": 1
 			},
 			"harmonic-tremolo.maxhelp": {
 				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/help",
-					"projectrelativepath": "./help"
-				}
+				"local": 1
 			},
 			"hex-fuzz.maxhelp": {
 				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/help",
-					"projectrelativepath": "./help"
-				}
+				"local": 1
 			},
 			"hex-tone.maxhelp": {
 				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/help",
-					"projectrelativepath": "./help"
-				}
+				"local": 1
 			},
 			"pitch-shift.maxhelp": {
 				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/help",
-					"projectrelativepath": "./help"
-				}
+				"local": 1
 			},
 			"spread.maxhelp": {
 				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/help",
-					"projectrelativepath": "./help"
-				}
+				"local": 1
 			},
 			"spread-lfo.maxhelp": {
 				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/help",
-					"projectrelativepath": "./help"
-				}
+				"local": 1
 			},
 			"stereo-imager.maxhelp": {
 				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/help",
-					"projectrelativepath": "./help"
-				}
+				"local": 1
 			},
 			"volume-pedal.maxhelp": {
 				"kind": "helpfile",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/help",
-					"projectrelativepath": "./help"
-				}
+				"local": 1
 			}
 		},
 		"code": {
@@ -191,8 +151,7 @@
 				"kind": "json",
 				"local": 1
 			}
-		},
-		"externals": {}
+		}
 	},
 	"layout": {},
 	"searchpath": {},
