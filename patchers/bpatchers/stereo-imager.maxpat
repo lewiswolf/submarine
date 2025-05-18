@@ -2,41 +2,16 @@
 	"patcher": {
 		"fileversion": 1,
 		"appversion": {
-			"major": 8,
-			"minor": 6,
-			"revision": 4,
+			"major": 9,
+			"minor": 0,
+			"revision": 6,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 1372.0, 751.0],
-		"bglocked": 0,
+		"rect": [34.0, 171.0, 1781.0, 695.0],
 		"openinpresentation": 1,
-		"default_fontsize": 12.0,
-		"default_fontface": 0,
-		"default_fontname": "Arial",
-		"gridonopen": 1,
 		"gridsize": [15.0, 15.0],
-		"gridsnaponopen": 1,
-		"objectsnaponopen": 1,
-		"statusbarvisible": 2,
-		"toolbarvisible": 1,
-		"lefttoolbarpinned": 0,
-		"toptoolbarpinned": 0,
-		"righttoolbarpinned": 0,
-		"bottomtoolbarpinned": 0,
-		"toolbars_unpinned_last_save": 0,
-		"tallnewobj": 0,
-		"boxanimatetime": 200,
-		"enablehscroll": 1,
-		"enablevscroll": 1,
-		"devicewidth": 0.0,
-		"description": "",
-		"digest": "",
-		"tags": "",
-		"style": "",
-		"subpatcher_template": "",
-		"assistshowspatchername": 0,
 		"boxes": [
 			{
 				"box": {
@@ -117,41 +92,15 @@
 					"patcher": {
 						"fileversion": 1,
 						"appversion": {
-							"major": 8,
-							"minor": 6,
-							"revision": 4,
+							"major": 9,
+							"minor": 0,
+							"revision": 6,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
-						"rect": [-1829.0, 57.0, 1708.0, 865.0],
-						"bglocked": 0,
-						"openinpresentation": 0,
-						"default_fontsize": 12.0,
-						"default_fontface": 0,
-						"default_fontname": "Arial",
-						"gridonopen": 1,
+						"rect": [34.0, 171.0, 1372.0, 695.0],
 						"gridsize": [15.0, 15.0],
-						"gridsnaponopen": 1,
-						"objectsnaponopen": 1,
-						"statusbarvisible": 2,
-						"toolbarvisible": 1,
-						"lefttoolbarpinned": 0,
-						"toptoolbarpinned": 0,
-						"righttoolbarpinned": 0,
-						"bottomtoolbarpinned": 0,
-						"toolbars_unpinned_last_save": 0,
-						"tallnewobj": 0,
-						"boxanimatetime": 200,
-						"enablehscroll": 1,
-						"enablevscroll": 1,
-						"devicewidth": 0.0,
-						"description": "",
-						"digest": "",
-						"tags": "",
-						"style": "",
-						"subpatcher_template": "",
-						"assistshowspatchername": 0,
 						"boxes": [
 							{
 								"box": {
@@ -163,41 +112,15 @@
 									"patcher": {
 										"fileversion": 1,
 										"appversion": {
-											"major": 8,
-											"minor": 6,
-											"revision": 4,
+											"major": 9,
+											"minor": 0,
+											"revision": 6,
 											"architecture": "x64",
 											"modernui": 1
 										},
 										"classnamespace": "box",
 										"rect": [-1864.0, 100.0, 1640.0, 801.0],
-										"bglocked": 0,
-										"openinpresentation": 0,
-										"default_fontsize": 12.0,
-										"default_fontface": 0,
-										"default_fontname": "Arial",
-										"gridonopen": 1,
 										"gridsize": [15.0, 15.0],
-										"gridsnaponopen": 1,
-										"objectsnaponopen": 1,
-										"statusbarvisible": 2,
-										"toolbarvisible": 1,
-										"lefttoolbarpinned": 0,
-										"toptoolbarpinned": 0,
-										"righttoolbarpinned": 0,
-										"bottomtoolbarpinned": 0,
-										"toolbars_unpinned_last_save": 0,
-										"tallnewobj": 0,
-										"boxanimatetime": 200,
-										"enablehscroll": 1,
-										"enablevscroll": 1,
-										"devicewidth": 0.0,
-										"description": "",
-										"digest": "",
-										"tags": "",
-										"style": "",
-										"subpatcher_template": "",
-										"assistshowspatchername": 0,
 										"boxes": [
 											{
 												"box": {
@@ -592,12 +515,6 @@
 										]
 									},
 									"patching_rect": [597.666671752929688, 203.0, 635.0, 22.0],
-									"saved_object_attributes": {
-										"description": "",
-										"digest": "",
-										"globalpatchername": "",
-										"tags": ""
-									},
 									"text": "p dsp"
 								}
 							},
@@ -1290,12 +1207,6 @@
 						]
 					},
 					"patching_rect": [24.333379983901978, 446.333343148231506, 1421.666708469390869, 22.0],
-					"saved_object_attributes": {
-						"description": "",
-						"digest": "",
-						"globalpatchername": "",
-						"tags": ""
-					},
 					"text": "p dsp"
 				}
 			},
@@ -1411,9 +1322,9 @@
 							"parameter_type": 2
 						}
 					},
-					"text": "LFO Input",
+					"text": "Manual",
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
-					"texton": "Manual",
+					"texton": "LFO Input",
 					"textoncolor": [1.0, 1.0, 1.0, 1.0],
 					"varname": "lfo_manual"
 				}
@@ -1427,7 +1338,7 @@
 					"outlettype": ["", "", "", ""],
 					"patching_rect": [1438.666709542274475, 150.66667115688324, 56.0, 22.0],
 					"restore": {
-						"bypass": [1],
+						"bypass": [0],
 						"depth": [0.5],
 						"lfo_manual": [0],
 						"linear_logarithmic": [0],
@@ -1492,41 +1403,15 @@
 					"patcher": {
 						"fileversion": 1,
 						"appversion": {
-							"major": 8,
-							"minor": 6,
-							"revision": 4,
+							"major": 9,
+							"minor": 0,
+							"revision": 6,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
 						"rect": [34.0, 118.0, 1372.0, 748.0],
-						"bglocked": 0,
-						"openinpresentation": 0,
-						"default_fontsize": 12.0,
-						"default_fontface": 0,
-						"default_fontname": "Arial",
-						"gridonopen": 1,
 						"gridsize": [15.0, 15.0],
-						"gridsnaponopen": 1,
-						"objectsnaponopen": 1,
-						"statusbarvisible": 2,
-						"toolbarvisible": 1,
-						"lefttoolbarpinned": 0,
-						"toptoolbarpinned": 0,
-						"righttoolbarpinned": 0,
-						"bottomtoolbarpinned": 0,
-						"toolbars_unpinned_last_save": 0,
-						"tallnewobj": 0,
-						"boxanimatetime": 200,
-						"enablehscroll": 1,
-						"enablevscroll": 1,
-						"devicewidth": 0.0,
-						"description": "",
-						"digest": "",
-						"tags": "",
-						"style": "",
-						"subpatcher_template": "",
-						"assistshowspatchername": 0,
 						"boxes": [
 							{
 								"box": {
@@ -1743,12 +1628,6 @@
 						]
 					},
 					"patching_rect": [1604.333379983901978, 366.333343148231506, 58.0, 22.0],
-					"saved_object_attributes": {
-						"description": "",
-						"digest": "",
-						"globalpatchername": "",
-						"tags": ""
-					},
 					"text": "p presets"
 				}
 			},
@@ -2077,7 +1956,7 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-83",
-					"index": 6,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2191,7 +2070,7 @@
 				"box": {
 					"comment": "LFO Offset [-1, 1]",
 					"id": "obj-44",
-					"index": 5,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2203,7 +2082,7 @@
 				"box": {
 					"comment": "LFO Depth [0, 1]",
 					"id": "obj-40",
-					"index": 4,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2215,7 +2094,7 @@
 				"box": {
 					"comment": "LFO Spread [0, 1]",
 					"id": "obj-33",
-					"index": 3,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2227,7 +2106,7 @@
 				"box": {
 					"comment": "LFO Rate [0, ∞) (Hz) ",
 					"id": "obj-32",
-					"index": 2,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2258,7 +2137,7 @@
 				"box": {
 					"comment": "Right Channel",
 					"id": "obj-6",
-					"index": 2,
+					"index": 0,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -2269,7 +2148,7 @@
 				"box": {
 					"comment": "Left Channel",
 					"id": "obj-2",
-					"index": 1,
+					"index": 0,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -2280,7 +2159,7 @@
 				"box": {
 					"comment": "Hexaphonic Input",
 					"id": "obj-1",
-					"index": 1,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2332,7 +2211,7 @@
 						"valueof": {
 							"parameter_enum": ["off", "on"],
 							"parameter_linknames": 1,
-							"parameter_longname": "reorder_channels[1]",
+							"parameter_longname": "reorder_channels",
 							"parameter_mmax": 1,
 							"parameter_modmode": 0,
 							"parameter_shortname": "reorder_channels",
@@ -2872,6 +2751,47 @@
 					"source": ["obj-89", 0]
 				}
 			}
-		]
+		],
+		"parameters": {
+			"obj-10": ["lfo_manual", "lfo_manual", 0],
+			"obj-116": ["linear_logarithmic[4]", "linear_logarithmic", 0],
+			"obj-117": ["Rate[2]", "Rate", 0],
+			"obj-118": ["Spread[2]", "Spread", 0],
+			"obj-131": ["Depth[4]", "Depth", 0],
+			"obj-20": ["offset", "offset", 0],
+			"obj-24": ["reorder_channels", "reorder_channels", 0],
+			"parameterbanks": {
+				"0": {
+					"index": 0,
+					"name": "",
+					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
+				}
+			},
+			"inherited_shortname": 1
+		},
+		"dependency_cache": [
+			{
+				"name": "number-input.gendsp",
+				"bootpath": "~/Desktop/submarine/code",
+				"patcherrelativepath": "../../code",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "spread-lfo.gendsp",
+				"bootpath": "~/Desktop/submarine/code",
+				"patcherrelativepath": "../../code",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "stereo-imager.gendsp",
+				"bootpath": "~/Desktop/submarine/code",
+				"patcherrelativepath": "../../code",
+				"type": "gDSP",
+				"implicit": 1
+			}
+		],
+		"autosave": 0
 	}
 }

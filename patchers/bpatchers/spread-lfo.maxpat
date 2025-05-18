@@ -2,41 +2,16 @@
 	"patcher": {
 		"fileversion": 1,
 		"appversion": {
-			"major": 8,
-			"minor": 6,
-			"revision": 4,
+			"major": 9,
+			"minor": 0,
+			"revision": 6,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [-1886.0, 82.0, 1708.0, 893.0],
-		"bglocked": 0,
+		"rect": [34.0, 171.0, 1372.0, 695.0],
 		"openinpresentation": 1,
-		"default_fontsize": 12.0,
-		"default_fontface": 0,
-		"default_fontname": "Arial",
-		"gridonopen": 1,
 		"gridsize": [15.0, 15.0],
-		"gridsnaponopen": 1,
-		"objectsnaponopen": 1,
-		"statusbarvisible": 2,
-		"toolbarvisible": 1,
-		"lefttoolbarpinned": 0,
-		"toptoolbarpinned": 0,
-		"righttoolbarpinned": 0,
-		"bottomtoolbarpinned": 0,
-		"toolbars_unpinned_last_save": 0,
-		"tallnewobj": 0,
-		"boxanimatetime": 200,
-		"enablehscroll": 1,
-		"enablevscroll": 1,
-		"devicewidth": 0.0,
-		"description": "",
-		"digest": "",
-		"tags": "",
-		"style": "",
-		"subpatcher_template": "",
-		"assistshowspatchername": 0,
 		"boxes": [
 			{
 				"box": {
@@ -95,41 +70,15 @@
 					"patcher": {
 						"fileversion": 1,
 						"appversion": {
-							"major": 8,
-							"minor": 6,
-							"revision": 4,
+							"major": 9,
+							"minor": 0,
+							"revision": 6,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
 						"rect": [34.0, 120.0, 1269.0, 746.0],
-						"bglocked": 0,
-						"openinpresentation": 0,
-						"default_fontsize": 12.0,
-						"default_fontface": 0,
-						"default_fontname": "Arial",
-						"gridonopen": 1,
 						"gridsize": [15.0, 15.0],
-						"gridsnaponopen": 1,
-						"objectsnaponopen": 1,
-						"statusbarvisible": 2,
-						"toolbarvisible": 1,
-						"lefttoolbarpinned": 0,
-						"toptoolbarpinned": 0,
-						"righttoolbarpinned": 0,
-						"bottomtoolbarpinned": 0,
-						"toolbars_unpinned_last_save": 0,
-						"tallnewobj": 0,
-						"boxanimatetime": 200,
-						"enablehscroll": 1,
-						"enablevscroll": 1,
-						"devicewidth": 0.0,
-						"description": "",
-						"digest": "",
-						"tags": "",
-						"style": "",
-						"subpatcher_template": "",
-						"assistshowspatchername": 0,
 						"boxes": [
 							{
 								"box": {
@@ -839,12 +788,6 @@
 						]
 					},
 					"patching_rect": [31.0, 387.0, 1221.0, 22.0],
-					"saved_object_attributes": {
-						"description": "",
-						"digest": "",
-						"globalpatchername": "",
-						"tags": ""
-					},
 					"text": "p dsp"
 				}
 			},
@@ -858,41 +801,15 @@
 					"patcher": {
 						"fileversion": 1,
 						"appversion": {
-							"major": 8,
-							"minor": 6,
-							"revision": 4,
+							"major": 9,
+							"minor": 0,
+							"revision": 6,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
 						"rect": [34.0, 120.0, 1269.0, 746.0],
-						"bglocked": 0,
-						"openinpresentation": 0,
-						"default_fontsize": 12.0,
-						"default_fontface": 0,
-						"default_fontname": "Arial",
-						"gridonopen": 1,
 						"gridsize": [15.0, 15.0],
-						"gridsnaponopen": 1,
-						"objectsnaponopen": 1,
-						"statusbarvisible": 2,
-						"toolbarvisible": 1,
-						"lefttoolbarpinned": 0,
-						"toptoolbarpinned": 0,
-						"righttoolbarpinned": 0,
-						"bottomtoolbarpinned": 0,
-						"toolbars_unpinned_last_save": 0,
-						"tallnewobj": 0,
-						"boxanimatetime": 200,
-						"enablehscroll": 1,
-						"enablevscroll": 1,
-						"devicewidth": 0.0,
-						"description": "",
-						"digest": "",
-						"tags": "",
-						"style": "",
-						"subpatcher_template": "",
-						"assistshowspatchername": 0,
 						"boxes": [
 							{
 								"box": {
@@ -992,41 +909,15 @@
 									"patcher": {
 										"fileversion": 1,
 										"appversion": {
-											"major": 8,
-											"minor": 6,
-											"revision": 4,
+											"major": 9,
+											"minor": 0,
+											"revision": 6,
 											"architecture": "x64",
 											"modernui": 1
 										},
 										"classnamespace": "dsp.gen",
 										"rect": [85.0, 227.0, 1629.0, 804.0],
-										"bglocked": 0,
-										"openinpresentation": 0,
-										"default_fontsize": 12.0,
-										"default_fontface": 0,
-										"default_fontname": "Arial",
-										"gridonopen": 1,
 										"gridsize": [15.0, 15.0],
-										"gridsnaponopen": 1,
-										"objectsnaponopen": 1,
-										"statusbarvisible": 2,
-										"toolbarvisible": 1,
-										"lefttoolbarpinned": 0,
-										"toptoolbarpinned": 0,
-										"righttoolbarpinned": 0,
-										"bottomtoolbarpinned": 0,
-										"toolbars_unpinned_last_save": 0,
-										"tallnewobj": 0,
-										"boxanimatetime": 200,
-										"enablehscroll": 1,
-										"enablevscroll": 1,
-										"devicewidth": 0.0,
-										"description": "",
-										"digest": "",
-										"tags": "",
-										"style": "",
-										"subpatcher_template": "",
-										"assistshowspatchername": 0,
 										"boxes": [
 											{
 												"box": {
@@ -1225,41 +1116,15 @@
 									"patcher": {
 										"fileversion": 1,
 										"appversion": {
-											"major": 8,
-											"minor": 6,
-											"revision": 4,
+											"major": 9,
+											"minor": 0,
+											"revision": 6,
 											"architecture": "x64",
 											"modernui": 1
 										},
 										"classnamespace": "dsp.gen",
 										"rect": [85.0, 227.0, 1629.0, 804.0],
-										"bglocked": 0,
-										"openinpresentation": 0,
-										"default_fontsize": 12.0,
-										"default_fontface": 0,
-										"default_fontname": "Arial",
-										"gridonopen": 1,
 										"gridsize": [15.0, 15.0],
-										"gridsnaponopen": 1,
-										"objectsnaponopen": 1,
-										"statusbarvisible": 2,
-										"toolbarvisible": 1,
-										"lefttoolbarpinned": 0,
-										"toptoolbarpinned": 0,
-										"righttoolbarpinned": 0,
-										"bottomtoolbarpinned": 0,
-										"toolbars_unpinned_last_save": 0,
-										"tallnewobj": 0,
-										"boxanimatetime": 200,
-										"enablehscroll": 1,
-										"enablevscroll": 1,
-										"devicewidth": 0.0,
-										"description": "",
-										"digest": "",
-										"tags": "",
-										"style": "",
-										"subpatcher_template": "",
-										"assistshowspatchername": 0,
 										"boxes": [
 											{
 												"box": {
@@ -1587,12 +1452,6 @@
 						]
 					},
 					"patching_rect": [873.0, 304.0, 91.0, 22.0],
-					"saved_object_attributes": {
-						"description": "",
-						"digest": "",
-						"globalpatchername": "",
-						"tags": ""
-					},
 					"text": "p list aesthetics"
 				}
 			},
@@ -1991,7 +1850,7 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-83",
-					"index": 4,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2146,7 +2005,7 @@
 				"box": {
 					"comment": "LFO Output [0, 1]",
 					"id": "obj-1",
-					"index": 1,
+					"index": 0,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -2157,7 +2016,7 @@
 				"box": {
 					"comment": "Depth [0, 1]",
 					"id": "obj-40",
-					"index": 3,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2169,7 +2028,7 @@
 				"box": {
 					"comment": "Spread [0, 1]",
 					"id": "obj-33",
-					"index": 2,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2181,7 +2040,7 @@
 				"box": {
 					"comment": "Rate [0, ∞] (Hz)",
 					"id": "obj-32",
-					"index": 1,
+					"index": 0,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2547,6 +2406,41 @@
 					"source": ["obj-92", 0]
 				}
 			}
-		]
+		],
+		"parameters": {
+			"obj-23": ["linear_logarithmic", "linear_logarithmic", 0],
+			"obj-28": ["min[2]", "min", 0],
+			"obj-46": ["invert", "invert", 0],
+			"obj-5": ["max[2]", "max", 0],
+			"obj-52": ["conitnuous_discrete", "conitnuous_discrete", 0],
+			"obj-59": ["Spread", "Spread", 0],
+			"obj-61": ["Rate", "Rate", 0],
+			"obj-92": ["Depth[1]", "Depth", 0],
+			"parameterbanks": {
+				"0": {
+					"index": 0,
+					"name": "",
+					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
+				}
+			},
+			"inherited_shortname": 1
+		},
+		"dependency_cache": [
+			{
+				"name": "number-input.gendsp",
+				"bootpath": "~/Desktop/submarine/code",
+				"patcherrelativepath": "../../code",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "spread-lfo.gendsp",
+				"bootpath": "~/Desktop/submarine/code",
+				"patcherrelativepath": "../../code",
+				"type": "gDSP",
+				"implicit": 1
+			}
+		],
+		"autosave": 0
 	}
 }

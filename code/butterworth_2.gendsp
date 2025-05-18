@@ -4,12 +4,12 @@
 		"appversion": {
 			"major": 9,
 			"minor": 0,
-			"revision": 4,
+			"revision": 6,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "dsp.gen",
-		"rect": [-1468.0, 419.0, 1427.0, 644.0],
+		"rect": [34.0, 171.0, 1781.0, 695.0],
 		"gridsize": [15.0, 15.0],
 		"boxes": [
 			{
@@ -61,7 +61,6 @@
 					"source": ["obj-3", 0]
 				}
 			}
-		],
-		"originid": "pat-259"
+		]
 	}
 }

@@ -4,12 +4,12 @@
 		"appversion": {
 			"major": 9,
 			"minor": 0,
-			"revision": 3,
+			"revision": 6,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 115.0, 1372.0, 751.0],
+		"rect": [34.0, 171.0, 1781.0, 695.0],
 		"gridsize": [15.0, 15.0],
 		"boxes": [
 			{
@@ -20,7 +20,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 252.0, 388.0, 174.0],
+					"patching_rect": [626.0, 252.0, 388.0, 175.0],
 					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nThe attack duration of each envelope.\n\nThe sustain duration of each envelope.\n\nThe release duration of each envelope.\n\nControl the curvature of each envelope, such that values < 1. create logarithmic envelopes, and values > 1. create exponential envelopes.\n\nSet the decibel threshold for the internal onset detector.\n\nEnvelope sustains infinitely until retriggered.",
 					"textjustification": 2
 				}
@@ -34,7 +34,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 147.0, 174.0],
+					"patching_rect": [474.0, 252.0, 147.0, 175.0],
 					"text": "Bypass\n\nAttack [0, 2000] (ms)\n\nSustain [0, 2000] (ms)\n\nRelease [0, 2000] (ms)\n\nCurvature [0.25, 8]\n\n\nThreshold [0, -120] (dB)\n\nInfinite Sustain"
 				}
 			},
@@ -46,7 +46,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 388.0, 90.0],
+					"patching_rect": [626.0, 71.0, 388.0, 91.0],
 					"text": "Main dry input.\n\nSet 'Attack' independently.\n\nSet 'Sustain' independently.\n\nSet 'Release' independently.",
 					"textjustification": 2
 				}
@@ -60,7 +60,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 71.0, 147.0, 90.0],
+					"patching_rect": [474.0, 71.0, 147.0, 91.0],
 					"text": "Hexaphonic Input\n\nAttack [0, ∞) (ms)\n\nSustain [0, ∞) (ms)\n\nRelease [0, ∞) (ms)"
 				}
 			},
@@ -73,7 +73,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 505.0, 154.0, 42.0],
+					"patching_rect": [474.0, 505.0, 154.0, 43.0],
 					"text": "Hexaphonic Output\n\nEnvelope Output [0, 1]"
 				}
 			},
@@ -187,7 +187,6 @@
 				}
 			}
 		],
-		"originid": "pat-248",
 		"parameters": {
 			"obj-2::obj-16": ["Attack", "Attack", 0],
 			"obj-2::obj-18": ["Sustain", "Sustain", 0],

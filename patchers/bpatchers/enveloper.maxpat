@@ -4,12 +4,12 @@
 		"appversion": {
 			"major": 9,
 			"minor": 0,
-			"revision": 4,
+			"revision": 6,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [-1468.0, 419.0, 1427.0, 644.0],
+		"rect": [34.0, 171.0, 1781.0, 695.0],
 		"openinpresentation": 1,
 		"gridsize": [15.0, 15.0],
 		"boxes": [
@@ -161,7 +161,6 @@
 							"parameter_mmax": 0.0,
 							"parameter_mmin": -120.0,
 							"parameter_modmode": 3,
-							"parameter_osc_name": "<default>",
 							"parameter_shortname": "Threshold",
 							"parameter_type": 0,
 							"parameter_unitstyle": 1
@@ -206,7 +205,6 @@
 							"parameter_mmax": 8.0,
 							"parameter_mmin": 0.25,
 							"parameter_modmode": 3,
-							"parameter_osc_name": "<default>",
 							"parameter_shortname": "live.numbox",
 							"parameter_type": 0,
 							"parameter_unitstyle": 1
@@ -226,6 +224,7 @@
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"fontname": "Moderat Trial Medium",
 					"fontsize": 12.0,
+					"hidden": 1,
 					"id": "obj-19",
 					"maxclass": "live.dial",
 					"numinlets": 1,
@@ -258,7 +257,6 @@
 							"parameter_longname": "Release",
 							"parameter_mmax": 2000.0,
 							"parameter_modmode": 3,
-							"parameter_osc_name": "<default>",
 							"parameter_shortname": "Release",
 							"parameter_type": 0,
 							"parameter_unitstyle": 2
@@ -278,6 +276,7 @@
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"fontname": "Moderat Trial Medium",
 					"fontsize": 12.0,
+					"hidden": 1,
 					"id": "obj-18",
 					"maxclass": "live.dial",
 					"numinlets": 1,
@@ -310,7 +309,6 @@
 							"parameter_longname": "Sustain",
 							"parameter_mmax": 2000.0,
 							"parameter_modmode": 3,
-							"parameter_osc_name": "<default>",
 							"parameter_shortname": "Sustain",
 							"parameter_type": 0,
 							"parameter_unitstyle": 2
@@ -362,7 +360,6 @@
 							"parameter_longname": "Attack",
 							"parameter_mmax": 2000.0,
 							"parameter_modmode": 3,
-							"parameter_osc_name": "<default>",
 							"parameter_shortname": "Attack",
 							"parameter_type": 0,
 							"parameter_unitstyle": 2
@@ -510,14 +507,13 @@
 						"appversion": {
 							"major": 9,
 							"minor": 0,
-							"revision": 4,
+							"revision": 6,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
-						"rect": [-1468.0, 419.0, 1427.0, 644.0],
+						"rect": [34.0, 171.0, 1781.0, 695.0],
 						"gridsize": [15.0, 15.0],
-						"visible": 1,
 						"boxes": [
 							{
 								"box": {
@@ -527,7 +523,7 @@
 											"appversion": {
 												"major": 9,
 												"minor": 0,
-												"revision": 4,
+												"revision": 6,
 												"architecture": "x64",
 												"modernui": 1
 											},
@@ -540,22 +536,22 @@
 														"maxclass": "comment",
 														"text": "This gen was originally created by Rodrigo Constanzo",
 														"patching_rect": [690.0, 15.0, 295.0, 20.0],
-														"id": "obj-3",
+														"numoutlets": 0,
 														"numinlets": 1,
-														"numoutlets": 0
+														"id": "obj-3"
 													}
 												},
 												{
 													"box": {
 														"maxclass": "codebox",
 														"patching_rect": [50.0, 46.0, 935.0, 377.0],
-														"id": "obj-5",
 														"fontsize": 12.0,
-														"numinlets": 1,
 														"numoutlets": 1,
-														"fontname": "<Monospaced>",
 														"outlettype": [""],
+														"fontname": "<Monospaced>",
 														"fontface": 0,
+														"numinlets": 1,
+														"id": "obj-5",
 														"code": "History state(0); \nHistory debounce(0); \nHistory prevValue(0); \n\nParam onthreshold(12); \nParam offthreshold(8); \nParam minslicelength(1323); \n\nif (state == 0 && in > onthreshold && prevValue < onthreshold && debounce == 0) {\n\tout1 = 1;   \n\tdebounce = int(minslicelength); \t\n \tstate = 1; \n} else {\n\tif (debounce > 0) {\r\n\t\tdebounce = debounce - 1;\r\n\t}\n}\r\n\nif (state == 1 && in1 < offthreshold) {\n\tstate = 0; \n}\r\n\nprevValue = in1;"
 													}
 												},
@@ -564,10 +560,10 @@
 														"maxclass": "newobj",
 														"text": "in 1",
 														"patching_rect": [50.0, 14.0, 28.0, 22.0],
-														"id": "obj-1",
-														"numinlets": 0,
 														"numoutlets": 1,
-														"outlettype": [""]
+														"outlettype": [""],
+														"numinlets": 0,
+														"id": "obj-1"
 													}
 												},
 												{
@@ -575,27 +571,26 @@
 														"maxclass": "newobj",
 														"text": "out 1",
 														"patching_rect": [50.0, 440.0, 35.0, 22.0],
-														"id": "obj-4",
+														"numoutlets": 0,
 														"numinlets": 1,
-														"numoutlets": 0
+														"id": "obj-4"
 													}
 												}
 											],
 											"lines": [
 												{
 													"patchline": {
-														"source": ["obj-1", 0],
-														"destination": ["obj-5", 0]
+														"source": ["obj-5", 0],
+														"destination": ["obj-4", 0]
 													}
 												},
 												{
 													"patchline": {
-														"source": ["obj-5", 0],
-														"destination": ["obj-4", 0]
+														"source": ["obj-1", 0],
+														"destination": ["obj-5", 0]
 													}
 												}
-											],
-											"originid": "pat-158"
+											]
 										}
 									},
 									"id": "obj-162",
@@ -605,7 +600,7 @@
 									"outlettype": ["multichannelsignal"],
 									"patching_rect": [60.0, 100.0, 359.0, 22.0],
 									"text": "mc.gen~ @onthreshold 19 @offthreshold 5 @minslicelength 1323",
-									"wrapper_uniquekey": "u255001756"
+									"wrapper_uniquekey": "u747000802"
 								}
 							},
 							{
@@ -620,14 +615,13 @@
 										"appversion": {
 											"major": 9,
 											"minor": 0,
-											"revision": 4,
+											"revision": 6,
 											"architecture": "x64",
 											"modernui": 1
 										},
 										"classnamespace": "box",
-										"rect": [-1468.0, 419.0, 1427.0, 644.0],
+										"rect": [34.0, 171.0, 1781.0, 695.0],
 										"gridsize": [15.0, 15.0],
-										"visible": 1,
 										"boxes": [
 											{
 												"box": {
@@ -722,7 +716,7 @@
 													"maxclass": "inlet",
 													"numinlets": 0,
 													"numoutlets": 1,
-													"outlettype": ["multichannelsignal"],
+													"outlettype": [""],
 													"patching_rect": [28.0, 21.0, 30.0, 30.0],
 													"varname": "u723004901"
 												}
@@ -817,13 +811,9 @@
 													"source": ["obj-99", 0]
 												}
 											}
-										],
-										"originid": "pat-277"
+										]
 									},
 									"patching_rect": [60.0, 65.0, 358.75, 22.0],
-									"saved_object_attributes": {
-										"globalpatchername": ""
-									},
 									"text": "p mc.flucoma.ampfeature~"
 								}
 							},
@@ -859,7 +849,7 @@
 									"maxclass": "inlet",
 									"numinlets": 0,
 									"numoutlets": 1,
-									"outlettype": ["multichannelsignal"],
+									"outlettype": [""],
 									"patching_rect": [15.0, 18.0, 30.0, 30.0]
 								}
 							},
@@ -1006,13 +996,9 @@
 									"source": ["obj-43", 0]
 								}
 							}
-						],
-						"originid": "pat-156"
+						]
 					},
 					"patching_rect": [208.0, 402.64104151725769, 878.0, 22.0],
-					"saved_object_attributes": {
-						"globalpatchername": ""
-					},
 					"text": "p dsp"
 				}
 			},
@@ -1295,7 +1281,7 @@
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": ["multichannelsignal"],
+					"outlettype": [""],
 					"patching_rect": [126.0, 356.64104151725769, 30.0, 30.0]
 				}
 			},
@@ -1850,7 +1836,6 @@
 					"source": ["obj-99", 0]
 				}
 			}
-		],
-		"originid": "pat-154"
+		]
 	}
 }

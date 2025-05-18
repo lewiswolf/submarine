@@ -2,41 +2,15 @@
 	"patcher": {
 		"fileversion": 1,
 		"appversion": {
-			"major": 8,
-			"minor": 6,
-			"revision": 4,
+			"major": 9,
+			"minor": 0,
+			"revision": 6,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 118.0, 1372.0, 748.0],
-		"bglocked": 0,
-		"openinpresentation": 0,
-		"default_fontsize": 12.0,
-		"default_fontface": 0,
-		"default_fontname": "Arial",
-		"gridonopen": 1,
+		"rect": [34.0, 171.0, 1781.0, 695.0],
 		"gridsize": [15.0, 15.0],
-		"gridsnaponopen": 1,
-		"objectsnaponopen": 1,
-		"statusbarvisible": 2,
-		"toolbarvisible": 1,
-		"lefttoolbarpinned": 0,
-		"toptoolbarpinned": 0,
-		"righttoolbarpinned": 0,
-		"bottomtoolbarpinned": 0,
-		"toolbars_unpinned_last_save": 0,
-		"tallnewobj": 0,
-		"boxanimatetime": 200,
-		"enablehscroll": 1,
-		"enablevscroll": 1,
-		"devicewidth": 0.0,
-		"description": "",
-		"digest": "",
-		"tags": "",
-		"style": "",
-		"subpatcher_template": "",
-		"assistshowspatchername": 0,
 		"boxes": [
 			{
 				"box": {
@@ -215,7 +189,6 @@
 			"obj-2::obj-23": ["linear_logarithmic", "linear_logarithmic", 0],
 			"obj-2::obj-28": ["min[2]", "min", 0],
 			"obj-2::obj-46": ["textbutton[6]", "invert", 0],
-			"obj-2::obj-48": ["reorder_channels", "reorder_channels", 0],
 			"obj-2::obj-5": ["max[2]", "max", 0],
 			"obj-2::obj-52": ["conitnuous_discrete", "conitnuous_discrete", 0],
 			"obj-2::obj-59": ["Spread", "Spread", 0],
@@ -233,21 +206,21 @@
 		"dependency_cache": [
 			{
 				"name": "number-input.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"bootpath": "~/Desktop/submarine/code",
 				"patcherrelativepath": "../code",
 				"type": "gDSP",
 				"implicit": 1
 			},
 			{
 				"name": "spread-lfo.gendsp",
-				"bootpath": "~/Dropbox/Work/Submarine/code",
+				"bootpath": "~/Desktop/submarine/code",
 				"patcherrelativepath": "../code",
 				"type": "gDSP",
 				"implicit": 1
 			},
 			{
 				"name": "spread-lfo.maxpat",
-				"bootpath": "~/Dropbox/Work/Submarine/patchers/bpatchers",
+				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
 				"patcherrelativepath": "../patchers/bpatchers",
 				"type": "JSON",
 				"implicit": 1
