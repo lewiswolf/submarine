@@ -4,12 +4,12 @@
 		"appversion": {
 			"major": 9,
 			"minor": 0,
-			"revision": 3,
+			"revision": 6,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [59.0, 134.0, 1340.0, 672.0],
+		"rect": [34.0, 171.0, 1781.0, 695.0],
 		"gridsize": [15.0, 15.0],
 		"boxes": [
 			{
@@ -45,7 +45,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [10.5, 11.0, 302.0, 70.0],
+					"patching_rect": [10.5, 11.0, 302.0, 71.0],
 					"text": "SubSix Playground\n"
 				}
 			},
@@ -489,7 +489,6 @@
 							"parameter_mmax": 6.0,
 							"parameter_mmin": -70.0,
 							"parameter_modmode": 3,
-							"parameter_osc_name": "<default>",
 							"parameter_shortname": "Master Gain",
 							"parameter_type": 0,
 							"parameter_unitstyle": 4
@@ -713,7 +712,6 @@
 				}
 			}
 		],
-		"originid": "pat-205",
 		"parameters": {
 			"obj-103::obj-16": ["Attack", "Attack", 0],
 			"obj-103::obj-18": ["Sustain", "Sustain", 0],

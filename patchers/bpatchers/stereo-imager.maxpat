@@ -750,7 +750,7 @@
 									"maxclass": "inlet",
 									"numinlets": 0,
 									"numoutlets": 1,
-									"outlettype": [""],
+									"outlettype": ["multichannelsignal"],
 									"patching_rect": [49.666671752929688, 239.0, 30.0, 30.0]
 								}
 							},
@@ -1322,9 +1322,9 @@
 							"parameter_type": 2
 						}
 					},
-					"text": "Manual",
+					"text": "LFO Input",
 					"textcolor": [1.0, 1.0, 1.0, 1.0],
-					"texton": "LFO Input",
+					"texton": "Manual",
 					"textoncolor": [1.0, 1.0, 1.0, 1.0],
 					"varname": "lfo_manual"
 				}
@@ -1956,7 +1956,7 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-83",
-					"index": 0,
+					"index": 6,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2070,7 +2070,7 @@
 				"box": {
 					"comment": "LFO Offset [-1, 1]",
 					"id": "obj-44",
-					"index": 0,
+					"index": 5,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2082,7 +2082,7 @@
 				"box": {
 					"comment": "LFO Depth [0, 1]",
 					"id": "obj-40",
-					"index": 0,
+					"index": 4,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2094,7 +2094,7 @@
 				"box": {
 					"comment": "LFO Spread [0, 1]",
 					"id": "obj-33",
-					"index": 0,
+					"index": 3,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2106,7 +2106,7 @@
 				"box": {
 					"comment": "LFO Rate [0, ∞) (Hz) ",
 					"id": "obj-32",
-					"index": 0,
+					"index": 2,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2137,7 +2137,7 @@
 				"box": {
 					"comment": "Right Channel",
 					"id": "obj-6",
-					"index": 0,
+					"index": 2,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -2148,7 +2148,7 @@
 				"box": {
 					"comment": "Left Channel",
 					"id": "obj-2",
-					"index": 0,
+					"index": 1,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -2159,11 +2159,11 @@
 				"box": {
 					"comment": "Hexaphonic Input",
 					"id": "obj-1",
-					"index": 0,
+					"index": 1,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": [""],
+					"outlettype": ["multichannelsignal"],
 					"patching_rect": [24.000000715255737, 152.66667115688324, 30.0, 30.0]
 				}
 			},
@@ -2211,7 +2211,7 @@
 						"valueof": {
 							"parameter_enum": ["off", "on"],
 							"parameter_linknames": 1,
-							"parameter_longname": "reorder_channels",
+							"parameter_longname": "reorder_channels[1]",
 							"parameter_mmax": 1,
 							"parameter_modmode": 0,
 							"parameter_shortname": "reorder_channels",
@@ -2751,47 +2751,6 @@
 					"source": ["obj-89", 0]
 				}
 			}
-		],
-		"parameters": {
-			"obj-10": ["lfo_manual", "lfo_manual", 0],
-			"obj-116": ["linear_logarithmic[4]", "linear_logarithmic", 0],
-			"obj-117": ["Rate[2]", "Rate", 0],
-			"obj-118": ["Spread[2]", "Spread", 0],
-			"obj-131": ["Depth[4]", "Depth", 0],
-			"obj-20": ["offset", "offset", 0],
-			"obj-24": ["reorder_channels", "reorder_channels", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"inherited_shortname": 1
-		},
-		"dependency_cache": [
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "spread-lfo.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "stereo-imager.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			}
-		],
-		"autosave": 0
+		]
 	}
 }
