@@ -2751,6 +2751,47 @@
 					"source": ["obj-89", 0]
 				}
 			}
-		]
+		],
+		"parameters": {
+			"obj-10": ["lfo_manual", "lfo_manual", 0],
+			"obj-116": ["linear_logarithmic[4]", "linear_logarithmic", 0],
+			"obj-117": ["Rate[2]", "Rate", 0],
+			"obj-118": ["Spread[2]", "Spread", 0],
+			"obj-131": ["Depth[4]", "Depth", 0],
+			"obj-20": ["offset", "offset", 0],
+			"obj-24": ["reorder_channels", "reorder_channels", 0],
+			"parameterbanks": {
+				"0": {
+					"index": 0,
+					"name": "",
+					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
+				}
+			},
+			"inherited_shortname": 1
+		},
+		"dependency_cache": [
+			{
+				"name": "number-input.gendsp",
+				"bootpath": "~/Desktop/submarine/code",
+				"patcherrelativepath": "../../code",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "spread-lfo.gendsp",
+				"bootpath": "~/Desktop/submarine/code",
+				"patcherrelativepath": "../../code",
+				"type": "gDSP",
+				"implicit": 1
+			},
+			{
+				"name": "stereo-imager.gendsp",
+				"bootpath": "~/Desktop/submarine/code",
+				"patcherrelativepath": "../../code",
+				"type": "gDSP",
+				"implicit": 1
+			}
+		],
+		"autosave": 0
 	}
 }
