@@ -2,8 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3827519017,
-	"viewrect": [0.0, 143.0, 1440.0, 723.0],
+	"modificationdate": 3830848506,
+	"viewrect": [0.0, 128.0, 1796.0, 773.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -50,6 +50,22 @@
 			"stereo-imager.maxpat": {
 				"kind": "patcher",
 				"local": 1
+			},
+			"hex-input.maxpat": {
+				"kind": "patcher",
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Desktop/submarine/patchers/utils",
+					"projectrelativepath": "./patchers/utils"
+				}
+			},
+			"hex-output.maxpat": {
+				"kind": "patcher",
+				"local": 1,
+				"singleton": {
+					"bootpath": "~/Desktop/submarine/patchers/utils",
+					"projectrelativepath": "./patchers/utils"
+				}
 			},
 			"stem-player.maxpat": {
 				"kind": "patcher",

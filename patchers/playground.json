@@ -5,7 +5,6 @@
 			"1": {
 				"id": 1,
 				"data": {
-					"master_gain": [-6.0],
 					"pitch-shift::bypass": [0],
 					"pitch-shift::mix": [100.0],
 					"pitch-shift::pitch_shift": [0.0],
@@ -28,7 +27,7 @@
 					"stereo-imager::rate": [0.5],
 					"stereo-imager::reorder_channels": [0],
 					"stereo-imager::spread": [0.0],
-					"stereo-imager::manual_panning": [-1.0, -0.6, -0.2, 0.2, 0.6, 1.0],
+					"stereo-imager::manual_panning": [1.0, 0.6, 0.2, -0.2, -0.6, -1.0],
 					"spread_lfo::bypass": [1],
 					"spread_lfo::conitnuous_discrete": [0],
 					"spread_lfo::depth": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
@@ -72,7 +71,10 @@
 					"spread::linear_logarithmic": [0],
 					"spread::max": [1.0],
 					"spread::min": [0.0],
-					"spread::multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
+					"spread::multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
+					"hex-input::first_channel": [1],
+					"hex-output::master_volume": [127],
+					"hex-output::first_channel": [1]
 				}
 			}
 		}
