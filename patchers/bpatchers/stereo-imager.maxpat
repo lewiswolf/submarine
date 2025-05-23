@@ -4,12 +4,12 @@
 		"appversion": {
 			"major": 9,
 			"minor": 0,
-			"revision": 6,
+			"revision": 7,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1781.0, 695.0],
+		"rect": [34.0, 128.0, 1851.0, 773.0],
 		"openinpresentation": 1,
 		"gridsize": [15.0, 15.0],
 		"boxes": [
@@ -22,7 +22,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [24.000000715255737, 47.3333340883255, 268.0, 22.0],
+					"patching_rect": [24.0, 47.0, 268.0, 22.0],
 					"text": "by Lewis Wolstanholme & Pete Roe"
 				}
 			},
@@ -87,21 +87,32 @@
 					"id": "obj-60",
 					"maxclass": "newobj",
 					"numinlets": 14,
-					"numoutlets": 3,
-					"outlettype": ["signal", "signal", ""],
+					"numoutlets": 2,
+					"outlettype": ["multichannelsignal", ""],
 					"patcher": {
 						"fileversion": 1,
 						"appversion": {
 							"major": 9,
 							"minor": 0,
-							"revision": 6,
+							"revision": 7,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
-						"rect": [34.0, 171.0, 1372.0, 695.0],
+						"rect": [34.0, 128.0, 1851.0, 773.0],
 						"gridsize": [15.0, 15.0],
 						"boxes": [
+							{
+								"box": {
+									"id": "obj-1",
+									"maxclass": "newobj",
+									"numinlets": 2,
+									"numoutlets": 1,
+									"outlettype": ["multichannelsignal"],
+									"patching_rect": [50.0, 421.0, 189.666671752929688, 22.0],
+									"text": "mc.combine~ 2"
+								}
+							},
 							{
 								"box": {
 									"id": "obj-100",
@@ -114,12 +125,12 @@
 										"appversion": {
 											"major": 9,
 											"minor": 0,
-											"revision": 6,
+											"revision": 7,
 											"architecture": "x64",
 											"modernui": 1
 										},
 										"classnamespace": "box",
-										"rect": [-1864.0, 100.0, 1640.0, 801.0],
+										"rect": [34.0, 128.0, 1851.0, 773.0],
 										"gridsize": [15.0, 15.0],
 										"boxes": [
 											{
@@ -918,25 +929,14 @@
 									"maxclass": "outlet",
 									"numinlets": 1,
 									"numoutlets": 0,
-									"patching_rect": [49.666671752929688, 421.0, 30.0, 30.0]
-								}
-							},
-							{
-								"box": {
-									"comment": "",
-									"id": "obj-58",
-									"index": 2,
-									"maxclass": "outlet",
-									"numinlets": 1,
-									"numoutlets": 0,
-									"patching_rect": [220.666671752929688, 421.0, 30.0, 30.0]
+									"patching_rect": [50.0, 459.0, 30.0, 30.0]
 								}
 							},
 							{
 								"box": {
 									"comment": "",
 									"id": "obj-59",
-									"index": 3,
+									"index": 2,
 									"maxclass": "outlet",
 									"numinlets": 1,
 									"numoutlets": 0,
@@ -945,6 +945,12 @@
 							}
 						],
 						"lines": [
+							{
+								"patchline": {
+									"destination": ["obj-57", 0],
+									"source": ["obj-1", 0]
+								}
+							},
 							{
 								"patchline": {
 									"destination": ["obj-30", 1],
@@ -1111,7 +1117,7 @@
 							},
 							{
 								"patchline": {
-									"destination": ["obj-57", 0],
+									"destination": ["obj-1", 0],
 									"source": ["obj-4", 0]
 								}
 							},
@@ -1149,7 +1155,7 @@
 							},
 							{
 								"patchline": {
-									"destination": ["obj-58", 0],
+									"destination": ["obj-1", 1],
 									"source": ["obj-5", 0]
 								}
 							},
@@ -1340,8 +1346,9 @@
 					"restore": {
 						"bypass": [0],
 						"depth": [0.5],
-						"lfo_manual": [0],
+						"lfo_manual": [1],
 						"linear_logarithmic": [0],
+						"manual_panning": [1.0, 0.6, 0.2, -0.2, -0.6, -1.0],
 						"offset": [0.0],
 						"rate": [0.5],
 						"reorder_channels": [0],
@@ -1355,6 +1362,7 @@
 				"box": {
 					"fontname": "Moderat Trial",
 					"format": 6,
+					"hidden": 1,
 					"id": "obj-20",
 					"maxclass": "flonum",
 					"maximum": 1.0,
@@ -1382,6 +1390,7 @@
 			},
 			{
 				"box": {
+					"hidden": 1,
 					"id": "obj-21",
 					"maxclass": "comment",
 					"numinlets": 1,
@@ -1405,12 +1414,12 @@
 						"appversion": {
 							"major": 9,
 							"minor": 0,
-							"revision": 6,
+							"revision": 7,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
-						"rect": [34.0, 118.0, 1372.0, 748.0],
+						"rect": [34.0, 128.0, 1851.0, 773.0],
 						"gridsize": [15.0, 15.0],
 						"boxes": [
 							{
@@ -1475,7 +1484,7 @@
 									"numinlets": 2,
 									"numoutlets": 2,
 									"outlettype": ["", ""],
-									"patching_rect": [217.0, 187.0, 163.0, 22.0],
+									"patching_rect": [217.0, 154.0, 163.0, 22.0],
 									"text": "list.reg -1. -0.6 -0.2 0.2 0.6 1."
 								}
 							},
@@ -1506,7 +1515,7 @@
 									"numinlets": 2,
 									"numoutlets": 2,
 									"outlettype": ["", ""],
-									"patching_rect": [217.0, 156.0, 163.0, 22.0],
+									"patching_rect": [217.0, 184.0, 163.0, 22.0],
 									"text": "list.reg 1. 0.6 0.2 -0.2 -0.6 -1."
 								}
 							},
@@ -1550,7 +1559,7 @@
 							{
 								"patchline": {
 									"destination": ["obj-11", 0],
-									"source": ["obj-10", 2]
+									"source": ["obj-10", 1]
 								}
 							},
 							{
@@ -1580,7 +1589,7 @@
 							{
 								"patchline": {
 									"destination": ["obj-9", 0],
-									"source": ["obj-10", 1]
+									"source": ["obj-10", 2]
 								}
 							},
 							{
@@ -1645,7 +1654,6 @@
 					"color": [0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0],
 					"elementcolor": [0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0],
 					"fontname": "Moderat Trial",
-					"hidden": 1,
 					"id": "obj-16",
 					"items": [
 						"Centre",
@@ -1720,6 +1728,7 @@
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"fontname": "Moderat Trial Medium",
 					"fontsize": 12.0,
+					"hidden": 1,
 					"id": "obj-131",
 					"maxclass": "live.dial",
 					"numinlets": 1,
@@ -1782,6 +1791,7 @@
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"fontname": "Moderat Trial Medium",
 					"fontsize": 12.0,
+					"hidden": 1,
 					"id": "obj-117",
 					"maxclass": "live.dial",
 					"numinlets": 1,
@@ -1834,6 +1844,7 @@
 					"focusbordercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"fontname": "Moderat Trial Medium",
 					"fontsize": 12.0,
+					"hidden": 1,
 					"id": "obj-118",
 					"maxclass": "live.dial",
 					"numinlets": 1,
@@ -1914,6 +1925,7 @@
 				"box": {
 					"bgcolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"fontname": "Moderat Trial",
+					"hidden": 1,
 					"id": "obj-116",
 					"maxclass": "textbutton",
 					"mode": 1,
@@ -2043,6 +2055,7 @@
 					"bgfillcolor_type": "color",
 					"color": [0.968627450980392, 0.968627450980392, 0.968627450980392, 1.0],
 					"fontname": "Moderat Trial",
+					"hidden": 1,
 					"id": "obj-89",
 					"items": ["Sine", ",", "Triangle", ",", "Square", ",", "Sawtooth", ",", "Random"],
 					"maxclass": "umenu",
@@ -2118,7 +2131,6 @@
 				"box": {
 					"contdata": 1,
 					"id": "obj-51",
-					"ignoreclick": 1,
 					"maxclass": "multislider",
 					"numinlets": 1,
 					"numoutlets": 2,
@@ -2130,18 +2142,8 @@
 					"presentation_rect": [10.0, 30.0, 160.0, 110.0],
 					"size": 6,
 					"slidercolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
-					"spacing": 2
-				}
-			},
-			{
-				"box": {
-					"comment": "Right Channel",
-					"id": "obj-6",
-					"index": 2,
-					"maxclass": "outlet",
-					"numinlets": 1,
-					"numoutlets": 0,
-					"patching_rect": [726.333379983901978, 486.0, 30.0, 30.0]
+					"spacing": 2,
+					"varname": "manual_panning"
 				}
 			},
 			{
@@ -2193,6 +2195,7 @@
 				"box": {
 					"bgcolor": [0.356862745098039, 0.513725490196078, 0.862745098039216, 1.0],
 					"fontname": "Moderat Trial",
+					"hidden": 1,
 					"id": "obj-24",
 					"maxclass": "textbutton",
 					"mode": 1,
@@ -2691,12 +2694,6 @@
 			{
 				"patchline": {
 					"destination": ["obj-51", 0],
-					"source": ["obj-60", 2]
-				}
-			},
-			{
-				"patchline": {
-					"destination": ["obj-6", 0],
 					"source": ["obj-60", 1]
 				}
 			},
@@ -2751,47 +2748,6 @@
 					"source": ["obj-89", 0]
 				}
 			}
-		],
-		"parameters": {
-			"obj-10": ["lfo_manual", "lfo_manual", 0],
-			"obj-116": ["linear_logarithmic[4]", "linear_logarithmic", 0],
-			"obj-117": ["Rate[2]", "Rate", 0],
-			"obj-118": ["Spread[2]", "Spread", 0],
-			"obj-131": ["Depth[4]", "Depth", 0],
-			"obj-20": ["offset", "offset", 0],
-			"obj-24": ["reorder_channels", "reorder_channels", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"inherited_shortname": 1
-		},
-		"dependency_cache": [
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "spread-lfo.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "stereo-imager.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			}
-		],
-		"autosave": 0
+		]
 	}
 }
