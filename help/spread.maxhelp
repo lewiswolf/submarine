@@ -3,14 +3,13 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 6,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1781.0, 695.0],
-		"gridsize": [15.0, 15.0],
+		"rect": [34.0, 121.0, 1372.0, 745.0],
 		"boxes": [
 			{
 				"box": {
@@ -20,7 +19,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [646.0, 252.0, 389.0, 163.0],
+					"patching_rect": [646.0, 252.0, 389.0, 162.0],
 					"text": "Bypass the output entirely.\n\nChoose from a range of preset configurations.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSet the minimum value of the output by (setting this as the maximum inverts the polarity of the interface).\n\nSet the maximum value of the output (setting this as the minimum inverts the polarity of the interface).",
 					"textjustification": 2
 				}
@@ -34,7 +33,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 162.0, 163.0],
+					"patching_rect": [474.0, 252.0, 162.0, 162.0],
 					"text": "Bypass\n\nPresets\n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nMin [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
 				}
 			},
@@ -188,24 +187,8 @@
 			"obj-2::obj-30": ["max", "max", 0],
 			"obj-2::obj-51": ["multislider", "multislider", 0],
 			"obj-2::obj-52": ["conitnuous_discrete[1]", "conitnuous_discrete", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
 			"inherited_shortname": 1
 		},
-		"dependency_cache": [
-			{
-				"name": "spread.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "../patchers/bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			}
-		],
 		"autosave": 0
 	}
 }

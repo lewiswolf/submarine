@@ -2,8 +2,8 @@
 	"name": "Submarine",
 	"version": 1,
 	"creationdate": 3801728560,
-	"modificationdate": 3830848506,
-	"viewrect": [0.0, 128.0, 1796.0, 773.0],
+	"modificationdate": 3845826257,
+	"viewrect": [0.0, 121.0, 1440.0, 745.0],
 	"autoorganize": 0,
 	"hideprojectwindow": 0,
 	"showdependencies": 1,
@@ -53,19 +53,11 @@
 			},
 			"hex-input.maxpat": {
 				"kind": "patcher",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/patchers/utils",
-					"projectrelativepath": "./patchers/utils"
-				}
+				"local": 1
 			},
 			"hex-output.maxpat": {
 				"kind": "patcher",
-				"local": 1,
-				"singleton": {
-					"bootpath": "~/Desktop/submarine/patchers/utils",
-					"projectrelativepath": "./patchers/utils"
-				}
+				"local": 1
 			},
 			"stem-player.maxpat": {
 				"kind": "patcher",
@@ -92,6 +84,10 @@
 				"local": 1
 			},
 			"hex-fuzz.maxhelp": {
+				"kind": "helpfile",
+				"local": 1
+			},
+			"hex-input-output.maxhelp": {
 				"kind": "helpfile",
 				"local": 1
 			},

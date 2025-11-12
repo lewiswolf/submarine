@@ -3,14 +3,13 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 6,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1781.0, 695.0],
-		"gridsize": [15.0, 15.0],
+		"rect": [34.0, 121.0, 1372.0, 745.0],
 		"boxes": [
 			{
 				"box": {
@@ -20,7 +19,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [663.0, 270.0, 442.0, 139.0],
+					"patching_rect": [663.0, 270.0, 442.0, 138.0],
 					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nRetune your guitar input. All pitch shifting/vibrato is applied after this retuning.\n\nPitch shift the input by a given semitone.\n\nSet the rate of vibrato.\n\nControl how much the vibrato shifts around the pitch shifted frequency.\n\nControl the mix of the main output.",
 					"textjustification": 2
 				}
@@ -34,7 +33,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [460.0, 270.0, 198.0, 139.0],
+					"patching_rect": [460.0, 270.0, 198.0, 138.0],
 					"text": "Bypass\n\nTuning Preset\n\nPitch Shift [-48, 48] (semitones)\n\nVibrato Rate [0, 50) (Hz)\n\nVibrato Amount [0, 24] (semitones)\n\nDry / Wet [0, 100] (%)"
 				}
 			},
@@ -46,7 +45,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [663.0, 71.0, 444.0, 115.0],
+					"patching_rect": [663.0, 71.0, 444.0, 114.0],
 					"text": "Main dry input.\n\nSet 'Pitch Shift' independently.\n\nSet 'Vibrato Rate' independently.\n\nSet 'Vibrato Amount' independently.\n\nSet 'Dry / Wet' independently.",
 					"textjustification": 2
 				}
@@ -60,7 +59,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [460.0, 71.0, 198.0, 115.0],
+					"patching_rect": [460.0, 71.0, 198.0, 114.0],
 					"text": "Hexaphonic Input\n\nPitch Shift [-48, 48] (semitones)\n\nVibrato Rate [0, ∞) (Hz)\n\nVibrato Amount [0, 24] (semitones)\n\nDry / Wet [0, 1]"
 				}
 			},
@@ -191,13 +190,6 @@
 			"obj-2::obj-45": ["vibrato_amount", "Vibrato Amt", 0],
 			"obj-2::obj-6": ["tuning", "tuning_preset", 0],
 			"obj-2::obj-63": ["vibrato_rate", "Vibrato Rate", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
 			"parameter_overrides": {
 				"obj-2::obj-36": {
 					"parameter_longname": "mix[1]"
@@ -208,29 +200,6 @@
 			},
 			"inherited_shortname": 1
 		},
-		"dependency_cache": [
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "pitch-shift.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "pitch-shift.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "../patchers/bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			}
-		],
 		"autosave": 0
 	}
 }

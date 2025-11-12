@@ -3,14 +3,13 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 6,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1781.0, 695.0],
-		"gridsize": [15.0, 15.0],
+		"rect": [34.0, 121.0, 1372.0, 745.0],
 		"boxes": [
 			{
 				"box": {
@@ -20,7 +19,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 252.0, 388.0, 199.0],
+					"patching_rect": [626.0, 252.0, 388.0, 198.0],
 					"text": "Bypass the effect, disabling the second outlet and passing the input.\n\nTime between each delay. \n\nDistribute 'Delay Time' across the 6 strings of the guitar.\n\nControl the recursive amplitude of the delay feedback.\n\nLow pass filter acting on the delay feedback.\n\nControl the mix of the main output.\n\nToggle reversed delay. \n\nSet the amplitude envelope for each reverse delay, where 0 is no fade, 1 is a triangle envelope, and (0, 1) is a trapezoidal envelope.",
 					"textjustification": 2
 				}
@@ -34,7 +33,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 147.0, 211.0],
+					"patching_rect": [474.0, 252.0, 147.0, 210.0],
 					"text": "Bypass\n\nDelay Time [0, 4000] (ms)\n\nSpread [-1, 1]\n\nFeedback [0, 1]\n\nTone [20, 24000] (Hz)\n\nDry / Wet [0, 100] (%)\n\nReverse Delay\n\nFade [0, 1]\n\n"
 				}
 			},
@@ -46,7 +45,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 388.0, 139.0],
+					"patching_rect": [626.0, 71.0, 388.0, 138.0],
 					"text": "Main dry input.\n\nSet 'Delay Time' independently, bypassing 'Spread'.\n\nSet 'Spread' independently.\n\nSet 'Feedback' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
 					"textjustification": 2
 				}
@@ -60,7 +59,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 71.0, 147.0, 139.0],
+					"patching_rect": [474.0, 71.0, 147.0, 138.0],
 					"text": "Hexaphonic Input\n\nDelay Time [0, 4000] (ms)\n\nSpread [-1, 1]\n\nFeedback [0, 1]\n\nTone [0, ∞) (Hz)\n\nDry / Wet [0, 1]"
 				}
 			},
@@ -73,7 +72,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 505.0, 154.0, 91.0],
+					"patching_rect": [474.0, 505.0, 154.0, 90.0],
 					"text": "Hexaphonic Output\n\nDelay Output\n\nDelay Tap 2/3\n\nDelay Tap 1/3"
 				}
 			},
@@ -124,7 +123,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 505.0, 388.0, 91.0],
+					"patching_rect": [626.0, 505.0, 388.0, 90.0],
 					"text": "Mixed signal between original and delayed signal.\n\nDelay signal unattenuated.\n\nDelay tap at 2/3 of the delay time (unused with reverse delay).\n\nDelay tap at 1/3 of the delay time (unused with reverse delay).",
 					"textjustification": 2
 				}
@@ -199,13 +198,6 @@
 			"obj-2::obj-8": ["Feedback", "Feedback", 0],
 			"obj-2::obj-81": ["Spread[3]", "Spread", 0],
 			"obj-2::obj-9": ["Filter Freq.", "Tone", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
 			"parameter_overrides": {
 				"obj-2::obj-7": {
 					"parameter_longname": "Delay Time"
@@ -216,36 +208,6 @@
 			},
 			"inherited_shortname": 1
 		},
-		"dependency_cache": [
-			{
-				"name": "buffer-delay.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "buffer-delay.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "../patchers/bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "spread-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			}
-		],
 		"autosave": 0
 	}
 }

@@ -3,14 +3,13 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 6,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1781.0, 695.0],
-		"gridsize": [15.0, 15.0],
+		"rect": [34.0, 121.0, 1372.0, 745.0],
 		"boxes": [
 			{
 				"box": {
@@ -20,7 +19,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [625.0, 204.0, 415.0, 259.0],
+					"patching_rect": [625.0, 204.0, 415.0, 258.0],
 					"text": "Bypass the output entirely.\n\nSet the rate of the internal LFOs.\n\nOffset the phase of the internal LFOs.\n\nSet the max output of the LFO.\n\nSwitch between Sine, Triangle, Square, Sawtooth and Random waveforms.\n\nInvert the polarity of the output.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSwitch between 'Spread' channels being ordered 123456 or 142536.\n\nSet the minimum value output by the pedal.\n\nSet the maximum value output by the pedal.",
 					"textjustification": 2
 				}
@@ -34,7 +33,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [464.0, 204.0, 157.0, 259.0],
+					"patching_rect": [464.0, 204.0, 157.0, 258.0],
 					"text": "Bypass\n\nRate [0, 50] (Hz)\n\nSpread [0, 1]\n\nDepth [0, 1]\n\nWaveform\n\nInvert \n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nReorder Channels\n\nMin [-24000., 24000.]\n\nMax [-24000., 24000.]"
 				}
 			},
@@ -46,7 +45,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 414.0, 67.0],
+					"patching_rect": [626.0, 71.0, 414.0, 66.0],
 					"text": "Set 'Rate' independently.\n\nSet 'Spread' independently.\n\nSet 'Depth' independently.",
 					"textjustification": 2
 				}
@@ -60,7 +59,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [464.0, 71.0, 157.0, 67.0],
+					"patching_rect": [464.0, 71.0, 157.0, 66.0],
 					"text": "Rate [0, ∞) (Hz)\n\nSpread [0, 1]\n\nDepth [0, 1]"
 				}
 			},
@@ -194,38 +193,8 @@
 			"obj-2::obj-59": ["Spread", "Spread", 0],
 			"obj-2::obj-61": ["Rate", "Rate", 0],
 			"obj-2::obj-92": ["Depth[1]", "Depth", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
 			"inherited_shortname": 1
 		},
-		"dependency_cache": [
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "spread-lfo.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "spread-lfo.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "../patchers/bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			}
-		],
 		"autosave": 0
 	}
 }

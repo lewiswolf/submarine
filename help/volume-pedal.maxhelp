@@ -3,14 +3,13 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 6,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1781.0, 695.0],
-		"gridsize": [15.0, 15.0],
+		"rect": [34.0, 121.0, 1372.0, 745.0],
 		"boxes": [
 			{
 				"box": {
@@ -20,7 +19,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 252.0, 389.0, 187.0],
+					"patching_rect": [626.0, 252.0, 389.0, 186.0],
 					"text": "Bypass the output entirely.\n\nEvery analog volume pedal is slightly different. Clicking this button resets the calibration for the pedal, which is set by moving the pedal to the minimum and maxmimum.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nOutput confitnuous floating points or integers.\n\nSet the minimum value output by the pedal (setting this as the maximum inverts the polarity of the pedal).\n\nSet the maximum value output by the pedal (setting this as the minimum inverts the polarity of the pedal).",
 					"textjustification": 2
 				}
@@ -34,7 +33,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 147.0, 187.0],
+					"patching_rect": [474.0, 252.0, 147.0, 186.0],
 					"text": "Bypass\n\nCalibrate Pedal\n\n\n\nLinear / Logarithmic\n\nContinuous / Discrete\n\nMin [-24000., 24000.]\n\n\nMax [-24000., 24000.]\n"
 				}
 			},
@@ -190,24 +189,8 @@
 			"obj-2::obj-28": ["min[1]", "min", 0],
 			"obj-2::obj-30": ["max[1]", "max", 0],
 			"obj-2::obj-52": ["conitnuous_discrete[2]", "conitnuous_discrete", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
 			"inherited_shortname": 1
 		},
-		"dependency_cache": [
-			{
-				"name": "volume-pedal.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "../patchers/bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			}
-		],
 		"autosave": 0
 	}
 }

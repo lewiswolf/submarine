@@ -3,14 +3,13 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 6,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1781.0, 695.0],
-		"gridsize": [15.0, 15.0],
+		"rect": [34.0, 121.0, 1372.0, 745.0],
 		"boxes": [
 			{
 				"box": {
@@ -20,7 +19,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 240.0, 415.0, 235.0],
+					"patching_rect": [626.0, 240.0, 415.0, 234.0],
 					"text": "Bypass the output entirely.\n\nSet the rate of the internal LFOs.\n\nOffset the phase of the internal LFOs.\n\nSet the max output of the LFO.\n\nOffset the center of he LFO.\n\nSwitch between Sine, Triangle, Square, Sawtooth and Random waveforms.\n\nSwitch between an output that is linear scaled or scaled by exp(x).\n\nSwitch between 'Spread' channels being ordered 123456 or 142536.\n\nDisable the internal LFO and switch to manual user input.\n\nPresets for Manual.",
 					"textjustification": 2
 				}
@@ -34,7 +33,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [464.0, 240.0, 157.0, 235.0],
+					"patching_rect": [464.0, 240.0, 157.0, 234.0],
 					"text": "Bypass\n\nRate [0, 50] (Hz)\n\nSpread [0, 1]\n\nDepth [0, 1]\n\nOffset [-1, 1]\n\nWaveform\n\nLinear / Logarithmic\n\nReorder Channels\n\nLFO Input / Manual\n\nManual Presets"
 				}
 			},
@@ -46,7 +45,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 414.0, 115.0],
+					"patching_rect": [626.0, 71.0, 414.0, 114.0],
 					"text": "Main dry input.\n\nSet 'Rate' independently.\n\nSet 'Spread' independently.\n\nSet 'Depth' independently.\n\nSet 'Offset' independently.",
 					"textjustification": 2
 				}
@@ -60,7 +59,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [464.0, 71.0, 157.0, 115.0],
+					"patching_rect": [464.0, 71.0, 157.0, 114.0],
 					"text": "Hexaphonic Input\n\nLFO Rate [0, ∞) (Hz)\n\nLFO Spread [0, 1]\n\nLFO Depth [0, 1]\n\nLFO Offset [-1, 1]"
 				}
 			},
@@ -142,9 +141,9 @@
 					"maxclass": "bpatcher",
 					"name": "stereo-imager.maxpat",
 					"numinlets": 6,
-					"numoutlets": 2,
+					"numoutlets": 1,
 					"offset": [0.0, 0.0],
-					"outlettype": ["signal", "signal"],
+					"outlettype": ["multichannelsignal"],
 					"patching_rect": [72.0, 49.0, 350.0, 175.0],
 					"varname": "buffer-delay",
 					"viewvisibility": 1
@@ -195,45 +194,8 @@
 			"obj-2::obj-131": ["Depth[4]", "Depth", 0],
 			"obj-2::obj-20": ["offset", "offset", 0],
 			"obj-2::obj-24": ["channel_order", "reorder_channels", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
 			"inherited_shortname": 1
 		},
-		"dependency_cache": [
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "spread-lfo.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "stereo-imager.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "stereo-imager.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "../patchers/bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			}
-		],
 		"autosave": 0
 	}
 }

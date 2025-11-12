@@ -3,15 +3,14 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 6,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1372.0, 695.0],
+		"rect": [34.0, 121.0, 838.0, 745.0],
 		"openinpresentation": 1,
-		"gridsize": [15.0, 15.0],
 		"boxes": [
 			{
 				"box": {
@@ -48,14 +47,13 @@
 						"fileversion": 1,
 						"appversion": {
 							"major": 9,
-							"minor": 0,
-							"revision": 6,
+							"minor": 1,
+							"revision": 0,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
 						"rect": [34.0, 118.0, 1372.0, 748.0],
-						"gridsize": [15.0, 15.0],
 						"boxes": [
 							{
 								"box": {
@@ -97,7 +95,7 @@
 									"numinlets": 1,
 									"numoutlets": 1,
 									"outlettype": [""],
-									"patching_rect": [253.14285714285711, 135.0, 39.0, 22.0],
+									"patching_rect": [253.1428571428571, 135.0, 39.0, 22.0],
 									"text": "dbtoa"
 								}
 							},
@@ -161,7 +159,7 @@
 									"numinlets": 0,
 									"numoutlets": 1,
 									"outlettype": [""],
-									"patching_rect": [253.142882999999983, 40.0, 30.0, 30.0]
+									"patching_rect": [253.14288299999998, 40.0, 30.0, 30.0]
 								}
 							},
 							{
@@ -314,14 +312,13 @@
 						"fileversion": 1,
 						"appversion": {
 							"major": 9,
-							"minor": 0,
-							"revision": 6,
+							"minor": 1,
+							"revision": 0,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
 						"rect": [34.0, 118.0, 1372.0, 748.0],
-						"gridsize": [15.0, 15.0],
 						"boxes": [
 							{
 								"box": {
@@ -414,7 +411,7 @@
 										"multichannelsignal",
 										"multichannelsignal"
 									],
-									"patching_rect": [127.0, 139.0, 326.999999999999659, 22.0],
+									"patching_rect": [127.0, 139.0, 326.99999999999966, 22.0],
 									"text": "mc.filtercoeff~ @chans 6"
 								}
 							},
@@ -425,7 +422,7 @@
 									"numinlets": 6,
 									"numoutlets": 1,
 									"outlettype": ["multichannelsignal"],
-									"patching_rect": [50.0, 177.0, 403.999999999999659, 22.0],
+									"patching_rect": [50.0, 177.0, 403.99999999999966, 22.0],
 									"text": "mc.biquad~ @chans 6"
 								}
 							},
@@ -437,7 +434,7 @@
 									"maxclass": "inlet",
 									"numinlets": 0,
 									"numoutlets": 1,
-									"outlettype": [""],
+									"outlettype": ["multichannelsignal"],
 									"patching_rect": [50.0, 34.0, 30.0, 30.0]
 								}
 							},
@@ -691,7 +688,7 @@
 				"box": {
 					"comment": "Hexaphonic Output",
 					"id": "obj-71",
-					"index": 0,
+					"index": 1,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -702,11 +699,11 @@
 				"box": {
 					"comment": "Hexaphonic Input",
 					"id": "obj-77",
-					"index": 0,
+					"index": 1,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": [""],
+					"outlettype": ["multichannelsignal"],
 					"patching_rect": [107.0, 268.0, 30.0, 30.0]
 				}
 			},
@@ -723,7 +720,7 @@
 						"filter-type": [0],
 						"frequency": [2000.0],
 						"gain": [0.0],
-						"resonance": [1.0]
+						"resonance": [0.9999999999999998]
 					},
 					"text": "autopattr",
 					"varname": "u790011379"
@@ -744,7 +741,7 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-83",
-					"index": 0,
+					"index": 5,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -782,7 +779,7 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [1106.0, 128.0, 107.0, 62.0],
+					"patching_rect": [1106.0, 129.0, 107.0, 62.0],
 					"text": ";\rmax openfile hex-tone-help hex-tone.maxhelp"
 				}
 			},
@@ -833,7 +830,7 @@
 				"box": {
 					"comment": "Gain [-24, 24] (dB)",
 					"id": "obj-21",
-					"index": 0,
+					"index": 3,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -924,7 +921,7 @@
 				"box": {
 					"comment": "Resonance [0, 24]",
 					"id": "obj-3",
-					"index": 0,
+					"index": 4,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -959,7 +956,7 @@
 				"box": {
 					"comment": "Frequency [0, ∞] (Hz)",
 					"id": "obj-32",
-					"index": 0,
+					"index": 2,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -1487,29 +1484,6 @@
 					"source": ["obj-87", 1]
 				}
 			}
-		],
-		"parameters": {
-			"obj-101": ["Gain[1]", "Gain", 0],
-			"obj-40": ["frequency", "Frequency", 0],
-			"obj-41": ["resonance", "Resonance", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"inherited_shortname": 1
-		},
-		"dependency_cache": [
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			}
-		],
-		"autosave": 0
+		]
 	}
 }

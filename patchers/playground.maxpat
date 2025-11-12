@@ -3,14 +3,13 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 7,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 128.0, 1469.0, 773.0],
-		"gridsize": [15.0, 15.0],
+		"rect": [34.0, 121.0, 1372.0, 745.0],
 		"boxes": [
 			{
 				"box": {
@@ -86,7 +85,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [19.0, 16.0, 302.0, 71.0],
+					"patching_rect": [19.0, 16.0, 302.0, 70.0],
 					"text": "SubSix Playground\n"
 				}
 			},
@@ -508,7 +507,7 @@
 				"patchline": {
 					"destination": ["obj-6", 0],
 					"midpoints": [
-						389.5, 837.0, 734.50103759765625, 837.0, 734.50103759765625, 639.3468017578125, 751.5,
+						389.5, 837.0, 734.5010375976562, 837.0, 734.5010375976562, 639.3468017578125, 751.5,
 						639.3468017578125
 					],
 					"source": ["obj-103", 0]
@@ -517,7 +516,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-1", 6],
-					"midpoints": [28.5, 424.1900634765625, 673.214285714285779, 424.1900634765625],
+					"midpoints": [28.5, 424.1900634765625, 673.2142857142858, 424.1900634765625],
 					"source": ["obj-11", 0]
 				}
 			},
@@ -700,7 +699,8 @@
 				"0": {
 					"index": 0,
 					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
+					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"],
+					"buttons": ["-", "-", "-", "-", "-", "-", "-", "-"]
 				}
 			},
 			"parameter_overrides": {
@@ -893,169 +893,6 @@
 				}
 			}
 		},
-		"dependency_cache": [
-			{
-				"name": "buffer-delay.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "buffer-delay.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "butterworth_2.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "enveloper.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "enveloper.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "harmonic-tremolo.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "harmonic-tremolo.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "hex-fuzz.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "hex-fuzz.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "hex-input.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/utils",
-				"patcherrelativepath": "./utils",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "hex-output.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/utils",
-				"patcherrelativepath": "./utils",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "hex-tone.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "pitch-shift.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "pitch-shift.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "playground.json",
-				"bootpath": "~/Desktop/submarine/patchers",
-				"patcherrelativepath": ".",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "spread-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "spread-lfo.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "spread-lfo.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "spread.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "stereo-imager.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "stereo-imager.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "volume-pedal.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "./bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			}
-		],
 		"autosave": 0
 	}
 }

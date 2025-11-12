@@ -23,11 +23,11 @@
 					"stereo-imager::depth": [0.5],
 					"stereo-imager::lfo_manual": [1],
 					"stereo-imager::linear_logarithmic": [0],
+					"stereo-imager::manual_panning": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
 					"stereo-imager::offset": [0.0],
 					"stereo-imager::rate": [0.5],
 					"stereo-imager::reorder_channels": [0],
 					"stereo-imager::spread": [0.0],
-					"stereo-imager::manual_panning": [1.0, 0.6, 0.2, -0.2, -0.6, -1.0],
 					"spread_lfo::bypass": [1],
 					"spread_lfo::conitnuous_discrete": [0],
 					"spread_lfo::depth": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
@@ -43,10 +43,10 @@
 					"hex-tone::gain": [0.0],
 					"hex-tone::resonance": [1.0],
 					"harmonic-tremolo::LFO_source": [1],
-					"harmonic-tremolo::bypass": [0],
+					"harmonic-tremolo::bypass": [1],
 					"harmonic-tremolo::depth": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
 					"harmonic-tremolo::octave_harmonic": [-3.0],
-					"buffer-delay::bypass": [1],
+					"buffer-delay::bypass": [0],
 					"buffer-delay::delay_time": [500.0],
 					"buffer-delay::feedback": [0.25],
 					"buffer-delay::mix": [100.0],
@@ -73,8 +73,8 @@
 					"spread::min": [0.0],
 					"spread::multislider": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0],
 					"hex-input::first_channel": [1],
-					"hex-output::master_volume": [127],
-					"hex-output::first_channel": [1]
+					"hex-output::first_channel": [1],
+					"hex-output::master_volume": [127]
 				}
 			}
 		}

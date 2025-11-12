@@ -13,14 +13,34 @@
 		"boxes": [
 			{
 				"box": {
+					"bgmode": 0,
+					"border": 0,
+					"clickthrough": 0,
+					"enablehscroll": 0,
+					"enablevscroll": 0,
+					"id": "obj-1",
+					"lockeddragscroll": 0,
+					"lockedsize": 0,
+					"maxclass": "bpatcher",
+					"name": "hex-output.maxpat",
+					"numinlets": 2,
+					"numoutlets": 0,
+					"offset": [0.0, 0.0],
+					"patching_rect": [72.0, 248.0, 350.0, 175.0],
+					"varname": "buffer-delay[1]",
+					"viewvisibility": 1
+				}
+			},
+			{
+				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-22",
-					"linecount": 9,
+					"linecount": 8,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [627.0, 252.0, 388.0, 114.0],
-					"text": "Bypass the effect and pass the input.\n\nSet the filter frequency.\n\nSet the amplitude of the filter coefficient.\n\nSet the resonance of the filter.\n\nChange the filter type (Lowpass, Highpass, Bandpass, Bandstop).",
+					"patching_rect": [626.5, 191.0, 388.0, 102.0],
+					"text": "Master output volume (Heaxphonic Output only)\n\nSets the first input/output channel - all six input/output channels are then automatically assigned in sequence.\n\nShortcut to configure the Max and audio interface settings.\n\nToggle the Max audio runtime on and off.",
 					"textjustification": 2
 				}
 			},
@@ -29,24 +49,23 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-21",
-					"linecount": 9,
+					"linecount": 8,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 252.0, 147.0, 126.0],
-					"text": "Bypass\n\nFrequency [0, ∞) (Hz)\n\nGain [-24, 24] (dB)\n\nResonance [0, 24]\n\nFilter Type\n"
+					"patching_rect": [474.5, 191.0, 147.0, 102.0],
+					"text": "Gain\n\nFirst Channel\n\n\nOpen Audio Settings\n\nTurn Audio On/Off"
 				}
 			},
 			{
 				"box": {
 					"fontname": "Moderat Trial",
 					"id": "obj-20",
-					"linecount": 7,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 388.0, 90.0],
-					"text": "Main dry input.\n\nSet 'Frequency' independently.\n\nSet 'Gain' independently.\n\nSet 'Resonance' independently.",
+					"patching_rect": [626.0, 71.0, 390.0, 18.0],
+					"text": "Interface output (Hexaphonic Output only).",
 					"textjustification": 2
 				}
 			},
@@ -55,12 +74,11 @@
 					"fontface": 0,
 					"fontname": "Moderat Trial",
 					"id": "obj-19",
-					"linecount": 7,
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 71.0, 147.0, 90.0],
-					"text": "Hexaphonic Input\n\nFrequency [0, ∞) (Hz)\n\nGain [-24, 24] (dB)\n\nResonance [0, 24]"
+					"patching_rect": [474.0, 71.0, 147.0, 18.0],
+					"text": "Hexaphonic Input"
 				}
 			},
 			{
@@ -71,7 +89,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 505.0, 154.0, 18.0],
+					"patching_rect": [474.0, 405.0, 147.0, 18.0],
 					"text": "Hexaphonic Output"
 				}
 			},
@@ -83,7 +101,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 484.0, 540.0, 18.0],
+					"patching_rect": [474.0, 384.0, 540.0, 18.0],
 					"text": "Outputs",
 					"textjustification": 1
 				}
@@ -96,7 +114,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [475.0, 232.0, 539.0, 18.0],
+					"patching_rect": [475.5, 169.0, 539.0, 18.0],
 					"text": "Controls",
 					"textjustification": 1
 				}
@@ -109,7 +127,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 49.0, 540.0, 18.0],
+					"patching_rect": [474.0, 49.0, 542.0, 18.0],
 					"text": "Multichannel Inputs",
 					"textjustification": 1
 				}
@@ -121,8 +139,8 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 505.0, 388.0, 18.0],
-					"text": "Original signal with the filters applied.",
+					"patching_rect": [626.0, 405.0, 388.0, 18.0],
+					"text": "Interface input (Hexaphonic Input only).",
 					"textjustification": 2
 				}
 			},
@@ -137,8 +155,8 @@
 					"lockeddragscroll": 0,
 					"lockedsize": 0,
 					"maxclass": "bpatcher",
-					"name": "hex-tone.maxpat",
-					"numinlets": 5,
+					"name": "hex-input.maxpat",
+					"numinlets": 1,
 					"numoutlets": 1,
 					"offset": [0.0, 0.0],
 					"outlettype": ["multichannelsignal"],
@@ -157,8 +175,8 @@
 					"numinlets": 2,
 					"numoutlets": 1,
 					"outlettype": [""],
-					"patching_rect": [732.0, 685.0, 155.0, 35.0],
-					"text": ";\rmax closefile hex-tone-help"
+					"patching_rect": [732.0, 685.0, 195.0, 35.0],
+					"text": ";\rmax closefile hex-input-output-help"
 				}
 			},
 			{
@@ -185,9 +203,9 @@
 			}
 		],
 		"parameters": {
-			"obj-2::obj-101": ["Gain[1]", "Gain", 0],
-			"obj-2::obj-40": ["frequency", "Frequency", 0],
-			"obj-2::obj-41": ["resonance", "Resonance", 0],
+			"obj-1::obj-12": ["master_volume", "master_volume", 0],
+			"obj-1::obj-8": ["number[1]", "number", 0],
+			"obj-2::obj-8": ["number", "number", 0],
 			"inherited_shortname": 1
 		},
 		"autosave": 0

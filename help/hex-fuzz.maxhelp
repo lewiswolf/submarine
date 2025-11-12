@@ -3,14 +3,13 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 6,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1781.0, 695.0],
-		"gridsize": [15.0, 15.0],
+		"rect": [34.0, 121.0, 1372.0, 745.0],
 		"boxes": [
 			{
 				"box": {
@@ -20,7 +19,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 270.0, 388.0, 199.0],
+					"patching_rect": [626.0, 270.0, 388.0, 198.0],
 					"text": "Bypass the effect and pass the input.\n\nSet the soft clipping algorithm (Hyperbolic Tangent, Two State Quadratic, Recipricol)\n\nSet the gain of the input signal before hard clipping.\n\nControl the bias of the input the gain.\n\nControl the presence of the soft clipping algorithm.\n\nDistribute 'Distortion Amount' across the 6 strings of the guitar.\n\nLow pass filter acting on the output signal.\n\nControl the mix of the main output.",
 					"textjustification": 2
 				}
@@ -34,7 +33,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 270.0, 147.0, 199.0],
+					"patching_rect": [474.0, 270.0, 147.0, 198.0],
 					"text": "Bypass\n\nAlgorithm\n\n\nGain [-30, 30] (dB)\n\nAsymmetry [-1, 1]\n\nAmmount [0, 1]\n\nSpread [-1, 1]\n\nTone [20, 24000] (Hz)\n\nDry / Wet [0, 100] (%)"
 				}
 			},
@@ -46,7 +45,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [626.0, 71.0, 390.0, 163.0],
+					"patching_rect": [626.0, 71.0, 390.0, 162.0],
 					"text": "Main dry input.\n\nSet 'Gain' independently.\n\nSet 'Asymmetry' independently.\n\nSet 'Distortion Amount' independently, bypassing 'Spread'.\n\nSet 'Spread' independently.\n\nSet 'Tone' independently.\n\nSet 'Dry / Wet' independently.",
 					"textjustification": 2
 				}
@@ -60,7 +59,7 @@
 					"maxclass": "comment",
 					"numinlets": 1,
 					"numoutlets": 0,
-					"patching_rect": [474.0, 71.0, 147.0, 163.0],
+					"patching_rect": [474.0, 71.0, 147.0, 162.0],
 					"text": "Hexaphonic Input\n\nGain [-30, 30] (dB)\n\nAsymmetry [-1, 1]\n\nDistortion Amount [0, 1]\n\nSpread [-1, 1]\n\nTone [0, ∞) (Hz)\n\nDry / Wet [0, 1]"
 				}
 			},
@@ -192,13 +191,6 @@
 			"obj-2::obj-36": ["Spread[4]", "Spread", 0],
 			"obj-2::obj-41": ["number[8]", "Dry / Wet", 0],
 			"obj-2::obj-72": ["Asymmetry", "Asymmetry", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
 			"parameter_overrides": {
 				"obj-2::obj-41": {
 					"parameter_longname": "number[8]"
@@ -206,36 +198,6 @@
 			},
 			"inherited_shortname": 1
 		},
-		"dependency_cache": [
-			{
-				"name": "hex-fuzz.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "hex-fuzz.maxpat",
-				"bootpath": "~/Desktop/submarine/patchers/bpatchers",
-				"patcherrelativepath": "../patchers/bpatchers",
-				"type": "JSON",
-				"implicit": 1
-			},
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "spread-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../code",
-				"type": "gDSP",
-				"implicit": 1
-			}
-		],
 		"autosave": 0
 	}
 }

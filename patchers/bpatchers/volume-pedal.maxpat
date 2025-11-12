@@ -3,15 +3,14 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 6,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1372.0, 695.0],
+		"rect": [34.0, 121.0, 1372.0, 745.0],
 		"openinpresentation": 1,
-		"gridsize": [15.0, 15.0],
 		"boxes": [
 			{
 				"box": {
@@ -82,14 +81,13 @@
 						"fileversion": 1,
 						"appversion": {
 							"major": 9,
-							"minor": 0,
-							"revision": 6,
+							"minor": 1,
+							"revision": 0,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
 						"rect": [34.0, 118.0, 1372.0, 748.0],
-						"gridsize": [15.0, 15.0],
 						"boxes": [
 							{
 								"box": {
@@ -124,14 +122,13 @@
 										"fileversion": 1,
 										"appversion": {
 											"major": 9,
-											"minor": 0,
-											"revision": 6,
+											"minor": 1,
+											"revision": 0,
 											"architecture": "x64",
 											"modernui": 1
 										},
 										"classnamespace": "dsp.gen",
 										"rect": [34.0, 227.0, 1680.0, 819.0],
-										"gridsize": [15.0, 15.0],
 										"boxes": [
 											{
 												"box": {
@@ -363,7 +360,7 @@
 									"maxclass": "inlet",
 									"numinlets": 0,
 									"numoutlets": 1,
-									"outlettype": [""],
+									"outlettype": ["signal"],
 									"patching_rect": [50.0, 40.0, 30.0, 30.0],
 									"varname": "u902008785"
 								}
@@ -604,7 +601,7 @@
 							{
 								"patchline": {
 									"destination": ["obj-45", 0],
-									"midpoints": [59.5, 127.592558994889259, 366.5, 127.592558994889259],
+									"midpoints": [59.5, 127.59255899488926, 366.5, 127.59255899488926],
 									"order": 0,
 									"source": ["obj-31", 0]
 								}
@@ -710,7 +707,7 @@
 					"parameter_enable": 0,
 					"patching_rect": [655.0, 270.0, 30.0, 30.0],
 					"presentation": 1,
-					"presentation_rect": [32.151031000000003, 30.0, 100.0, 135.0],
+					"presentation_rect": [32.151031, 30.0, 100.0, 135.0],
 					"setminmax": [0.0, 1.0],
 					"slidercolor": [0.329411764705882, 0.701960784313725, 0.470588235294118, 1.0],
 					"thickness": 4
@@ -854,7 +851,7 @@
 					"numinlets": 1,
 					"numoutlets": 2,
 					"outlettype": ["float", "float"],
-					"patching_rect": [287.0, 120.0, 141.600000000000023, 22.0],
+					"patching_rect": [287.0, 120.0, 141.60000000000002, 22.0],
 					"text": "t 0. 1."
 				}
 			},
@@ -918,7 +915,7 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-83",
-					"index": 0,
+					"index": 2,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -979,11 +976,11 @@
 				"box": {
 					"comment": "Pedal Input (Mono)",
 					"id": "obj-73",
-					"index": 0,
+					"index": 1,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
-					"outlettype": [""],
+					"outlettype": ["signal"],
 					"patching_rect": [42.0, 112.0, 30.0, 30.0]
 				}
 			},
@@ -991,7 +988,7 @@
 				"box": {
 					"comment": "Carrier Signal (Mono)",
 					"id": "obj-72",
-					"index": 0,
+					"index": 2,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -1019,7 +1016,7 @@
 				"box": {
 					"comment": "Hexaphonic Pedal Output",
 					"id": "obj-29",
-					"index": 0,
+					"index": 1,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -1209,22 +1206,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"obj-12": ["linear_logarithmic[2]", "linear_logarithmic", 0],
-			"obj-28": ["min[1]", "min", 0],
-			"obj-30": ["max[1]", "max", 0],
-			"obj-52": ["conitnuous_discrete[2]", "conitnuous_discrete", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"inherited_shortname": 1
-		},
-		"dependency_cache": [],
-		"autosave": 0,
 		"styles": [
 			{
 				"name": "rnbodefault",

@@ -3,15 +3,14 @@
 		"fileversion": 1,
 		"appversion": {
 			"major": 9,
-			"minor": 0,
-			"revision": 6,
+			"minor": 1,
+			"revision": 0,
 			"architecture": "x64",
 			"modernui": 1
 		},
 		"classnamespace": "box",
-		"rect": [34.0, 171.0, 1372.0, 695.0],
+		"rect": [34.0, 121.0, 1372.0, 745.0],
 		"openinpresentation": 1,
-		"gridsize": [15.0, 15.0],
 		"boxes": [
 			{
 				"box": {
@@ -71,14 +70,13 @@
 						"fileversion": 1,
 						"appversion": {
 							"major": 9,
-							"minor": 0,
-							"revision": 6,
+							"minor": 1,
+							"revision": 0,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
 						"rect": [34.0, 120.0, 1269.0, 746.0],
-						"gridsize": [15.0, 15.0],
 						"boxes": [
 							{
 								"box": {
@@ -802,14 +800,13 @@
 						"fileversion": 1,
 						"appversion": {
 							"major": 9,
-							"minor": 0,
-							"revision": 6,
+							"minor": 1,
+							"revision": 0,
 							"architecture": "x64",
 							"modernui": 1
 						},
 						"classnamespace": "box",
 						"rect": [34.0, 120.0, 1269.0, 746.0],
-						"gridsize": [15.0, 15.0],
 						"boxes": [
 							{
 								"box": {
@@ -910,14 +907,13 @@
 										"fileversion": 1,
 										"appversion": {
 											"major": 9,
-											"minor": 0,
-											"revision": 6,
+											"minor": 1,
+											"revision": 0,
 											"architecture": "x64",
 											"modernui": 1
 										},
 										"classnamespace": "dsp.gen",
 										"rect": [85.0, 227.0, 1629.0, 804.0],
-										"gridsize": [15.0, 15.0],
 										"boxes": [
 											{
 												"box": {
@@ -1117,14 +1113,13 @@
 										"fileversion": 1,
 										"appversion": {
 											"major": 9,
-											"minor": 0,
-											"revision": 6,
+											"minor": 1,
+											"revision": 0,
 											"architecture": "x64",
 											"modernui": 1
 										},
 										"classnamespace": "dsp.gen",
 										"rect": [85.0, 227.0, 1629.0, 804.0],
-										"gridsize": [15.0, 15.0],
 										"boxes": [
 											{
 												"box": {
@@ -1797,7 +1792,7 @@
 					"numinlets": 1,
 					"numoutlets": 2,
 					"outlettype": ["float", "float"],
-					"patching_rect": [993.0, 133.0, 139.200000000000045, 22.0],
+					"patching_rect": [993.0, 133.0, 139.20000000000005, 22.0],
 					"text": "t 0. 1."
 				}
 			},
@@ -1850,7 +1845,7 @@
 				"box": {
 					"comment": "'loadbang' to reset the patcher / 'help' to open the helpfile",
 					"id": "obj-83",
-					"index": 0,
+					"index": 4,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2005,7 +2000,7 @@
 				"box": {
 					"comment": "LFO Output [0, 1]",
 					"id": "obj-1",
-					"index": 0,
+					"index": 1,
 					"maxclass": "outlet",
 					"numinlets": 1,
 					"numoutlets": 0,
@@ -2016,7 +2011,7 @@
 				"box": {
 					"comment": "Depth [0, 1]",
 					"id": "obj-40",
-					"index": 0,
+					"index": 3,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2028,7 +2023,7 @@
 				"box": {
 					"comment": "Spread [0, 1]",
 					"id": "obj-33",
-					"index": 0,
+					"index": 2,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2040,7 +2035,7 @@
 				"box": {
 					"comment": "Rate [0, ∞] (Hz)",
 					"id": "obj-32",
-					"index": 0,
+					"index": 1,
 					"maxclass": "inlet",
 					"numinlets": 0,
 					"numoutlets": 1,
@@ -2175,7 +2170,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-86", 1],
-					"midpoints": [160.5, 296.499997854232788, 954.5, 296.499997854232788],
+					"midpoints": [160.5, 296.4999978542328, 954.5, 296.4999978542328],
 					"order": 0,
 					"source": ["obj-25", 0]
 				}
@@ -2183,7 +2178,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-10", 0],
-					"midpoints": [1300.5, 123.166661500930786, 641.5, 123.166661500930786],
+					"midpoints": [1300.5, 123.16666150093079, 641.5, 123.16666150093079],
 					"order": 3,
 					"source": ["obj-26", 0]
 				}
@@ -2191,7 +2186,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-20", 0],
-					"midpoints": [1300.5, 123.166661500930786, 40.5, 123.166661500930786],
+					"midpoints": [1300.5, 123.16666150093079, 40.5, 123.16666150093079],
 					"order": 6,
 					"source": ["obj-26", 0]
 				}
@@ -2199,7 +2194,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-21", 0],
-					"midpoints": [1300.5, 123.166661500930786, 160.5, 123.166661500930786],
+					"midpoints": [1300.5, 123.16666150093079, 160.5, 123.16666150093079],
 					"order": 5,
 					"source": ["obj-26", 0]
 				}
@@ -2207,7 +2202,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-24", 0],
-					"midpoints": [1300.5, 123.166661500930786, 1241.5, 123.166661500930786],
+					"midpoints": [1300.5, 123.16666150093079, 1241.5, 123.16666150093079],
 					"order": 0,
 					"source": ["obj-26", 0]
 				}
@@ -2215,7 +2210,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-39", 0],
-					"midpoints": [1300.5, 123.166661500930786, 401.5, 123.166661500930786],
+					"midpoints": [1300.5, 123.16666150093079, 401.5, 123.16666150093079],
 					"order": 4,
 					"source": ["obj-26", 0]
 				}
@@ -2223,7 +2218,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-4", 0],
-					"midpoints": [1300.5, 123.166661500930786, 1002.5, 123.166661500930786],
+					"midpoints": [1300.5, 123.16666150093079, 1002.5, 123.16666150093079],
 					"order": 1,
 					"source": ["obj-26", 0]
 				}
@@ -2231,7 +2226,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-44", 0],
-					"midpoints": [1300.5, 123.166661500930786, 882.5, 123.166661500930786],
+					"midpoints": [1300.5, 123.16666150093079, 882.5, 123.16666150093079],
 					"order": 2,
 					"source": ["obj-26", 0]
 				}
@@ -2306,7 +2301,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-86", 1],
-					"midpoints": [160.5, 295.699997842311859, 954.5, 295.699997842311859],
+					"midpoints": [160.5, 295.69999784231186, 954.5, 295.69999784231186],
 					"order": 0,
 					"source": ["obj-45", 0]
 				}
@@ -2362,7 +2357,7 @@
 			{
 				"patchline": {
 					"destination": ["obj-87", 0],
-					"midpoints": [1341.5, 50.475072860717773, 1300.5, 50.475072860717773],
+					"midpoints": [1341.5, 50.47507286071777, 1300.5, 50.47507286071777],
 					"source": ["obj-82", 0]
 				}
 			},
@@ -2382,8 +2377,8 @@
 				"patchline": {
 					"destination": ["obj-92", 0],
 					"midpoints": [
-						954.5, 334.282537937164307, 858.466641592979272, 334.282537937164307,
-						858.466641592979272, 221.282537937164307, 882.5, 221.282537937164307
+						954.5, 334.2825379371643, 858.4666415929793, 334.2825379371643, 858.4666415929793,
+						221.2825379371643, 882.5, 221.2825379371643
 					],
 					"source": ["obj-86", 1]
 				}
@@ -2406,41 +2401,6 @@
 					"source": ["obj-92", 0]
 				}
 			}
-		],
-		"parameters": {
-			"obj-23": ["linear_logarithmic", "linear_logarithmic", 0],
-			"obj-28": ["min[2]", "min", 0],
-			"obj-46": ["invert", "invert", 0],
-			"obj-5": ["max[2]", "max", 0],
-			"obj-52": ["conitnuous_discrete", "conitnuous_discrete", 0],
-			"obj-59": ["Spread", "Spread", 0],
-			"obj-61": ["Rate", "Rate", 0],
-			"obj-92": ["Depth[1]", "Depth", 0],
-			"parameterbanks": {
-				"0": {
-					"index": 0,
-					"name": "",
-					"parameters": ["-", "-", "-", "-", "-", "-", "-", "-"]
-				}
-			},
-			"inherited_shortname": 1
-		},
-		"dependency_cache": [
-			{
-				"name": "number-input.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			},
-			{
-				"name": "spread-lfo.gendsp",
-				"bootpath": "~/Desktop/submarine/code",
-				"patcherrelativepath": "../../code",
-				"type": "gDSP",
-				"implicit": 1
-			}
-		],
-		"autosave": 0
+		]
 	}
 }
