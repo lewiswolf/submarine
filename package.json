@@ -1,14 +1,14 @@
 {
 	"name": "submarine",
-	"version": "1.0.2",
-	"description": "A suite of hexaphonic effects designed in Max for the SubSix pickup by Submarine.",
-	"scripts": {
-		"format": "prettier . --write"
-	},
 	"author": "Lewis Wolstanholme & Pete Roe",
-	"license": "Private",
+	"description": "A suite of hexaphonic effects designed in Max for the SubSix pickup by Submarine.",
+	"version": "1.0.2",
+	"license": "CC BY-NC-SA 4.0",
 	"devDependencies": {
 		"prettier": "^3.6.2"
+	},
+	"scripts": {
+		"format": "prettier . --write"
 	},
 	"prettier": {
 		"arrowParens": "always",
