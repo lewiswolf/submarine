@@ -4,7 +4,7 @@
 		"appversion": {
 			"major": 9,
 			"minor": 1,
-			"revision": 0,
+			"revision": 4,
 			"architecture": "x64",
 			"modernui": 1
 		},
@@ -93,7 +93,7 @@
 						"appversion": {
 							"major": 9,
 							"minor": 1,
-							"revision": 0,
+							"revision": 4,
 							"architecture": "x64",
 							"modernui": 1
 						},
@@ -123,7 +123,7 @@
 										"appversion": {
 											"major": 9,
 											"minor": 1,
-											"revision": 0,
+											"revision": 4,
 											"architecture": "x64",
 											"modernui": 1
 										},
@@ -1411,7 +1411,7 @@
 						"appversion": {
 							"major": 9,
 							"minor": 1,
-							"revision": 0,
+							"revision": 4,
 							"architecture": "x64",
 							"modernui": 1
 						},
@@ -2144,7 +2144,7 @@
 			},
 			{
 				"box": {
-					"comment": "Left Channel",
+					"comment": "Stereo Output",
 					"id": "obj-2",
 					"index": 1,
 					"maxclass": "outlet",
@@ -2210,7 +2210,7 @@
 						"valueof": {
 							"parameter_enum": ["off", "on"],
 							"parameter_linknames": 1,
-							"parameter_longname": "reorder_channels[1]",
+							"parameter_longname": "reorder_channels",
 							"parameter_mmax": 1,
 							"parameter_modmode": 0,
 							"parameter_shortname": "reorder_channels",
